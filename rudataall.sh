@@ -35,6 +35,14 @@
                
 
 outfile=rudata_all.json
+epochtime=$(date +%s)
+
+# Find the number of processes inside the container
+IFS=$'\n'
+PPS=(`cat /sys/fs/cgroup/pids/tasks`)
+unset IFS
+length=${#PPS[@]}
+PIDS=$((length-2)) 
 
 ## VM level metrics
 
@@ -147,6 +155,7 @@ vmid="unavailable"
 
 
 echo "{" > $outfile
+echo "  \"currentTime\": $epochtime" >> $outfile
 echo "  \"vMetricType\": \"VM level\"," >> $outfile
 ## print VM level data 
 echo "  \"vCpuTime\": $CPUTOT," >> $outfile
@@ -281,7 +290,6 @@ NTC=${NET[9]}  # bytes transmitted
 [[ -z "$NTC" ]] && NTC=0
 
 
-epochtime=$(date +%s)
 # Get container ID
 CIDS=$(cat /etc/hostname)
 
@@ -319,20 +327,15 @@ echo "  \"cMemoryMaxUsed\": $MEMMAXC," >> $outfile
 
 
 echo "  \"cId\": \"$CIDS\"," >> $outfile
+echo "  \"cNumProcesses\": $PIDS" >> $outfile
 
 echo "  \"pMetricType\": \"Process level\"," >> $outfile
 
 
 ## Process level metrics
 
-# Find the number of processes inside the container
 # For each process, parse the data
-IFS=$'\n'
-PPS=(`cat /sys/fs/cgroup/pids/tasks`)
-unset IFS
 
-length=${#PPS[@]}
-PIDS=$((length-2)) 
 # command cat $outfile in the last line of the script
 # and ./rudataall.sh are counted as 2 extra processes, so -2 here for PIDS
 
@@ -344,6 +347,8 @@ do
   STAT=(`cat /proc/$pid/stat`)
 
   PID=${STAT[0]}
+  PSHORT=$(echo $(echo ${STAT[1]} | cut -d'(' -f 2 ))
+  PSHORT=${PSHORT::-1}
   NUMTHRDS=${STAT[19]}
 
   # Get process CPU stats
@@ -366,9 +371,14 @@ do
   VSIZE=${STAT[22]} # in Bytes
   RSS=${STAT[23]} # in pages
 
+  PNAME=$(cat /proc/$pid/cmdline | tr "\0" " ")
+  PNAME=${PNAME::-1}
+
   # print process level data
   echo "  {" >> $outfile
   echo "  \"pId\": $PID, " >> $outfile
+  echo "  \"pCmdLine\":\"$PNAME\", " >> $outfile                    # process cmdline
+  echo "  \"pName\":\"$PSHORT\", " >> $outfile          # process cmd short version
   echo "  \"pNumThreads\": $NUMTHRDS, " >> $outfile
   echo "  \"pCpuTimeUserMode\": $UTIME, " >> $outfile         # cs
   echo "  \"pCpuTimeKernelMode\": $STIME, " >> $outfile       # cs
@@ -382,10 +392,7 @@ do
   echo "  }, " >> $outfile
 done
 
-echo "  {\"pNumProcesses\": $PIDS}" >> $outfile
 echo "  ]," >> $outfile
-
-echo "  \"currentTime\": $epochtime" >> $outfile
 
 echo "}" >> $outfile
 
