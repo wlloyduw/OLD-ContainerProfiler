@@ -10,6 +10,12 @@ ContainerProfiler includes bash scripts **rudataall.sh** to profile the resource
 
 **License:** Copyright.
 
+
+
+
+Function Reference
+======
+
 **deltav2**.sh calculates the delta from 2 json files produced by **rudataall.sh**
 
 It writes the deltas to stdout in json format and the missing fields to stderr
