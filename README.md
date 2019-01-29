@@ -109,8 +109,8 @@ Process Level Metrics
 | ------------- | --------------- |
 | pId | Process ID |  
 | pNumThreads | Number of threads in this process |  
-| pCpuTimeUserMode | Amount of time that this process has been scheduled in user mode, measured in clock ticks (divide by sysconf(SC_CLK_TCK)) |  
-| pCpuTimeKernelMode | Amount of time that this process has been scheduled in kernel mode, measured in clock ticks (divide by sysconf(SC_CLK_TCK)) |
+| pCpuTimeUserMode | Amount of time that this process has been scheduled in user mode, measured in clock ticks (divide by sysconf(\_SC_CLK_TCK)) |  
+| pCpuTimeKernelMode | Amount of time that this process has been scheduled in kernel mode, measured in clock ticks (divide by sysconf(\_SC_CLK_TCK)) |
 | pChildrenUserMode | Amount of time that this process's waited-for children have been scheduled in user mode, measured in clock ticks |
 | pChildrenKernelMode | Amount of time that this process's waited-for children have been scheduled in kernel mode, measured in clock ticks |
 | pVoluntaryContextSwitches | Number of voluntary context switches | 
