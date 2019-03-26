@@ -1,6 +1,6 @@
 # ContainerProfiler
 
-ContainerProfiler includes bash scripts **rudataall.sh** to profile the resource utilization on VM level, container level and process level and **deltav2.sh** to compute the delta statistics of resource utilization between two time instances. Detailed usage of the profiler script can be found in the Youtube video linked below.
+ContainerProfiler includes bash scripts **rudataall.sh** to profile the resource utilization on VM level, container level and process level and **deltav2.sh** to compute the delta statistics of resource utilization between two time instances. Detailed usage of the profiler script can be found in the YouTube video linked below.
 
 **Authors:** Wes Lloyd & Huazeng Deng & Ling-hong Hung
 
