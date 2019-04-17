@@ -6,7 +6,8 @@ NWELLS=96
 DOCKERCMD="docker run -d --rm -v /home/ubuntu/profiler_demo/container_profiler:/data -e NWELLS=$NWELLS sysbench"
 runCmd=/data/processpack.sh
 deltaT=1
-$DOCKERCMD bash -c "/data/ru_profiler.sh $runCmd $deltaT"  
+$DOCKERCMD bash -c "/data/ru_profiler.sh $runCmd $deltaT"
+
 
 
 
