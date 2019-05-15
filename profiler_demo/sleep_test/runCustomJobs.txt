@@ -9,9 +9,8 @@
 
 3) Open "Dockerfile"
   3a) Make sure the line "ENTRYPOINT ["/entrypoint_test.sh", "6000"]" is commented out. It should already be.
-  3b) Keep the first run line("RUN apt-get install update") but delete the other "Run" commands.
-  3c) Insert your own run commands to set up your ubuntu enviroment.  Make sure to use "install -y" for each command that would require that
-      you confirm "yes" you want to use the extra disk space.
+  3b) Keep the first run line ("RUN apt-get install update") but delete the other "RUN" commands.
+  3c) Insert your own RUN commands to set up your ubuntu enviroment.  Make sure to use "install -y" for each command that  requires the user to confirm "yes" to proceed. (?? you want to use the extra disk space. ??)
 
 4) Build the docker container with "sudo docker build -t 'container-name' ." (Choose whatever container name you want)
   4a)  Type "sudo docker images" and confirm that 'container-name' is on the list.
@@ -19,13 +18,13 @@
 5) Open "runDockerProfile.sh". The line starting with "DOCKERCMD=" is doing a lot of stuff.  It is building the command that will start the docker container and mounts the directory on the host machine that is running the tool to the data directory in the container.  This is necessary in order to get the json ouput files containing all your metrics onto your host machine.  Otherwise they would go away when the container dies.
 
 So we need to do two things:
-  5a) After the "-v" in that line you should see "host_path:data", change the "host_path" to the path on your machine where the tool is  running(Can use "pwd" in terminal to make extra sure it's correct).
+  5a) After the "-v" in that line you should see "host_path:data", change the "host_path" to the path on your machine where the tool is running (Can use "pwd" in terminal to confirm the directory is correct).
   5b) At the end of this command you should see "sysbench" telling the docker to start the sysbench image.  You need to change this to 'container-name', whatever you chose in step 4.
 
-6) Open "process_pack.sh".  This file container the bash commands that will be executed in the container.  It contains the commands for sysbench and stress.ng by default.  Delete them and enter your own commands for the job you are running.
+6) Open "process_pack.sh".  This file contains the bash commands that will be executed in the container.  It contains the commands for sysbench and stress-ng by default.  Delete them and enter your own commands for the job you'd like to profile.
 
 7) You should be able to run "sudo ./runDockerProfile" at the terminal and see that it is creating json ouput files.
-  7a)  run "sudo docker ps -a" to make extra sure the container is running.  If there is something wrong the container stops without printing any error message so you might not know it didn't work.
+  7a)  run "sudo docker ps -a" to confirm the container your trying to profile is running.  If there is something wrong, your container may have exited without printing any error message so you might not know it didn't work.
   7b)  If you're running Ubuntu natively you can just open the directory in the directory gui explorer.
   7c)  You can also open a second terminal, navigate to where the tool is running and type "watch -n 0.5 ls -alt".  This will print out the content of the directory every half second so that you can see the output files being collected. 
 
