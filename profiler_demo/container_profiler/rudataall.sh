@@ -81,7 +81,7 @@ DISK=($(cat /proc/diskstats | grep 'd.[0-9]') )
 
 unset IFS
 length=${#DISK[@]}
-if [ "$length" -gt "1" ]
+if [ $length > 1 ]
 then
   for (( i=0 ; i < length; i++ ))
   do
@@ -116,7 +116,7 @@ NET=($(cat /proc/net/dev | grep 'eth0') )
 unset IFS
 length=${#NET[@]}
 #Parse multiple network adapters if they exist
-if [ "$length" -gt "1" ]
+if [ $length > 1 ]
 then
   for (( i=0 ; i < length; i++ ))
   do
@@ -248,7 +248,7 @@ else
     temp=($line)
     for elem in "${disk_arr[@]}"
     do 
-      if [ "$elem" = "${temp[0]}" ]
+      if [ "$elem" == "${temp[0]}" ]
       then
         BRC=$(echo "${temp[2]} + $BRC" | bc)
       fi
@@ -271,7 +271,7 @@ else
     temp=($line)
     for elem in "${disk_arr[@]}"
     do 
-      if [ "$elem" = "${temp[0]}" ]
+      if [ "$elem" == "${temp[0]}" ]
       then
         BWC=$(echo "${temp[2]} + $BWC" | bc)
       fi
@@ -348,7 +348,7 @@ do
 
   PID=${STAT[0]}
   PSHORT=$(echo $(echo ${STAT[1]} | cut -d'(' -f 2 ))
-  PSHORT=${PSHORT::-1}
+  PSHORT=${PSHORT%?}
   NUMTHRDS=${STAT[19]}
 
   # Get process CPU stats
@@ -356,7 +356,7 @@ do
   STIME=${STAT[14]}
   CUTIME=${STAT[15]}
   CSTIME=${STAT[16]}
-  TOTTIME=$((${UTIME}+${STIME}))
+  TOTTIME=$((${UTIME} + ${STIME}))
 
   # context switch  !! need double check result format
   VCSWITCH=$(cat /proc/$pid/status | grep "^voluntary_ctxt_switches" | \
@@ -372,7 +372,7 @@ do
   RSS=${STAT[23]} # in pages
 
   PNAME=$(cat /proc/$pid/cmdline | tr "\0" " ")
-  PNAME=${PNAME::-1}
+  PNAME=${PNAME%?}
 
   # print process level data
   echo "  {" >> $outfile
