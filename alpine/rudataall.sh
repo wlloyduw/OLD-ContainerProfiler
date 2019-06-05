@@ -344,52 +344,54 @@ echo "  \"pProcesses\": [" >> $outfile
 for (( i=0; i<PIDS; i++ ))
 do 
   pid=${PPS[i]}
-  STAT=(`cat /proc/$pid/stat`)
+  #check if pid still exists
+  STAT=(`cat /proc/$pid/stat 2>/dev/null`)
+  if (( ${#STAT[@]} )); then
+	PID=${STAT[0]}
+	PSHORT=$(echo $(echo ${STAT[1]} | cut -d'(' -f 2 ))
+	PSHORT=${PSHORT%?}
+	NUMTHRDS=${STAT[19]}
 
-  PID=${STAT[0]}
-  PSHORT=$(echo $(echo ${STAT[1]} | cut -d'(' -f 2 ))
-  PSHORT=${PSHORT%?}
-  NUMTHRDS=${STAT[19]}
+	# Get process CPU stats
+	UTIME=${STAT[13]}
+	STIME=${STAT[14]}
+	CUTIME=${STAT[15]}
+	CSTIME=${STAT[16]}
+	TOTTIME=$((${UTIME} + ${STIME}))
 
-  # Get process CPU stats
-  UTIME=${STAT[13]}
-  STIME=${STAT[14]}
-  CUTIME=${STAT[15]}
-  CSTIME=${STAT[16]}
-  TOTTIME=$((${UTIME} + ${STIME}))
-
-  # context switch  !! need double check result format
-  VCSWITCH=$(cat /proc/$pid/status | grep "^voluntary_ctxt_switches" | \
+	# context switch  !! need double check result format
+	VCSWITCH=$(cat /proc/$pid/status | grep "^voluntary_ctxt_switches" | \
       cut -d":" -f 2 | sed 's/^[ \t]*//') 
-  NVCSSWITCH=$(cat /proc/$pid/status | grep "^nonvoluntary_ctxt_switches" | \
+	NVCSSWITCH=$(cat /proc/$pid/status | grep "^nonvoluntary_ctxt_switches" | \
       cut -d":" -f 2 | sed 's/^[ \t]*//') 
 
-  # Get process disk stats
-  DELAYIO=${STAT[41]}
+	# Get process disk stats
+	DELAYIO=${STAT[41]}
 
-  # Get process memory stats
-  VSIZE=${STAT[22]} # in Bytes
-  RSS=${STAT[23]} # in pages
+	# Get process memory stats
+	VSIZE=${STAT[22]} # in Bytes
+	RSS=${STAT[23]} # in pages
 
-  PNAME=$(cat /proc/$pid/cmdline | tr "\0" " ")
-  PNAME=${PNAME%?}
+	PNAME=$(cat /proc/$pid/cmdline | tr "\0" " ")
+	PNAME=${PNAME%?}
 
-  # print process level data
-  echo "  {" >> $outfile
-  echo "  \"pId\": $PID, " >> $outfile
-  echo "  \"pCmdLine\":\"$PNAME\", " >> $outfile                    # process cmdline
-  echo "  \"pName\":\"$PSHORT\", " >> $outfile          # process cmd short version
-  echo "  \"pNumThreads\": $NUMTHRDS, " >> $outfile
-  echo "  \"pCpuTimeUserMode\": $UTIME, " >> $outfile         # cs
-  echo "  \"pCpuTimeKernelMode\": $STIME, " >> $outfile       # cs
-  echo "  \"pChildrenUserMode\": $CUTIME, " >> $outfile       # cs
-  echo "  \"pChildrenKernelMode\": $CSTIME, " >> $outfile     # cs
-  echo "  \"pVoluntaryContextSwitches\": $VCSWITCH, " >> $outfile
-  echo "  \"pNonvoluntaryContextSwitches\": $NVCSSWITCH, " >> $outfile
-  echo "  \"pBlockIODelays\": $DELAYIO, " >> $outfile         # cs
-  echo "  \"pVirtualMemoryBytes\": $VSIZE, " >> $outfile
-  echo "  \"pResidentSetSize\": $RSS " >> $outfile            # page
-  echo "  }, " >> $outfile
+	# print process level data
+	echo "  {" >> $outfile
+	echo "  \"pId\": $PID, " >> $outfile
+	echo "  \"pCmdLine\":\"$PNAME\", " >> $outfile                    # process cmdline
+	echo "  \"pName\":\"$PSHORT\", " >> $outfile          # process cmd short version
+	echo "  \"pNumThreads\": $NUMTHRDS, " >> $outfile
+	echo "  \"pCpuTimeUserMode\": $UTIME, " >> $outfile         # cs
+	echo "  \"pCpuTimeKernelMode\": $STIME, " >> $outfile       # cs
+	echo "  \"pChildrenUserMode\": $CUTIME, " >> $outfile       # cs
+	echo "  \"pChildrenKernelMode\": $CSTIME, " >> $outfile     # cs
+	echo "  \"pVoluntaryContextSwitches\": $VCSWITCH, " >> $outfile
+	echo "  \"pNonvoluntaryContextSwitches\": $NVCSSWITCH, " >> $outfile
+	echo "  \"pBlockIODelays\": $DELAYIO, " >> $outfile         # cs
+	echo "  \"pVirtualMemoryBytes\": $VSIZE, " >> $outfile
+	echo "  \"pResidentSetSize\": $RSS " >> $outfile            # page
+	echo "  }, " >> $outfile
+ fi	
 done
 echo "  {\"cNumProcesses\": $PIDS}" >> $outfile
 echo "  ]" >> $outfile
