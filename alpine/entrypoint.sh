@@ -21,11 +21,16 @@ rpid=$!
 #kill the runcmd if there is an error
 trap "kill -9 $rpid 2> /dev/null" EXIT
 
-while kill -0 $rpid 2> /dev/null; do
-    today=`date '+%Y_%m_%d__%H_%M_%S'`;
-    file_name="$today.json"
-    rudataall.sh  > "${OUTPUTDIR}/${file_name}"
-    sleep $DELTA
+SECONDS=0
+while ps -p $rpid 2> /dev/null 
+do
+    if [ $SECONDS >= $DELTA ]; then
+      today=`date '+%Y_%m_%d__%H_%M_%S'`;
+      file_name="$today.json"
+      rudataall.sh  > "${OUTPUTDIR}/${file_name}"
+      SECONDS=0
+    fi
+    sleep 1
 done
 
 
