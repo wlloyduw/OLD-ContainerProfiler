@@ -62,7 +62,7 @@ done
 
 #after profiling is finished print the max and min profiling times
 echo '******************************************************************************************'
-echo 'Max profiling time is: ' $max
-echo 'Min profiling time is: ' $min
+echo 'Max profiling time is: ' `echo $max / 1000 | bc -l`
+echo 'Min profiling time is: ' `echo $min / 1000 | bc -l`
 echo '******************************************************************************************'
 
