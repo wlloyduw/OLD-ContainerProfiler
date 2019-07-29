@@ -1,1 +1,1 @@
-rudataall.sh
+../../rudataall.sh
