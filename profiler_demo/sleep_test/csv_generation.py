@@ -6,23 +6,13 @@ import subprocess
 import matplotlib.pyplot as plt
 import numpy as np
 
-#new
-import plotly.express as px
-
-
 # vm_container dictionary to store the virtual machine and container data. Key is the filename and value is the virtual machine and container data.
 vm_container = {}
 # Path from where the json files to be converted to a csv file
-#path = "/home/david/ContainerProfiler/profiler_demo/sleep_test/json/"#sys.argv[1]
 path = sys.argv[1]
-
 dirs = os.listdir( path )
 # processes dictionary to store process level data
 processes = dict()
-
-metrics_filepath = "/home/david/ContainerProfiler/profiler_demo/sleep_test/csv_metrics"
-with open(metrics_filepath) as f:
-    metrics= f.read().splitlines()
 
 for file in dirs:
     with open(path+file) as f:
@@ -32,13 +22,9 @@ for file in dirs:
         r = {}
 
         # Check for any list or dictionary in y
-        # determines what is chosen out of the metrics.
-
-        
         for k in y:
             if k != "pProcesses" and k != "cProcessorStats":
-                if k in metrics:
-                    r[k] = y[k]
+                r[k] = y[k]
 
         if "cProcessorStats" in y and "cNumProcessors" in y:
             for k in y["cProcessorStats"]:
@@ -49,7 +35,7 @@ for file in dirs:
         totalProcesses = len(y["pProcesses"]) - 1
 
         # Loop through the process level data
-        for i in range(totalProcesses):
+        for i in xrange(totalProcesses):
             # A dictinary containing process level data
             s = {"filename": file}
 
@@ -65,7 +51,7 @@ for file in dirs:
         vm_container[file] = r
 
 # Create a separate CSV files for each of the processes
-for key, value in processes.items():
+for key, value in processes.iteritems():
     df1 = pd.DataFrame(value)
     df1.to_csv(str(key)+".csv")
 
@@ -76,15 +62,3 @@ with open("vm_container.json","w") as f:
 # Convert JSON to dataframe and convert it to CSV
 df = pd.read_json("vm_container.json").T
 df.to_csv("vm_container.csv", sep=',')
-
-# Convert JSON to dataframe and convert it to CSV
-df = pd.read_json("vm_container.json").T
-df.to_csv("vm_container.tsv", sep='\t')
-
-
-## new
-#data_frame = pd.read_csv("vm_container.csv")
-#data_frame.head()
-
-#fig = px.line(df, x = "vDiskSectorReads", y="vDiskSectorReads:", title="Plot.ly graph test")
-#fig.show()
