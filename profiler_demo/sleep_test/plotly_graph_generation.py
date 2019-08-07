@@ -13,6 +13,8 @@ import plotly.graph_objects as go
 import argparse
 from os import path
 
+#usage: python plotly_graph_generation.py csv_file graphing_method metrics(file or space delimited list, if file include --infile)
+
 #implemented graphing methods
 graphing_methods=['scatter', 'bar']
 

@@ -13,6 +13,9 @@ import plotly.graph_objects as go
 import argparse
 from os import path
 
+
+#usage: python csv_generation_2.py path_of_folder_with_json metrics(file or space delimited list, if file include --infile)
+
 def read_metrics_file(metrics):
 
 	if (len(metrics) == 1 and path.exists(metrics[0])):

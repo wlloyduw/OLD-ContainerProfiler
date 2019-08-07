@@ -24,7 +24,7 @@ ppid=$(pgrep -x "${pname}")
 echo "parent process ID: " $ppid
 
 mydir=(`date '+%Y_%m_%d__%H_%M_%S'`)
-mkdir /data/${mydir}
+mkdir -m 777 /data/${mydir}
 
 #Keep track of min and max profiling time
 let min=2**31
