@@ -27,11 +27,12 @@ for file_name in $path/$folder/*.json; do
 	if [[ $file2 == "empty" ]]; then
 		file2=$file_name
 		cd $delta_json_path
+		#$path/deltav2.sh $file2 $file1 1>"${x}_delta.json"
 		$path/deltav2.sh $file2 $file1 1>"${x}_delta.json"
 
 
+		file1=$file2
 		file2="empty"
-		file1=$path/$folder/delta_json/"${x}_delta.json"
 		cd ..
 		((x++))
 		continue

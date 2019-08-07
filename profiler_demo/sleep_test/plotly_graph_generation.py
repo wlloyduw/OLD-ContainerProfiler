@@ -32,8 +32,6 @@ def read_metrics_file(metrics, data_frame):
 
 def read_cmdline_metrics(metrics, data_frame):
 	if (len(metrics) == 0):
-		print(list(data_frame.columns[1:]))
-		print("return a big list ok")
 		return list(data_frame.columns[1:])
 	else:
 		return metrics
@@ -71,8 +69,9 @@ def makegraphs(metrics, df, graph_function):
 		axiscounter=1
 
 		for x in sliced_metrics:
+		
 
-			fig.add_trace(graph_function(x=data_frame.currentTime, y=data_frame[x]),
+			fig.add_trace(graph_function(x=data_frame.index, y=data_frame[x]),
 				row=current_row, col=current_col)
 			current_col = current_col +1
 			if (current_col == 4):
@@ -111,5 +110,5 @@ data_frame.currentTime = (data_frame.currentTime - data_frame.currentTime[0])
 #obtains the graphs from cmdline, can have no input for every metric in the csv, n metrics space delimited, or a file if --infile tag included at the end
 metrics = args.read_metrics(args.metrics, data_frame)
 
-
+print(metrics)
 makegraphs(metrics, data_frame, graph_function)
