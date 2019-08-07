@@ -26,10 +26,8 @@ def read_metrics_file(metrics):
 	else:
 		print("Error: Too many arguments or path does not exist")
 
-
 def read_cmdline_metrics(metrics):
 	return metrics
-
 
 # vm_container dictionary to store the virtual machine and container data. Key is the filename and value is the virtual machine and container data.
 vm_container = {}
@@ -42,9 +40,6 @@ args= parser.parse_args()
 
 file_path = args.file_path
 metrics = args.read_metrics(args.metrics)
-
-
-
 
 dirs = os.listdir( file_path )
 # processes dictionary to store process level data
@@ -107,26 +102,3 @@ df.to_csv("vm_container2.csv", sep=',')
 df = pd.read_json("vm_container.json").T
 df.to_csv("vm_container.tsv", sep='\t')
 
-
-## new
-#data_frame = pd.read_csv("vm_container.csv")
-#data_frame.head()
-#data_frame.currentTime = (data_frame.currentTime - data_frame.currentTime[0])
-
-#
-#fig = make_subplots(rows=2, cols=2,subplot_titles=("cCpuTimeKernelMode","cCpuTimeUserMode","cNetworkBytesRecvd","vNetworkBytesRecvd"))
-#fig.add_trace(go.Scatter(x=data_frame.currentTime, y=data_frame.cCpuTimeKernelMode),
-#row=1, col=1
-#)
-#fig.add_trace(go.Scatter(x=data_frame.currentTime, y=data_frame.cCpuTimeUserMode),
-#row=1, col=2
-#)
-#fig.add_trace(go.Scatter(x=data_frame.currentTime, y=data_frame.cNetworkBytesRecvd),
-#row=2, col=1
-#)
-#fig.add_trace(go.Scatter(x=data_frame.currentTime, y=data_frame.vNetworkBytesRecvd),
-#row=2, col=2
-#)
-#fig = px.line(data_frame, x = "currentTime", y="vDiskSectorReads", title="Plot.ly graph test")
-#fig.show()
-#print("OK")
