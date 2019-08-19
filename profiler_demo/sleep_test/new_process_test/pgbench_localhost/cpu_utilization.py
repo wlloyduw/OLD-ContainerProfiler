@@ -47,8 +47,10 @@ for line in inFile:
         
 
 for datum in data:
-    outFile.write(str(datum[0]) + tab + utilization + tab + str(datum[1]) + nL)
-    outFile.write(str(datum[0]) + tab + idle + tab + str(datum[2]) + nL)
+    percentUtilized = (float(datum[1]) / (datum[1] + datum[2])) * 100
+    percentIdle = (float(datum[2]) / (datum[1] + datum[2])) * 100
+    outFile.write(str(datum[0]) + tab + utilization + tab + str(percentUtilized) + nL)
+    outFile.write(str(datum[0]) + tab + idle + tab + str(percentIdle) + nL)
 
 inFile.close()
 outFile.close()
