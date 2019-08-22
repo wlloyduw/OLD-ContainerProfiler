@@ -12,11 +12,21 @@ import plotly.express as px
 import plotly.graph_objects as go
 import argparse
 from os import path
+import math
 
 #usage: python plotly_graph_generation.py csv_file graphing_method metrics(file or space delimited list, if file include --infile)
 
 #implemented graphing methods
 graphing_methods=['scatter', 'bar']
+
+def export_graphs_as_images(fig, title):
+
+	if not os.path.exists("images"):
+		os.mkdir("images")
+	fig.write_image("images/"+title +".png")
+	print("saved image: " +title +".png to " + os.path.abspath("images"))
+	
+
 
 def read_metrics_file(metrics, data_frame):
 
@@ -57,24 +67,35 @@ def slice_for_x(theList, start, length):
 	else:
 		return theList[start:start+length]
 
+def graphs_rows_cols(metrics_count):
+	if (metrics_count == 1):
+		return 1
+	elif (metrics_count <=4):
+		return 2
+	elif (metrics_count >=5):
+		return 3;
+
 def makegraphs(metrics, df, graph_function):
 	start =0
-	length=9
-
-	for i in xrange((len(metrics) // length) + 1):
+	metrics_count=len(metrics) 
+	row_col_length = graphs_rows_cols(metrics_count)
+	length = row_col_length * row_col_length
+	x = ((float(metrics_count) / length))
+	for i in xrange(int(math.ceil(x))):
 		sliced_metrics = slice_for_x(metrics, start, length)
-		fig = make_subplots(rows=3, cols=3, subplot_titles=sliced_metrics)
+		fig = make_subplots(rows=row_col_length, cols=row_col_length, subplot_titles=sliced_metrics)
+
 		current_row=1
 		current_col=1
 		axiscounter=1
 
 		for x in sliced_metrics:
 		
-
+			
 			fig.add_trace(graph_function(x=data_frame.index, y=data_frame[x]),
 				row=current_row, col=current_col)
 			current_col = current_col +1
-			if (current_col == 4):
+			if (current_col == row_col_length +1):
 				current_col =1
 				current_row +=1
 			currentXAxis='xaxis{}'.format(axiscounter)
@@ -84,9 +105,26 @@ def makegraphs(metrics, df, graph_function):
 			fig['layout'][currentYAxis].update(title=x)
 			axiscounter+=1
 
+
+			#this code will create the current trace as a seperate fig so that it can be saved as its own image.
+			#This is necessary because we can only export figs as images, and current each figure being dynamically created
+			#is showing multiple at a time.
+			#this code can be moved or implemented differently, for example if we want to give the user to either A export images, or B save images.
+			export_fig = go.Figure(
+				data=[graph_function(x=data_frame.index, y=data_frame[x])],
+				layout=go.Layout(
+					title=go.layout.Title(text=x)
+				)
+
+			)
+			export_fig['layout']['xaxis'].update(title="Epoch Time(seconds)")
+			export_fig['layout']['yaxis'].update(title=x)
+			export_graphs_as_images(export_fig, x)
+			
 		start += length
 
 		fig.show()
+
 
 #cmdline parser
 parser = argparse.ArgumentParser(description="generates plotly graphs")
@@ -106,9 +144,10 @@ data_frame.head()
 graph_function = graph_selection(graphing_methods, args.graph_method)
 
 #preparing the x axis of time for all graphs
-data_frame.currentTime = (data_frame.currentTime - data_frame.currentTime[0])
 #obtains the graphs from cmdline, can have no input for every metric in the csv, n metrics space delimited, or a file if --infile tag included at the end
 metrics = args.read_metrics(args.metrics, data_frame)
 
 print(metrics)
 makegraphs(metrics, data_frame, graph_function)
+
+

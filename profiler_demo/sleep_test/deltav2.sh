@@ -6,15 +6,21 @@
 #This version will work if the variables are in different order
 #The resulting json file will have the order of the second file
 
+#Including .ini file
+. /home/david/ContainerProfiler/profiler_demo/sleep_test/graph_generation_config.shlib
+
 #loop through file1
 declare -A map1
 declare -A map2
+
 while IFS="\n" read -r line; do
     #search for pattern ': <positive integer>' - the ': ' prefix makes sure that it is actually a field and not part of a name 
     value=$(echo $line | grep -o -E ': [0-9]+' | grep -o -E '[0-9]+')
     [ -z $value ] && continue
     key=$(echo $line | grep -o '".*"')
     map1[$key]=$value
+    #echo "key:" $key
+    #echo "value:" $value
 done <"$1"
 
 while IFS="\n" read -r line; do
@@ -33,7 +39,13 @@ while IFS="\n" read -r line; do
         >&2 echo $key" : ,"$value
     else
         delta=`expr ${map1[$key]} - $value`
-        echo $line | sed -r "s/: [0-9]+/: ${delta}/"
+	flag="$(config_get $key)"
+
+	if [[ $flag == "delta" ]]; then
+        	echo $line | sed -r "s/: [0-9]+/: ${delta}/"
+	else
+        	echo $line | sed -r "s/: [0-9]+/: ${map1[$key]}/"
+	fi
         map2[$key]=$value
     fi
 done <"$2"

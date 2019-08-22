@@ -12,9 +12,9 @@ import plotly.express as px
 import plotly.graph_objects as go
 import argparse
 from os import path
+import glob
 
-
-#usage: python csv_generation_2.py path_of_folder_with_json metrics(file or space delimited list, if file include --infile)
+#usage: python csv_generation_2.py path_of_folder_with_json metrics(file or space delimited list, if file include --infile, leave blank for all metrics found in the json files.)
 
 def read_metrics_file(metrics):
 
@@ -47,9 +47,10 @@ metrics = args.read_metrics(args.metrics)
 dirs = os.listdir( file_path )
 # processes dictionary to store process level data
 processes = dict()
+dirs=  [i for i in os.listdir( file_path ) if i.endswith(".json")]
 
 for file in dirs:
-    with open(file_path+file) as f:
+    with open(file_path+'/'+file) as f:
         # Deserialize into python object
         y = json.load(f)
         # A dictionary which contains the value of vm_container dictionary
@@ -99,7 +100,7 @@ with open("vm_container.json","w") as f:
 
 # Convert JSON to dataframe and convert it to CSV
 df = pd.read_json("vm_container.json").T
-df.to_csv("vm_container2.csv", sep=',')
+df.to_csv("vm_container.csv", sep=',')
 
 # Convert JSON to dataframe and convert it to CSV
 df = pd.read_json("vm_container.json").T
