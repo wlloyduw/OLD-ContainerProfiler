@@ -6,6 +6,6 @@ config_read_file() {
 config_get() {
     temp="${1%\"}"
     temp="${temp#\"}"
-    val="$(config_read_file /home/david/ContainerProfiler/profiler_demo/sleep_test/graph_generation_config.cfg "${temp}")";
+    val="$(config_read_file /home/david/latest/ContainerProfiler/profiler_demo/sleep_test/graph_generation_config.cfg "${temp}")";
     printf -- "%s" "${val}";
 }
