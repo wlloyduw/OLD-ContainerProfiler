@@ -29,7 +29,10 @@ for file_name in $path/$folder/*.json; do
 		fi
 		file1=$file_name
 		array1+=($file_name)
-		array3+=($file_name)
+		shortened_file_name="$(basename $file_name)" 
+		shortened_file_name="${shortened_file_name%.*}"
+		array3+=("$delta_json_path/${shortened_file_name}_delta.json")
+		echo $file_name
 		continue
 	fi
 
@@ -63,6 +66,6 @@ runJob()
 
 }
 export -f runJob
-parallel --link runJob ::: $path ::: ${array1[@]} ::: ${array2[@]} ::: ${array3[@]}
+parallel --jobs 2 --link runJob ::: $path ::: ${array1[@]} ::: ${array2[@]} ::: ${array3[@]}
 
 
