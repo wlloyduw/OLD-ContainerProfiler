@@ -198,6 +198,6 @@ ggplot(data=cpu, aes(x=Time, y=Value, group=Metric, color=Metric)) +
   guides(color = guide_legend(label.position = "bottom"))
 
 
-ggsave("CPU.jpeg", height = 285.75, width = 508, units = "mm")
+ggsave("CPU.jpeg", height = 285.75 * 4, width = 508 * 4, units = "mm")
 
 

@@ -180,7 +180,7 @@ sar_theme <- function(base_size = 20, base_family = "Roboto", width = unit(10, "
 
 #################################################################################################
 
-all_times <- read.csv(args[1], sep="\t")
+#all_times <- read.csv(args[1], sep="\t")
 
 all_times <- read.csv("./Data/cpu.tsv", sep="\t")
 
