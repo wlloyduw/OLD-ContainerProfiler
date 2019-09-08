@@ -17,14 +17,12 @@ fi
 ${@} &
 #capture the pid of the run command
 rpid=$!
-
 #kill the runcmd if there is an error
 trap "kill -9 $rpid 2> /dev/null" EXIT
-
 SECONDS=0
-while ps -p $rpid 2> /dev/null 
+while [ -n "$rpid" -a -e /proc/$rpid ]
 do
-    if [ $SECONDS >= $DELTA ]; then
+    if [ "$SECONDS" -ge "$DELTA" ]; then
       today=`date '+%Y_%m_%d__%H_%M_%S'`;
       file_name="$today.json"
       rudataall.sh  > "${OUTPUTDIR}/${file_name}"
