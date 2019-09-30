@@ -52,6 +52,7 @@ done
      
 
 outfile=rudata_all.json
+echo "{" > $outfile
 epochtime=$(date +%s)
 
 # Find the number of processes inside the container
@@ -174,7 +175,7 @@ then
 
 
 
-  echo "{" > $outfile
+  
   echo "  \"currentTime\": $epochtime," >> $outfile
   echo "  \"vMetricType\": \"VM level\"," >> $outfile
   ## print VM level data 
