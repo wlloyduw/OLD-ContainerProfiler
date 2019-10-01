@@ -19,12 +19,12 @@ import math
 #implemented graphing methods
 graphing_methods=['scatter', 'bar']
 
-def export_graphs_as_images(fig, title):
-
-	if not os.path.exists("images"):
-		os.mkdir("images")
-	fig.write_image("images/"+title +".png")
-	print("saved image: " +title +".png to " + os.path.abspath("images"))
+def export_graphs_as_images(fig, file_name, title):
+	file_name=file_name.split('.',1)[0]
+	if not os.path.exists(file_name +"_images"):
+		os.mkdir(file_name +"_images")
+	fig.write_image(file_name +"_images/"+title +".png")
+	print("saved image: " +title +".png to " + os.path.abspath(file_name +"_images"))
 	
 
 
@@ -119,7 +119,7 @@ def makegraphs(metrics, df, graph_function):
 			)
 			export_fig['layout']['xaxis'].update(title="Epoch Time(seconds)")
 			export_fig['layout']['yaxis'].update(title=x)
-			export_graphs_as_images(export_fig, x)
+			export_graphs_as_images(export_fig, df.name, x)
 			
 		start += length
 
@@ -141,6 +141,7 @@ args= parser.parse_args()
 data_frame = pd.read_csv(args.csv_file)
 data_frame.head()
 data_frame=data_frame.iloc[::args.sampling_delta]
+data_frame.name=args.csv_file
 
 #choosing which method to make the graphs
 graph_function = graph_selection(graphing_methods, args.graph_method)

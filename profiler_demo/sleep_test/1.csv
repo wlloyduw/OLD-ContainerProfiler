@@ -1,5 +1,0 @@
-,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
-0,2019_07_31__06_04_31_delta.json,0,1206,66544,bash -c /data/ru_profiler.sh /data/processpack.sh 1,46,46,1,bash,1506,1,777,18817024,8130
-1,2019_07_31__06_04_31_delta.json,0,1206,66544,/bin/bash /data/processpack.sh,46,46,1,processpack.sh,1506,1,777,18817024,8130
-2,2019_07_31__06_04_31_delta.json,0,1206,66544,sysbench --test=cpu --cpu-max-prime=20000 --max-requests=0 --max-time=600 run,46,46,1,sysbench,1506,1,777,18817024,8130
-3,2019_07_31__06_04_31_delta.json,0,1206,66544,sysbench --test=cpu --cpu-max-prime=20000 --max-requests=0 --max-time=600 run,46,46,1,sysbench,1506,1,777,18817024,8130
