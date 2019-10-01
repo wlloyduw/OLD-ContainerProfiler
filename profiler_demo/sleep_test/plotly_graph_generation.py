@@ -4,7 +4,6 @@ import json
 import os, sys
 import pandas as pd
 import subprocess
-import matplotlib.pyplot as plt
 import numpy as np
 
 #new
