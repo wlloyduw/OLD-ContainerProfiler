@@ -23,35 +23,34 @@ for file_name in $path/$folder/*.json; do
 	[ -e "$file_name" ] || continue 
 
 	if [[ $file1 == "empty" ]]; then
-		if [ $x -eq 1 ]; then
-			((x++))
-			continue
-		fi
+		#if [ $x -eq 1 ]; then
+		#	((x++))
+		#3	continue
+		#fi
 		file1=$file_name
 		array1+=($file_name)
 		shortened_file_name="$(basename $file_name)" 
 		shortened_file_name="${shortened_file_name%.*}"
 		array3+=("$delta_json_path/${shortened_file_name}_delta.json")
 		echo $file_name
-		continue
+		
+		continue		
 	fi
 
 	if [[ $file2 == "empty" ]]; then
 		file2=$file_name
 		array2+=($file_name)
-		#cd $delta_json_path
 		shortened_file_name="$(basename $file_name)" 
 		shortened_file_name="${shortened_file_name%.*}"
 		array3+=("$delta_json_path/${shortened_file_name}_delta.json")
-		
-		#$path/deltav2.sh $file2 $file1 1>"$delta_json_path/${shortened_file_name}_delta.json"
 		file1=$file2
 		array1+=($file_name)
 		file2="empty"
-		#cd ..
 		continue
 	fi
 done
+unset 'array1[${#array1[@]}-1]'
+unset 'array3[${#array3[@]}-1]'
 
 runJob()
 {
@@ -59,13 +58,11 @@ runJob()
 	b=$2
 	c=$3
 	d=$4
-	#echo ${b[0]}
-	#echo ${c[0]}
-	#echo ${d[0]}
 	$a/deltav2.sh ${c[0]} ${b[0]} 1>${d[0]}
 
 }
 export -f runJob
-parallel --jobs 2 --link runJob ::: $path ::: ${array1[@]} ::: ${array2[@]} ::: ${array3[@]}
+thread_count="$(cat /proc/cpuinfo | grep processor | wc -l)"
+parallel --jobs $thread_count --link runJob ::: $path ::: ${array1[@]} ::: ${array2[@]} ::: ${array3[@]}
 
 

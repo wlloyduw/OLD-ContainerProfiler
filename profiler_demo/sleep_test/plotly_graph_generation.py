@@ -14,7 +14,7 @@ import argparse
 from os import path
 import math
 
-#usage: python plotly_graph_generation.py csv_file graphing_method metrics(file or space delimited list, if file include --infile)
+#usage: python plotly_graph_generation.py csv_file graphing_method sample_delta metrics(file or space delimited list, if file include --infile)
 
 #implemented graphing methods
 graphing_methods=['scatter', 'bar']
@@ -130,6 +130,7 @@ def makegraphs(metrics, df, graph_function):
 parser = argparse.ArgumentParser(description="generates plotly graphs")
 parser.add_argument('csv_file', action='store', help='csv file')
 parser.add_argument('graph_method', action='store', nargs='?', default='Scatter', help='stores which graphing method to use')
+parser.add_argument('sampling_delta', type=int, nargs='?', help='determines sampling size')
 parser.add_argument('metrics', type=str, nargs='*', help='list of metrics to graph over')
 parser.add_argument('--infile', dest='read_metrics', action='store_const', const=read_metrics_file, default=read_cmdline_metrics, help='reads metrics from a file or from command line')
 args= parser.parse_args()
@@ -139,6 +140,7 @@ args= parser.parse_args()
 #dataframe read into from cmdline
 data_frame = pd.read_csv(args.csv_file)
 data_frame.head()
+data_frame=data_frame.iloc[::args.sampling_delta]
 
 #choosing which method to make the graphs
 graph_function = graph_selection(graphing_methods, args.graph_method)

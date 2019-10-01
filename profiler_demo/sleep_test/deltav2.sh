@@ -7,7 +7,7 @@
 #The resulting json file will have the order of the second file
 
 #Including .ini file
-. /home/david/latest/ContainerProfiler/profiler_demo/sleep_test/graph_generation_config.shlib
+. /home/david/ContainerProfiler/profiler_demo/sleep_test/graph_generation_config.shlib
 
 #loop through file1
 declare -A map1

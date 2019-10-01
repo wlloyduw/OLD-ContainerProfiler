@@ -14,7 +14,7 @@ import argparse
 from os import path
 import glob
 
-#usage: python csv_generation_2.py path_of_folder_with_json metrics(file or space delimited list, if file include --infile, leave blank for all metrics found in the json files.)
+#usage: python csv_generation_2.py path_of_folder_with_json sampling_delta metrics(file or space delimited list, if file include --infile, leave blank for all metrics found in the json files.)
 
 def read_metrics_file(metrics):
 
@@ -37,10 +37,11 @@ vm_container = {}
 # Path from where the json files to be converted to a csv file
 parser = argparse.ArgumentParser(description='process path and file /or string of metrics.')
 parser.add_argument('file_path', action='store', help='stores the filepath to the folder holding all the JSON files')
+parser.add_argument('sampling_delta', type=int, nargs='?', help='determines sampling size')
 parser.add_argument('metrics', type=str, nargs='*', help='list of metrics or file for metrics')
 parser.add_argument('--infile', dest='read_metrics', action='store_const', const=read_metrics_file, default=read_cmdline_metrics, help='reads metrics from a file or from command line')
-args= parser.parse_args()
 
+args= parser.parse_args()
 file_path = args.file_path
 metrics = args.read_metrics(args.metrics)
 
@@ -100,9 +101,13 @@ with open("vm_container.json","w") as f:
 
 # Convert JSON to dataframe and convert it to CSV
 df = pd.read_json("vm_container.json").T
+sampling_delta=60
+df=df.iloc[::args.sampling_delta]
 df.to_csv("vm_container.csv", sep=',')
 
 # Convert JSON to dataframe and convert it to CSV
 df = pd.read_json("vm_container.json").T
+sampling_delta=60
+df=df.iloc[::sampling_delta]
 df.to_csv("vm_container.tsv", sep='\t')
 
