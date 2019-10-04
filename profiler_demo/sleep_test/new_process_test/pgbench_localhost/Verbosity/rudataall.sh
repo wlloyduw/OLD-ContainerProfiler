@@ -35,21 +35,25 @@
 # Notes for process level statistics:
 # TBD...
  
-VM=true
-CONTAINER=true
-PROCESS=true
+VM=false
+CONTAINER=false
+PROCESS=false
 
 #get the flags and omit levels as requested
-while [ -n "$1" ]
-do
-  case "$1" in
-    -v) VM=false;;
-    -c) CONTAINER=false;;
-    -p) PROCESS=false;;
-  esac
-  shift
-done
-     
+if [ $# -eq 0 ]
+then
+  VM=true;CONTAINER=true;PROCESS=true
+else
+  while [ -n "$1" ]
+  do
+    case "$1" in
+      -v) VM=true;;
+      -c) CONTAINER=true;;
+      -p) PROCESS=true;;
+    esac
+    shift
+  done
+fi    
 
 outfile=rudata_all.json
 echo "{" > $outfile
