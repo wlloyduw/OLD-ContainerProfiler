@@ -3,13 +3,13 @@
 #usage: ./delta_json_generation.sh (path to this folder with script) (folder containing json)
 #example usage: ./delta_json_generation.sh /home/david/ContainerProfiler/profiler_demo/sleep_test 2019_08_07__03_53_14
 path=$1
-folder=$2
+json_folder_path=$2
 if [ ! -d "$path" ]; then
 	echo "Please enter a valid file path"
 	exit 1
 fi
 
-delta_json_path=$path/$folder/delta_json
+delta_json_path=$json_folder_path/delta_json
 mkdir -m 777 $delta_json_path
 
 file1="empty"
@@ -19,7 +19,7 @@ array1=()
 array2=()
 array3=()
 x=1
-for file_name in $path/$folder/*.json; do
+for file_name in $json_folder_path/*.json; do
 	[ -e "$file_name" ] || continue 
 
 	if [[ $file1 == "empty" ]]; then
@@ -58,7 +58,7 @@ runJob()
 	b=$2
 	c=$3
 	d=$4
-	$a/deltav2.sh ${c[0]} ${b[0]} 1>${d[0]}
+	$a/deltav2.sh ${c[0]} ${b[0]} 1>${d[0]} 2>>missing.txt
 
 }
 export -f runJob

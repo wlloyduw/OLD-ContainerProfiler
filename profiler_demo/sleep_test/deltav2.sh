@@ -7,7 +7,7 @@
 #The resulting json file will have the order of the second file
 
 #Including .ini file
-. /home/david/ContainerProfiler/profiler_demo/sleep_test/graph_generation_config.shlib
+. ~/.config/graphing_tool/graph_generation_config.shlib
 
 #loop through file1
 declare -A map1
@@ -18,7 +18,9 @@ while IFS="\n" read -r line; do
     value=$(echo $line | grep -o -E ': [0-9]+' | grep -o -E '[0-9]+')
     [ -z $value ] && continue
     key=$(echo $line | grep -o '".*"')
+
     map1[$key]=$value
+    #echo $key +" and the value: " + $value
     #echo "key:" $key
     #echo "value:" $value
 done <"$1"
