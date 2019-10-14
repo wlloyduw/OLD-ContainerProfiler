@@ -75,17 +75,26 @@ then
   CPU=(`cat /proc/stat | grep '^cpu '`)
   unset CPU[0]
   CPUUSR=${CPU[1]}
+  T_CPUUSR=$(date +%s%N)
   CPUNICE=${CPU[2]}
+  T_CPUNICE=$(date +%s%N)
   CPUKRN=${CPU[3]}
+  T_CPUKRN=$(date +%s%N)
   CPUIDLE=${CPU[4]}  
+  T_CPUIDLE=$(date +%s%N)
   CPUIOWAIT=${CPU[5]}
+  T_CPUIOWAIT=$(date +%s%N)
   CPUIRQ=${CPU[6]}
   CPUSOFTIRQ=${CPU[7]}
+  T_CPUSOFTIRQ=$(date +%s%N)
   CPUSTEAL=${CPU[8]}
+  T_CPUSTEAL=$(date +%s%N)
   CPUTOT=`expr $CPUUSR + $CPUKRN`
+  T_CPUTOT=$(date +%s%N)
   CONTEXT=(`cat /proc/stat | grep '^ctxt '`)
   unset CONTEXT[0]
-  CSWITCH=${CONTEXT[1]} 
+  CSWITCH=${CONTEXT[1]}
+  T_CSWITCH=$(date +%s%N) 
 
   # Get disk stats
   COMPLETEDREADS=0
@@ -101,7 +110,9 @@ then
   CPU_TYPE=(`cat /proc/cpuinfo | grep 'model name' | cut -d":" -f 2 | sed 's/^ *//'`)
   CPU_MHZ=(`cat /proc/cpuinfo | grep 'cpu MHz' | cut -d":" -f 2 | sed 's/^ *//'`)
   CPUTYPE=${CPU_TYPE[0]}
+  T_CPUTYPE=$(date +%s%N)
   CPUMHZ=${CPU_MHZ[0]}
+  T_CPUMHZ=$(date +%s%N)
   DISK=($(cat /proc/diskstats | grep 'd.[0-9]') )
 
   unset IFS
@@ -117,25 +128,43 @@ then
       READTIME=`expr ${currdisk[6]} + $READTIME`
       COMPLETEDWRITES=`expr ${currdisk[7]} + $COMPLETEDWRITES`
       MERGEDWRITES=`expr ${currdisk[8]} + $MERGEDWRITES`
-      SW=`expr ${currdisk[9]} + $SW`
+      SW=`expr ${currdisk[9]} + $SW` 
       WRITETIME=`expr ${currdisk[10]} + $WRITETIME`
     done
+    T_COMPLETEDREADS=$(date +%s%N)
+    T_MEGEDREADS=$(date +%s%N)
+    T_SR=$(date +%s%N)
+    T_READTIME=$(date +%s%N)
+    T_COMPLETEDWRITES=$(date +%s%N)
+    T_MERGEDWRITES=$(date +%s%N)
+    T_SW=$(date +%s%N)
+    T_WRITETIME=$(date +%s%N)
   else
     DISK=(`cat /proc/diskstats | grep 'xvda1'`)
     unset DISK[0]
     COMPLETEDREADS=${DISK[3]}
+    T_COMPLETEDREADS=$(date +%s%N)
     MERGEDREADS=${DISK[4]}
+    T_MERGEDREADS=$(date +%s%N)
     SR=${DISK[5]}
+    T_SR=$(date +%s%N)
     READTIME=${DISK[6]}
+    T_READTIME=$(date +%s%N)
     COMPLETEDWRITES=${DISK[7]}
+    T_COMPLETEDWRITES=$(date +%s%N)
     MERGEDWRITES=${DISK[8]}
+    T_MERGEDWRITES=$(date +%s%N)
     SW=${DISK[9]}
+    T_SW=$(date +%s%N)
     WRITETIME=${DISK[10]}
+    T_WRITETIME=$(date +%s%N)
   fi
 
   # Get network stats
   BR=0
+  T_BT=0
   BT=0
+  T_BT=0
   IFS=$'\n'
   NET=($(cat /proc/net/dev | grep 'eth0') )
   unset IFS
@@ -147,7 +176,9 @@ then
     do
       currnet=(${NET[$i]})
       BR=`expr ${currnet[1]} + $BR`
+      T_BR=$(date +%s%N)
       BT=`expr ${currnet[9]} + $BT`
+      T_BT=$(date +%s%N)
     done
   else
     NET=(`cat /proc/net/dev | grep 'eth0'`)
@@ -156,23 +187,33 @@ then
     if [ -z $space  ]
     then
       BR=${NET[1]}
+      T_BR=$(date +%s%N)
       BT=${NET[9]}
+      T_BT=$(date +%s%N)
     else
       BR=`expr substr $NET 6 500`
+      T_BR=$(date +%s%N)
       BT=${NET[8]}
+      T_BT=$(date +%s%N)
     fi
   fi
   LOADAVG=(`cat /proc/loadavg`)
+  T_LOADAVG=$(date +%s%N)
   LAVG=${LOADAVG[0]}
+  T_LAVG=$(date +%s%N)
 
   # Get Memory Stats
   MEMTOT=$(cat /proc/meminfo | grep 'MemTotal' | cut -d":" -f 2 | sed 's/^ *//' | cut -d" " -f 1 ) # in KB
+  T_MEMTOT=$(date +%s%N)
 
   MEMFREE=$(cat /proc/meminfo | grep 'MemFree' | cut -d":" -f 2 | sed 's/^ *//' | cut -d" " -f 1 ) # in KB
+  T_MEMFREE=$(date +%s%N)
 
   BUFFERS=$(cat /proc/meminfo | grep 'Buffers' | cut -d":" -f 2 | sed 's/^ *//' | cut -d" " -f 1 ) # in KB
+  T_BUFFERS=$(date +%s%N)
 
   CACHED=$(cat /proc/meminfo | grep -w 'Cached' | cut -d":" -f 2 | sed 's/^ *//' | cut -d" " -f 1 ) # in KB
+  T_CACHED=$(date +%s%N)
 
 
   vmid="unavailable"
@@ -184,35 +225,62 @@ then
   echo "  \"vMetricType\": \"VM level\"," >> $outfile
   ## print VM level data 
   echo "  \"vCpuTime\": $CPUTOT," >> $outfile
+  echo "  \"tvCpuTime\": $T_CPUTOT," >> $outfile
   echo "  \"vDiskSectorWrites\": $SW," >> $outfile
+  echo "  \"tvDiskSectorWrites\": $T_SW," >> $outfile
   echo "  \"vNetworkBytesRecvd\": $BR," >> $outfile
+  echo "  \"tvNetworkBytesRecvd\": $T_BR," >> $outfile
   echo "  \"vNetworkBytesSent\": $BT," >> $outfile
+  echo "  \"tvNetworkBytesSent\": $T_BT," >> $outfile
   echo "  \"vCpuTimeUserMode\": $CPUUSR," >> $outfile
+  echo "  \"tvCpuTimeUserMode\": $T_CPUUSR," >> $outfile
   echo "  \"vCpuTimeKernelMode\": $CPUKRN," >> $outfile
+  echo "  \"tvCpuTimeKernelMode\": $T_CPUKRN," >> $outfile
   echo "  \"vCpuIdleTime\": $CPUIDLE," >> $outfile
+  echo "  \"tvCpuIdleTime\": $T_CPUIDLE," >> $outfile
   echo "  \"vCpuTimeIOWait\": $CPUIOWAIT," >> $outfile
+  echo "  \"tvCpuTimeIOWait\": $T_CPUIOWAIT," >> $outfile
   echo "  \"vCpuTimeIntSrvc\": $CPUIRQ," >> $outfile
+  echo "  \"tvCpuTimeIntSrvc\": $T_CPUIRQ," >> $outfile
   echo "  \"vCpuTimeSoftIntSrvc\": $CPUSOFTIRQ," >> $outfile
+  echo "  \"tvCpuTimeSoftIntSrvc\": $T_CPUSOFTIRQ," >> $outfile
   echo "  \"vCpuContextSwitches\": $CSWITCH," >> $outfile
+  echo "  \"tvCpuContextSwitches\": $T_CSWITCH," >> $outfile
   echo "  \"vCpuNice\": $CPUNICE," >> $outfile
+  echo "  \"tvCpuNice\": $T_CPUNICE," >> $outfile
   echo "  \"vCpuSteal\": $CPUSTEAL," >> $outfile
+  echo "  \"tvCpuSteal\": $T_CPUSTEAL," >> $outfile
   echo "  \"vDiskSuccessfulReads\": $COMPLETEDREADS," >> $outfile
+  echo "  \"tvDiskSuccessfulReads\": $T_COMPLETEDREADS," >> $outfile
   echo "  \"vDiskMergedReads\": $MERGEDREADS," >> $outfile
+  echo "  \"tvDiskMergedReads\": $T_MERGEDREADS," >> $outfile
   echo "  \"vDiskReadTime\": $READTIME," >> $outfile
+  echo "  \"tvDiskReadTime\": $T_READTIME," >> $outfile
   echo "  \"vDiskSuccessfulWrites\": $COMPLETEDWRITES," >> $outfile
+  echo "  \"tvDiskSuccessfulWrites\": $T_COMPLETEDWRITES," >> $outfile
   echo "  \"vDiskMergedWrites\": $MERGEDWRITES," >> $outfile
+  echo "  \"tvDiskMergedWrites\": $T_MERGEDWRITES," >> $outfile
   echo "  \"vDiskWriteTime\": $WRITETIME," >> $outfile
+  echo "  \"tvDiskWriteTime\": $T_WRITETIME," >> $outfile
 
   echo "  \"vMemoryTotal\": $MEMTOT," >> $outfile     # KB
+  echo "  \"tvMemoryTotal\": $T_MEMTOT," >> $outfile
   echo "  \"vMemoryFree\": $MEMFREE," >> $outfile     # KB
+  echo "  \"tvMemoryFree\": $T_MEMFREE," >> $outfile
   echo "  \"vMemoryBuffers\": $BUFFERS," >> $outfile  # KB
+  echo "  \"tvMemoryBuffers\": $T_BUFFERS," >> $outfile
   echo "  \"vMemoryCached\": $CACHED," >> $outfile    # KB
+  echo "  \"tvMemoryCached\": $T_CACHED," >> $outfile
 
 
   echo "  \"vLoadAvg\": $LAVG," >> $outfile
+  echo "  \"tvLoadAvg\": $T_LAVG," >> $outfile
   echo "  \"vId\": \"$vmid\"," >> $outfile
+  echo "  \"tvId\": \"$t_vmid\"," >> $outfile
   echo "  \"vCpuType\": \"$CPUTYPE\"," >> $outfile
+  echo "  \"tvCpuType\": \"$T_CPUTYPE\"," >> $outfile
   echo "  \"vCpuMhz\": \"$CPUMHZ\"," >> $outfile
+  echo "  \"tvCpuMhz\": \"$T_CPUMHZ\"," >> $outfile
 fi
 
 
@@ -225,16 +293,20 @@ then
   # Get CPU stats
 
   CPUUSRC=$(cat /sys/fs/cgroup/cpuacct/cpuacct.stat | grep 'user' | cut -d" " -f 2) # in cs
+  T_CPUUSRC=$(date +%s%N)
 
   CPUKRNC=$(cat /sys/fs/cgroup/cpuacct/cpuacct.stat | grep 'system' | cut -d" " -f 2) # in cs
+  T_CPUKRNC=$(date +%s%N)
 
   CPUTOTC=$(cat /sys/fs/cgroup/cpuacct/cpuacct.usage) # in ns
-
+  T_CPUTOTC=$(date +%s%N)
 
   IFS=$'\n'
 
   PROS=(`cat /proc/cpuinfo | grep 'processor' | cut -d":" -f 2`)
+  T_PROS=$(date +%s%N)
   NUMPROS=${#PROS[@]}
+  T_NUMPROS=$(date +%s%N)
 
 
   # Get disk stats
@@ -257,8 +329,10 @@ then
   # if arr is empty, then assign 0; else, sum up all elements in arr
   if [ -z "$arr" ]; then
     SRWC=0
+    T_SRWC=$(date +%s%N)
   else
     SRWC=$( ( IFS=+; echo "${arr[*]}" ) | bc )
+    T_SRWC=$(date +%s%N)
   fi
 
 
@@ -268,8 +342,10 @@ then
 
   if [ -z "$arr" ]; then
     BRC=0
+    T_BRC=$(date +%s%N)
   else
     BRC=0
+    T_BRC=$(date +%s%N)
     for line in "${arr[@]}"
     do 
       temp=($line)
@@ -278,6 +354,7 @@ then
         if [ "$elem" == "${temp[0]}" ]
         then
           BRC=$(echo "${temp[2]} + $BRC" | bc)
+          T_BRC=$(date +%s%N)
         fi
       done
     done
@@ -291,8 +368,10 @@ then
 
   if [ -z "$arr" ]; then
     BWC=0
+    T_BWC=$(date +%s%N)
   else
     BWC=0
+    T_BWC=$(date +%s%N)
     for line in "${arr[@]}"
     do 
       temp=($line)
@@ -301,6 +380,7 @@ then
         if [ "$elem" == "${temp[0]}" ]
         then
           BWC=$(echo "${temp[2]} + $BWC" | bc)
+          T_BWC=$(date +%s%N)
         fi
       done
     done
@@ -311,50 +391,71 @@ then
 
   NET=(`cat /proc/net/dev | grep 'eth0'`)
   NRC=${NET[1]}  # bytes received
+  T_NRC=$(date +%s%N)
   [[ -z "$NRC" ]] && NRC=0
 
   NTC=${NET[9]}  # bytes transmitted
+  T_NTC=$(date +%s%N)
   [[ -z "$NTC" ]] && NTC=0
 
 
   #Get container ID
   CIDS=$(cat /etc/hostname)
+  T_CIDS=$(date +%s%N)
 
   # Get memory stats
   MEMUSEDC=$(cat /sys/fs/cgroup/memory/memory.usage_in_bytes)
+  T_MEMUSEDC=$(date +%s%N)
   MEMMAXC=$(cat /sys/fs/cgroup/memory/memory.max_usage_in_bytes)
+  T_MEMMAXC=$(date +%s%N)
 
   unset IFS
   CPUPERC=(`cat /sys/fs/cgroup/cpuacct/cpuacct.usage_percpu`) # in ns, 0, 1, 2, 3 elements
+  T_CPUPERC=$(date +%s%N)
 
 
   # print container level data
   echo "  \"cCpuTime\": $CPUTOTC," >> $outfile     # ns
+  echo "  \"tcCpuTime\": $T_CPUTOTC," >> $outfile
   echo "  \"cNumProcessors\": $NUMPROS," >> $outfile
+  echo "  \"tcNumProcessors\": $T_NUMPROS," >> $outfile
   echo "  \"cProcessorStats\": {" >> $outfile
   for (( i=0; i<NUMPROS; i++ ))
   do 
     echo "  \"cCpu${i}TIME\": ${CPUPERC[$i]}, " >> $outfile
   done
-  echo "  \"cNumProcessors\": $NUMPROS" >> $outfile
+  echo "  \"tcCpu#TIME\": $T_CPUPERC," >> $outfile
+  echo "  \"cNumProcessors\": $NUMPROS," >> $outfile
+  echo "  \"tcNumProcessors\": $T_NUMPROS," >> $outfile
   echo "  }," >> $outfile
 
   echo "  \"cCpuTimeUserMode\": $CPUUSRC," >> $outfile    # cs
+  echo "  \"tcCpuTimeUserMode\": $T_CPUUSRC," >> $outfile
   echo "  \"cCpuTimeKernelMode\": $CPUKRNC," >> $outfile  # cs
+  echo "  \"tcCpuTimeKernelMode\": $T_CPUKRNC," >> $outfile
 
   echo "  \"cDiskSectorIO\": $SRWC," >> $outfile
+  echo "  \"tcDiskSectorIO\": $T_SRWC," >> $outfile
   echo "  \"cDiskReadBytes\": $BRC," >> $outfile
+  echo "  \"tcDiskReadBytes\": $T_BRC," >> $outfile
   echo "  \"cDiskWriteBytes\": $BWC," >> $outfile
+  echo "  \"tcDiskWriteBytes\": $T_BWC," >> $outfile
 
   echo "  \"cNetworkBytesRecvd\": $NRC," >> $outfile
+  echo "  \"tcNetworkBytesRecvd\": $T_NRC," >> $outfile
   echo "  \"cNetworkBytesSent\": $NTC," >> $outfile
+  echo "  \"tcNetworkBytesSent\": $T_NTC," >> $outfile
 
   echo "  \"cMemoryUsed\": $MEMUSEDC," >> $outfile
+  echo "  \"tcMemoryUsed\": $T_MEMUSEDC," >> $outfile
   echo "  \"cMemoryMaxUsed\": $MEMMAXC," >> $outfile
+  echo "  \"tcMemoryMaxUsed\": $T_MEMMAXC," >> $outfile
 
 
   echo "  \"cId\": \"$CIDS\"," >> $outfile
+  echo "  \"tcId\": \"$T_CIDS\"," >> $outfile
   echo "  \"cNumProcesses\": $PIDS," >> $outfile
+  echo "  \"tcNumProcesses\": $T_PIDS," >> $outfile
 
   echo "  \"pMetricType\": \"Process level\"," >> $outfile
 fi
