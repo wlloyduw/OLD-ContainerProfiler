@@ -18,4 +18,3 @@ sudo apt install npm -y
 sudo npm install -g electron@1.8.4 orca -y 
 sudo apt install libcanberra-gtk-module libcanberra-gtk3-module -y
 sudo apt install libgconf-2-4 -y
-sudo apt install parallel
