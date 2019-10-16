@@ -1,15 +1,11 @@
-from plotly.subplots import make_subplots
 import random
 import json
 import os, sys
 import pandas as pd
 import subprocess
-import matplotlib.pyplot as plt
 import numpy as np
 
 #new
-import plotly.express as px
-import plotly.graph_objects as go
 import argparse
 from os import path
 import glob

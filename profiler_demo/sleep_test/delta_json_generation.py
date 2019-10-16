@@ -40,7 +40,7 @@ for (each_key, each_val) in config.items('all'):
         if ( each_val == 'numeric_delta'): #and each_key.isdigit()):
 
 		json_one = "the_json_one['" +each_key+"']"
-		json_two = "the_json_two['" +each_key+ "']"
+		json_two = "the_json_two['" +each_key+"']"
 		json_three = "json_three['" +each_key+"']"
 		generated_script.write("\t" + json_three +"=" + json_two +'-' + json_one+"\n")
 

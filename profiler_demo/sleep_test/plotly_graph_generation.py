@@ -91,7 +91,7 @@ def makegraphs(metrics, df, graph_function):
 		for x in sliced_metrics:
 		
 			
-			fig.add_trace(graph_function(x=data_frame.index, y=data_frame[x]),
+			fig.add_trace(graph_function(x=data_frame['currentTime'], y=data_frame[x]),
 				row=current_row, col=current_col)
 			current_col = current_col +1
 			if (current_col == row_col_length +1):
@@ -110,7 +110,7 @@ def makegraphs(metrics, df, graph_function):
 			#is showing multiple at a time.
 			#this code can be moved or implemented differently, for example if we want to give the user to either A export images, or B save images.
 			export_fig = go.Figure(
-				data=[graph_function(x=data_frame.index, y=data_frame[x])],
+				data=[graph_function(x=data_frame['currentTime'], y=data_frame[x])],
 				layout=go.Layout(
 					title=go.layout.Title(text=x)
 				)
@@ -139,6 +139,10 @@ args= parser.parse_args()
 #dataframe read into from cmdline
 data_frame = pd.read_csv(args.csv_file)
 data_frame.head()
+
+
+data_frame['currentTime'] = data_frame['currentTime'] - data_frame['currentTime'][0]
+
 data_frame=data_frame.iloc[::args.sampling_delta]
 data_frame.name=args.csv_file
 
