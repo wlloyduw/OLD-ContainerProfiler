@@ -17,10 +17,8 @@ fi
 ${@} &
 #capture the pid of the run command
 rpid=$!
-
 #kill the runcmd if there is an error
 trap "kill -9 $rpid 2> /dev/null" EXIT
-
 
 #Keep track of min and max profiling time
 let min=2**31
@@ -28,9 +26,9 @@ let max=0
 echo "" > "${OUTPUTDIR}/sample_times.txt"
 
 SECONDS=0
-while ps -p $rpid 2> /dev/null 
+while [ -n "$rpid" -a -e /proc/$rpid ]
 do
-    if [ $SECONDS >= $DELTA ]; then
+    if [ $SECONDS -ge $DELTA ]; then
       today=`date '+%Y_%m_%d__%H_%M_%S'`;
       t1=$(date '+%s%3N')
       file_name="$today.json"
@@ -47,7 +45,7 @@ do
         let max=$profile_time
       fi
 
-    echo "$profile_time" >> "${OUTPUTDIR}/sample_times.txt"
+      echo "$profile_time" >> "${OUTPUTDIR}/sample_times.txt"
 
       SECONDS=0
     fi
