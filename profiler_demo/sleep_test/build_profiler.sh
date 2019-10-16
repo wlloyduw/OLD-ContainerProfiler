@@ -3,10 +3,6 @@
 cd ../..
 cp rudataall.sh ./profiler_demo/sleep_test
 cd profiler_demo/sleep_test
-mkdir ~/.config/graphing_tool
-cp graph_generation_config.shlib ~/.config/graphing_tool
-cp graph_generation_config.cfg ~/.config/graphing_tool
-
 
 #takes care of all dependencies needed for csv creation, delta creation, plotly graph creation
 sudo apt install python -y

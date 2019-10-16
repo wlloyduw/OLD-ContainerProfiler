@@ -74,7 +74,7 @@ def graphs_rows_cols(metrics_count):
 	elif (metrics_count >=5):
 		return 3;
 
-def makegraphs(metrics, df, graph_function):
+def makegraphs(metrics, df):#, graph_function):
 	start =0
 	metrics_count=len(metrics) 
 	row_col_length = graphs_rows_cols(metrics_count)
@@ -91,7 +91,7 @@ def makegraphs(metrics, df, graph_function):
 		for x in sliced_metrics:
 		
 			
-			fig.add_trace(graph_function(x=data_frame['currentTime'], y=data_frame[x]),
+			fig.add_trace(go.Scatter(x=data_frame['currentTime'], y=data_frame[x]),
 				row=current_row, col=current_col)
 			current_col = current_col +1
 			if (current_col == row_col_length +1):
@@ -110,7 +110,7 @@ def makegraphs(metrics, df, graph_function):
 			#is showing multiple at a time.
 			#this code can be moved or implemented differently, for example if we want to give the user to either A export images, or B save images.
 			export_fig = go.Figure(
-				data=[graph_function(x=data_frame['currentTime'], y=data_frame[x])],
+				data=[go.Scatter(x=data_frame['currentTime'], y=data_frame[x])],
 				layout=go.Layout(
 					title=go.layout.Title(text=x)
 				)
@@ -121,15 +121,15 @@ def makegraphs(metrics, df, graph_function):
 			export_graphs_as_images(export_fig, df.name, x)
 			
 		start += length
-
-		fig.show()
+		if (args.dynamic_creation):
+			fig.show()
 
 
 #cmdline parser
 parser = argparse.ArgumentParser(description="generates plotly graphs")
 parser.add_argument('csv_file', action='store', help='csv file')
-parser.add_argument('graph_method', action='store', nargs='?', default='Scatter', help='stores which graphing method to use')
-parser.add_argument('sampling_delta', type=int, nargs='?', help='determines sampling size')
+parser.add_argument("-s", "--sampling_interval", type=int, nargs='?', action="store", help='determines sampling size')
+parser.add_argument("-d", "--dynamic_creation", action="store_true", help='determines sampling size')
 parser.add_argument('metrics', type=str, nargs='*', help='list of metrics to graph over')
 parser.add_argument('--infile', dest='read_metrics', action='store_const', const=read_metrics_file, default=read_cmdline_metrics, help='reads metrics from a file or from command line')
 args= parser.parse_args()
@@ -143,17 +143,17 @@ data_frame.head()
 
 data_frame['currentTime'] = data_frame['currentTime'] - data_frame['currentTime'][0]
 
-data_frame=data_frame.iloc[::args.sampling_delta]
+data_frame=data_frame.iloc[::args.sampling_interval]
 data_frame.name=args.csv_file
 
 #choosing which method to make the graphs
-graph_function = graph_selection(graphing_methods, args.graph_method)
+#graph_function = graph_selection(graphing_methods, args.graph_method)
 
 #preparing the x axis of time for all graphs
 #obtains the graphs from cmdline, can have no input for every metric in the csv, n metrics space delimited, or a file if --infile tag included at the end
 metrics = args.read_metrics(args.metrics, data_frame)
 
 print(metrics)
-makegraphs(metrics, data_frame, graph_function)
+makegraphs(metrics, data_frame)
 
 
