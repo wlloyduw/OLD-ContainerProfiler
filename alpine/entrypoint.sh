@@ -32,10 +32,10 @@ SECONDS=0
 while [ -n "$rpid" -a -e /proc/$rpid ]
 do
       today=`date '+%Y_%m_%d__%H_%M_%S'`;
-      t1=$(date '+%s%N')
+      t1=$(date '+%s%3N')
       file_name="$today.json"
       rudataall.sh  > "${OUTPUTDIR}/${file_name}"
-      t2=$(date '+%s%N')
+      t2=$(date '+%s%3N')
 
       #Test to see if we have a new min or max profiling time
       let profile_time=$t2-$t1
