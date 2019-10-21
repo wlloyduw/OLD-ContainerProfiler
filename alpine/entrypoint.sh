@@ -30,32 +30,29 @@ echo "" > "${OUTPUTDIR}/sample_times.txt"
 
 SECONDS=0
 while [ -n "$rpid" -a -e /proc/$rpid ]
-do
-      today=`date '+%Y_%m_%d__%H_%M_%S'`;
-      t1=$(date '+%s%3N')
-      file_name="$today.json"
-      rudataall.sh  > "${OUTPUTDIR}/${file_name}"
-      t2=$(date '+%s%3N')
+	if [ "$SECONDS" -ge "$DELTA" ]; then
 
-      #Test to see if we have a new min or max profiling time
-      let profile_time=$t2-$t1
-      if [ $profile_time -lt $min ]
-      then
-      	let min=$profile_time
-      elif [ $profile_time -gt $max ]
-      then
-        let max=$profile_time
-      fi
+		today=`date '+%Y_%m_%d__%H_%M_%S'`;
+		t1=$(date '+%s%3N')
+		file_name="$today.json"
+		rudataall.sh  > "${OUTPUTDIR}/${file_name}"
+		t2=$(date '+%s%3N')
 
-      echo "$profile_time" >> "${OUTPUTDIR}/sample_times.txt"
+		#Test to see if we have a new min or max profiling time
+		let profile_time=$t2-$t1
+		if [ $profile_time -lt $min ]
+			then
+			let min=$profile_time
+		elif [ $profile_time -gt $max ]
+			then
+			let max=$profile_time
+		fi
 
-      SECONDS=0
-      let sleep_time=$deltaT-$profile_time
-      #convert time to sleep back into seconds
-      sleep_time=`echo $sleep_time / 1000 | bc -l`
-      #Sleep
-    
-      sleep $sleep_time
+		echo "$profile_time" >> "${OUTPUTDIR}/sample_times.txt"
+
+		SECONDS=0
+	fi
+	sleep 1
 done
 
 
