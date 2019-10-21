@@ -30,6 +30,7 @@ echo "" > "${OUTPUTDIR}/sample_times.txt"
 
 SECONDS=0
 while [ -n "$rpid" -a -e /proc/$rpid ]
+	do
 	if [ "$SECONDS" -ge "$DELTA" ]; then
 
 		today=`date '+%Y_%m_%d__%H_%M_%S'`;
