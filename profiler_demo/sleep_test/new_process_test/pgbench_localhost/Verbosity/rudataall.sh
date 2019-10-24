@@ -71,6 +71,9 @@ PIDS=$((length-2))
 if [ $VM = true ]
 then
   #echo "VM is Running!!"
+
+  T_VM_1=$(date +%s%3N)
+
   # Get CPU stats
   CPU=(`cat /proc/stat | grep '^cpu '`)
   unset CPU[0]
@@ -189,11 +192,13 @@ then
 
   vmid="unavailable"
 
-
+  T_VM_2=$(date +%s%3N)
+  let T_VM=$T_VM_2-$T_VM_1
 
   
   echo "  \"currentTime\": $epochtime," >> $outfile
   echo "  \"vMetricType\": \"VM level\"," >> $outfile
+  echo "  \"vTime\": $T_VM," >> $outfile 
   ## print VM level data 
   echo "  \"vCpuTime\": $CPUTOT," >> $outfile
   echo "  \"tvCpuTime\": $T_CPUTOT," >> $outfile
@@ -244,6 +249,8 @@ fi
 if [ $CONTAINER = true ]
 then
   #echo "CONTAINER is Running!!"
+  T_CNT_1=$(date +%s%3N)
+
   echo "  \"cMetricType\": \"Container level\"," >> $outfile
 
   # Get CPU stats
@@ -355,8 +362,11 @@ then
   CPUPERC=(`cat /sys/fs/cgroup/cpuacct/cpuacct.usage_percpu`) # in ns, 0, 1, 2, 3 elements
   T_CPUPERC=$(date +%s%3N)
 
+  T_CNT_2=$(date +%s%3N)
+  let T_CNT=$T_CNT_2-T_CNT_1
 
   # print container level data
+  echo "  \"cTime\": $T_CNT, " >> $outfile
   echo "  \"cCpuTime\": $CPUTOTC," >> $outfile     # ns
   echo "  \"tcCpuTime\": $T_CPUTOTC," >> $outfile
   echo "  \"cNumProcessors\": $NUMPROS," >> $outfile
@@ -397,6 +407,8 @@ fi
 if [ $PROCESS = true ]
 then
   #echo "PROCESS is Running!!"
+
+  T_PRC_1=$(date +%s%3N)
   # For each process, parse the data
 
   # command cat $outfile in the last line of the script
@@ -456,7 +468,10 @@ then
 	  echo "  }, " >> $outfile
    fi	
   done
-  echo "  {\"cNumProcesses\": $PIDS}" >> $outfile
+  T_PRC_2=$(date +%s%3N)
+  let T_PRC=$T_PRC_2-$T_PRC_1
+  echo "  {\"cNumProcesses\": $PIDS," >> $outfile
+  echo "  \"pTime\": $T_PRC }" >> $outfile
   echo "  ]" >> $outfile
 fi
 
