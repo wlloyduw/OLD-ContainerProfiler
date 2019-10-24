@@ -28,7 +28,7 @@ echo "parent process ID: " $ppid
 let min=2**31
 let max=0
 
-echo "" > "/data/sample_times.txt"
+#echo "" > "/data/sample_times.txt"
 
 while true; do
   cpids=($(get_cpid $ppid | xargs))
@@ -52,7 +52,7 @@ while true; do
 
     #Write out the time it takes to collect each sample to another file
 
-    echo "$profile_time" >> "/data/sample_times.txt"
+    #echo "$profile_time" >> "/data/sample_times.txt"
     
     #Difference between desired sampling rate and time used to run profiling script
     let sleep_time=$deltaT-$profile_time
