@@ -57,9 +57,9 @@ for file in dirs:
         # determines what is chosen out of the metrics.
 
         for k in y:
-            if not (k == "pProcesses" or k == "cProcessorStats"):
-                if k in metrics or len(metrics) == 0:
-                    r[k] = y[k]
+            #if not (k == "pProcesses" or k == "cProcessorStats"):
+			if k in metrics or len(metrics) == 0:
+				r[k] = y[k]
 
 	if(("cProcessorStats" in metrics and "cNumProcessors" in metrics) or len(metrics) ==0):
 		if ("cProcessorStats" in y and "cNumProcessors" in y):
