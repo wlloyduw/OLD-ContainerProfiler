@@ -202,6 +202,7 @@ then
   ## print VM level data 
   echo "  \"vCpuTime\": $CPUTOT," >> $outfile
   echo "  \"tvCpuTime\": $T_CPUTOT," >> $outfile
+  echo "  \"vDiskSectorReads\": $SR," >> $outfile
   echo "  \"vDiskSectorWrites\": $SW," >> $outfile
   echo "  \"vNetworkBytesRecvd\": $BR," >> $outfile
   echo "  \"vNetworkBytesSent\": $BT," >> $outfile
