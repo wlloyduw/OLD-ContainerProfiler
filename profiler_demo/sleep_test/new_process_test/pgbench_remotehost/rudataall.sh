@@ -397,8 +397,3 @@ echo "  ]" >> $outfile
 echo "}" >> $outfile
 
 cat $outfile
-
-
-
-
-

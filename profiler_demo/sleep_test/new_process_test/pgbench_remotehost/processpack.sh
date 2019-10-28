@@ -6,5 +6,7 @@ echo "The process: "
 echo ""
 echo 
 echo
-su - postgres
-pgbench -c 16 -j 16 -T 600
+
+#some command in the container
+#make all in one of the directories 
+#or some script

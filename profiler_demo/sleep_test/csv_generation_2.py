@@ -33,7 +33,7 @@ vm_container = {}
 # Path from where the json files to be converted to a csv file
 parser = argparse.ArgumentParser(description='process path and file /or string of metrics.')
 parser.add_argument('file_path', action='store', help='stores the filepath to the folder holding all the JSON files')
-parser.add_argument('sampling_delta', type=int, nargs='?', help='determines sampling size')
+parser.add_argument('sampling_delta', type=int, nargs='?', default=1, help='determines sampling size')
 parser.add_argument('metrics', type=str, nargs='*', help='list of metrics or file for metrics')
 parser.add_argument('--infile', dest='read_metrics', action='store_const', const=read_metrics_file, default=read_cmdline_metrics, help='reads metrics from a file or from command line')
 
@@ -55,11 +55,12 @@ for file in dirs:
 
         # Check for any list or dictionary in y
         # determines what is chosen out of the metrics.
-
+	#print metrics
         for k in y:
-            #if not (k == "pProcesses" or k == "cProcessorStats"):
+            if not (k == "pProcesses" or k == "cProcessorStats"):
 			if k in metrics or len(metrics) == 0:
 				r[k] = y[k]
+
 
 	if(("cProcessorStats" in metrics and "cNumProcessors" in metrics) or len(metrics) ==0):
 		if ("cProcessorStats" in y and "cNumProcessors" in y):
@@ -67,9 +68,13 @@ for file in dirs:
 		        if k != "cNumProcessors":
 		            r[k] = y["cProcessorStats"][k]
 
-        #totalProcesses = y["cNumProcesses"]
         totalProcesses = len(y["pProcesses"]) - 1
-
+	#print y["pProcesses"][len(y["pProcesses"]) - 1]
+	
+	for k in y["pProcesses"][totalProcesses]:
+		if k == "pTime":
+			r["pTime"] = y["pProcesses"][totalProcesses]["pTime"]
+	
         # Loop through the process level data
         for i in xrange(totalProcesses):
             # A dictinary containing process level data
@@ -77,6 +82,9 @@ for file in dirs:
 
             for k in y["pProcesses"][i]:
                 s[k] = y["pProcesses"][i][k]
+
+		if y["pProcesses"][i] == "pTime":
+			r[k] = y[k]
 
             # If the process id is already in the processes, append to the list of processes
             pids = []
@@ -87,9 +95,12 @@ for file in dirs:
         vm_container[file] = r
 
 # Create a separate CSV files for each of the processes
+if not os.path.exists('./process_info/{}'.format(os.path.basename(os.path.normpath(file_path)))):
+	os.makedirs('./process_info/{}'.format(os.path.basename(os.path.normpath(file_path))))
+
 for key, value in processes.iteritems():
     df1 = pd.DataFrame(value)
-    df1.to_csv(str(key)+".csv")
+    df1.to_csv("./process_info/{}/Pid, {}.csv".format(os.path.basename(os.path.normpath(file_path)),str(key)))
 
 # Dump dictionary to a JSON file
 with open("vm_container.json","w") as f:
@@ -97,13 +108,11 @@ with open("vm_container.json","w") as f:
 
 # Convert JSON to dataframe and convert it to CSV
 df = pd.read_json("vm_container.json").T
-sampling_delta=60
 df=df.iloc[::args.sampling_delta]
 df.to_csv("vm_container.csv", sep=',')
 
 # Convert JSON to dataframe and convert it to CSV
 df = pd.read_json("vm_container.json").T
-sampling_delta=60
-df=df.iloc[::sampling_delta]
+df=df.iloc[::args.sampling_delta]
 df.to_csv("vm_container.tsv", sep='\t')
 

@@ -1,0 +1,9 @@
+,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
+0,2019_10_26__23_06_33_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F2/all.fastq,365,4795,30199,bwa,40914,1,36796,156839936,227038
+1,2019_10_26__22_55_43_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F2/all.fastq,1,1,30199,bwa,9,1,1186,5402624,2
+2,2019_10_26__23_01_06_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F2/all.fastq,195,2444,30199,bwa,22645,1,37196,156839936,113256
+3,2019_10_26__23_01_27_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F2/all.fastq,195,2444,30199,bwa,22645,1,37196,156839936,113256
+4,2019_10_26__23_01_17_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F2/all.fastq,195,2444,30199,bwa,22645,1,37196,156839936,113256
+5,2019_10_26__23_06_22_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F2/all.fastq,357,4763,30199,bwa,38692,1,37878,156839936,227037
+6,2019_10_26__23_06_12_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F2/all.fastq,335,4405,30199,bwa,37515,1,36732,156839936,207266
+7,2019_10_26__22_55_35_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F2/all.fastq,1,1,30199,bwa,9,1,1186,5402624,2

@@ -23,6 +23,8 @@ echo "processname: " $pname
 ppid=$(pgrep -x "${pname}") 
 echo "parent process ID: " $ppid
 
+mydir=(`date '+%Y_%m_%d__%H_%M_%S'`)
+mkdir -m 777 /data/${mydir}
 
 #Keep track of min and max profiling time
 let min=2**31
@@ -35,7 +37,7 @@ while true; do
     today=`date '+%Y_%m_%d__%H_%M_%S'`;
     file_name="$today.json"
     t1=$(date '+%s%3N')
-    /data/rudataall.sh  > "/data/${file_name}"
+    /data/rudataall.sh  > "/data/${mydir}/${file_name}"
     t2=$(date '+%s%3N')
 
     #Test to see if we have a new min or max profiling time
