@@ -100,7 +100,7 @@ def makegraphs(metrics, df):#, graph_function):
 			currentXAxis='xaxis{}'.format(axiscounter)
 			currentYAxis='yaxis{}'.format(axiscounter)
 
-			fig['layout'][currentXAxis].update(title="Epoch Time(seconds)")
+			fig['layout'][currentXAxis].update(title="Time(seconds)")
 			fig['layout'][currentYAxis].update(title=x)
 			axiscounter+=1
 
@@ -116,7 +116,7 @@ def makegraphs(metrics, df):#, graph_function):
 				)
 
 			)
-			export_fig['layout']['xaxis'].update(title="Epoch Time(seconds)")
+			export_fig['layout']['xaxis'].update(title="Time(seconds)")
 			export_fig['layout']['yaxis'].update(title=x)
 			export_graphs_as_images(export_fig, df.name, x)
 			

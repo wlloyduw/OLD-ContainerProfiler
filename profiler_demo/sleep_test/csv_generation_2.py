@@ -83,8 +83,7 @@ for file in dirs:
             for k in y["pProcesses"][i]:
                 s[k] = y["pProcesses"][i][k]
 
-		if y["pProcesses"][i] == "pTime":
-			r[k] = y[k]
+            s["currentTime"] = r["currentTime"]
 
             # If the process id is already in the processes, append to the list of processes
             pids = []
@@ -100,6 +99,7 @@ if not os.path.exists('./process_info/{}'.format(os.path.basename(os.path.normpa
 
 for key, value in processes.iteritems():
     df1 = pd.DataFrame(value)
+    df1 = df1.sort_values(by='currentTime', ascending=True)
     df1.to_csv("./process_info/{}/Pid, {}.csv".format(os.path.basename(os.path.normpath(file_path)),str(key)))
 
 # Dump dictionary to a JSON file
