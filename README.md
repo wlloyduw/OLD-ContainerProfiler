@@ -46,34 +46,34 @@ VM Level Metrics
 
 | **Attribute** | **Description** |
 | ------------- | --------------- |
-| vCpuTime | Total CPU time (cpu_user+cpu_kernel) in centisecond (cs) (hundreths of a second) |
-| vCpuTimeUserMode | CPU time for processes executing in user mode in centisecond (cs) |  
-| vCpuTimeKernelMode | CPU time for processes executing in kernel mode in centisecond (cs) |  
-| vCpuIdleTime | CPU idle time in centisecond (cs) |  
-| vCpuTimeIOWait | CPU time waiting for I/O to complete in centisecond (cs) |  
-| vCpuTimeIntSrvc | CPU time servicing interrupts in centisecond (cs) |  
-| vCpuTimeSoftIntSrvc | CPU time servicing soft interrupts in centisecond (cs) |  
+| vCpuTime | Total CPU time (cpu_user+cpu_kernel) in centiseconds (cs) (hundreths of a second) |
+| vCpuTimeUserMode | CPU time for processes executing in user mode in centiseconds (cs) |  
+| vCpuTimeKernelMode | CPU time for processes executing in kernel mode in centiseconds (cs) |  
+| vCpuIdleTime | CPU idle time in centiseconds (cs) |  
+| vCpuTimeIOWait | CPU time waiting for I/O to complete in centiseconds (cs) |  
+| vCpuTimeIntSrvc | CPU time servicing interrupts in centiseconds (cs) |  
+| vCpuTimeSoftIntSrvc | CPU time servicing soft interrupts in centiseconds (cs) |  
 | vCpuContextSwitches | The total number of context switches across all CPUs |  
-| vCpuNice | Time spent with niced processes executing in user mode in centisecond (cs) |  
-| vCpuSteal | Time stolen by other operating systems running in a virtual environment in centisecond (cs) |  
-| vCpuType | The common name of the processor, including its project name |  
-| vCpuMhz | The precise speed in MHz for the processor to the thousandths decimal place |  
-| vDiskSectorReads | Sectors read is number of sectors read, where a sector is typically 512 bytes, assumes /dev/sda1|  
-| vDiskSectorWrites | Sectors written is number of sectors written, assumes /dev/sda1 |  
+| vCpuNice | Time spent with niced processes executing in user mode in centiseconds (cs) |  
+| vCpuSteal | Time stolen by other operating systems running in a virtual environment in centiseconds (cs) |  
+| vCpuType | The model name of the processor |  
+| vCpuMhz | The precise speed in MHz for thee processor to the thousandths decimal place |  
+| vDiskSectorReads | The number of disk sectors read, where a sector is typically 512 bytes, assumes /dev/sda1|  
+| vDiskSectorWrites | The number of disk sectors written, where a sector is typically 512 bytes, assumes /dev/sda1 |  
 | vDiskSuccessfulReads | Number of disk reads completed succesfully |
 | vDiskMergedReads | Number of disk reads merged together (adjacent and merged for efficiency) |
-| vDiskReadTime | Time spent reading in millisecond (ms) |
+| vDiskReadTime | Time spent reading from the disk in millisecond (ms) |
 | vDiskSuccessfulReads | Number of disk reads completed succesfully |
 | vDiskSuccessfulWrites | Number of disk writes completed succesfully |
 | vDiskMergedWrites | Number of disk writes merged together (adjacent and merged for efficiency) |
-| vDiskWriteTime | Time spent writing in millisecond (ms) |
-| vMemoryTotal | Total amount of usable RAM in kilobyte (KB) |
-| vMemoryFree | The amount of physical RAM left unused by the system in kilobyte (KB) |
-| vMemoryBuffers | The amount of temporary storage for raw disk blocks in kilobyte (KB) |
-| vMemoryCached | The amount of physical RAM used as cache memory in kilobyte (KB) |
-| vNetworkBytesRecvd | Network Bytes recv'd assumes eth0 in byte |
-| vNetworkBytesSent | Network Bytes written assumes eth0 in byte |
-| vLoadAvg | Load average in regard to both the CPU and IO over last 1 minute |
+| vDiskWriteTime | Time spent writing in milliseconds (ms) |
+| vMemoryTotal | Total amount of usable RAM in kilobytes (KB) |
+| vMemoryFree | The amount of physical RAM left unused by the system in kilobytes (KB) |
+| vMemoryBuffers | The amount of temporary storage for raw disk blocks in kilobytes (KB) |
+| vMemoryCached | The amount of physical RAM used as cache memory in kilobytes (KB) |
+| vNetworkBytesRecvd | Network Bytes received assumes eth0 in bytes |
+| vNetworkBytesSent | Network Bytes written assumes eth0 in bytes |
+| vLoadAvg | The system load average as an average number of running plus waiting threads over the last minute |
 | vId | VM ID (default is "unavailable") |
 | currentTime | Number of seconds (s) that have elapsed since January 1, 1970 (midnight UTC/GMT) |
 
@@ -86,19 +86,19 @@ Container Level Metrics
 
 | **Attribute** | **Description** |
 | ------------- | --------------- |
-| cCpuTime | Total CPU time consumed by all tasks in this cgroup (including tasks lower in the hierarchy) in nanosecond (ns) |
+| cCpuTime | Total CPU time consumed by all tasks in this cgroup (including tasks lower in the hierarchy) in nanoseconds (ns) |
 | cProcessorStats | Self-defined parameter |
-| cCpu${i}TIME | CPU time consumed on each CPU by all tasks in this cgroup (including tasks lower in the hierarchy) in nanosecond (ns) |
+| cCpu${i}TIME | CPU time consumed on each CPU by all tasks in this cgroup (including tasks lower in the hierarchy) in nanoseconds (ns) |
 | cNumProcessors | Number of CPU processors |
-| cCpuTimeUserMode | CPU time consumed by tasks in user mode in this cgroup in centisecond (cs) |
-| cCpuTimeKernelMode | PU time consumed by tasks in kernel mode in this cgroup in centisecond (cs) |
+| cCpuTimeUserMode | CPU time consumed by tasks in user mode in this cgroup in centiseconds (cs) |
+| cCpuTimeKernelMode | PU time consumed by tasks in kernel mode in this cgroup in centiseconds (cs) |
 | cDiskSectorIO | Number of sectors transferred to or from specific devices by a cgroup |
-| cDiskReadBytes | Number of bytes transferred from specific devices by a cgroup in byte |
-| cDiskWriteBytes | Number of bytes transferred to specific devices by a cgroup in byte |
-| cMemoryUsed | Total current memory usage by processes in the cgroup in byte |
-| cMemoryMaxUsed | Maximum memory used by processes in the cgroup in byte |
-| cNetworkBytesRecvd | The number of bytes each interface has received in byte |
-| cNetworkBytesSent | The number of bytes each interface has sent in byte |
+| cDiskReadBytes | Number of bytes transferred from specific devices by a cgroup in bytes |
+| cDiskWriteBytes | Number of bytes transferred to specific devices by a cgroup in bytes |
+| cMemoryUsed | Total current memory usage by processes in the cgroup in bytes |
+| cMemoryMaxUsed | Maximum memory used by processes in the cgroup in bytes |
+| cNetworkBytesRecvd | The number of bytes each interface has received |
+| cNetworkBytesSent | The number of bytes each interface has sent |
 | cId | Container ID |
 
 
@@ -111,10 +111,10 @@ Process Level Metrics
 | ------------- | --------------- |
 | pId | Process ID |  
 | pNumThreads | Number of threads in this process |  
-| pCpuTimeUserMode | Amount of time that this process has been scheduled in user mode, measured in clock ticks (divide by sysconf(\_SC_CLK_TCK)) |  
-| pCpuTimeKernelMode | Amount of time that this process has been scheduled in kernel mode, measured in clock ticks (divide by sysconf(\_SC_CLK_TCK)) |
-| pChildrenUserMode | Amount of time that this process's waited-for children have been scheduled in user mode, measured in clock ticks |
-| pChildrenKernelMode | Amount of time that this process's waited-for children have been scheduled in kernel mode, measured in clock ticks |
+| pCpuTimeUserMode | Total CPU time this process was scheduled in user mode, measured in clock ticks (divide by sysconf(\_SC_CLK_TCK)) |  
+| pCpuTimeKernelMode | Total CPU time this process was scheduled in kernel mode, measured in clock ticks (divide by sysconf(\_SC_CLK_TCK)) |
+| pChildrenUserMode | Total time children processes of the parent were scheduled in user mode, measured in clock ticks |
+| pChildrenKernelMode | Total time children processes of the parent were scheduled in kernel mode, measured in clock ticks |
 | pVoluntaryContextSwitches | Number of voluntary context switches | 
 | pNonvoluntaryContextSwitches | Number of involuntary context switches | 
 | pBlockIODelays | Aggregated block I/O delays, measured in clock ticks | 
