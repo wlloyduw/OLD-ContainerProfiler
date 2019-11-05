@@ -44,10 +44,10 @@ for file_name in dirs:
 
 total = pcmd_list[0]
 for i in pcmd_list[1:]:
-	total.add(i, fill_value=0)
+	total = total.add(i, fill_value=0)
 
 
-
+total = total.sort_values(by="pCmdLine", ascending=False)
 total.to_csv("processes_used.csv", sep=',')
 
 

@@ -36,7 +36,6 @@ def file_subtraction(the_json_one, the_json_two):
 	json_three['cDiskReadBytes']=the_json_two['cDiskReadBytes']-the_json_one['cDiskReadBytes']
 	json_three['cDiskSectorIO']=the_json_two['cDiskSectorIO']-the_json_one['cDiskSectorIO']
 	json_three['cDiskWriteBytes']=the_json_two['cDiskWriteBytes']-the_json_one['cDiskWriteBytes']
-	json_three['cMemoryUsed']=the_json_two['cMemoryUsed']-the_json_one['cMemoryUsed']
 	json_three['cNetworkBytesRecvd']=the_json_two['cNetworkBytesRecvd']-the_json_one['cNetworkBytesRecvd']
 	json_three['cNetworkBytesSent']=the_json_two['cNetworkBytesSent']-the_json_one['cNetworkBytesSent']
 	json_three['vCpuContextSwitches']=the_json_two['vCpuContextSwitches']-the_json_one['vCpuContextSwitches']
@@ -55,8 +54,6 @@ def file_subtraction(the_json_one, the_json_two):
 	json_three['vDiskSuccessfulReads']=the_json_two['vDiskSuccessfulReads']-the_json_one['vDiskSuccessfulReads']
 	json_three['vDiskSuccessfulWrites']=the_json_two['vDiskSuccessfulWrites']-the_json_one['vDiskSuccessfulWrites']
 	json_three['vDiskWriteTime']=the_json_two['vDiskWriteTime']-the_json_one['vDiskWriteTime']
-	json_three['vMemoryBuffers']=the_json_two['vMemoryBuffers']-the_json_one['vMemoryBuffers']
-	json_three['vMemoryCached']=the_json_two['vMemoryCached']-the_json_one['vMemoryCached']
 	json_three['vNetworkBytesRecvd']=the_json_two['vNetworkBytesRecvd']-the_json_one['vNetworkBytesRecvd']
 	json_three['vNetworkBytesSent']=the_json_two['vNetworkBytesSent']-the_json_one['vNetworkBytesSent']
 	for (each_key) in the_json_two['cProcessorStats']:

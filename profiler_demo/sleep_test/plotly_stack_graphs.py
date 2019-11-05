@@ -42,7 +42,7 @@ def read_cmdline_metrics(metrics, data_frame):
 
 
 
-def makegraphs(metrics, dfs, graph_title, x_title, y_title):
+def makegraphs(metrics, dfs, percentage_flag, graph_title, x_title, y_title):
 	start =0
 	fig = go.Figure()
 	fig.update_layout(
@@ -77,11 +77,15 @@ def makegraphs(metrics, dfs, graph_title, x_title, y_title):
 		)
 	    )
 	)
+	
 
 	for df in dfs:
 		for x in metrics:
-			if x in df.columns:
-				fig.add_trace(go.Scatter(x=df['currentTime'], y=df[x]/df[x].max(), name=x))
+			if x in list(df.columns.values):	
+				if percentage_flag == True:
+					fig.add_trace(go.Scatter(x=df['currentTime'], y=df[x]/df[x].max(), name=x))
+				else:
+					fig.add_trace(go.Scatter(x=df['currentTime'], y=df[x], name=x))
 				
 	export_graphs_as_images(fig, graph_title, "temp3")
 	fig.show()
@@ -101,6 +105,8 @@ parser.add_argument("-t", "--title", action="store", help='determines sampling s
 parser.add_argument("-xt", "--x_title", action="store", help='determines sampling size')
 parser.add_argument("-yt", "--y_title", action="store", help='determines sampling size')
 
+parser.add_argument("-p", "--percentage", action="store_true", help='determines sampling size')
+
 parser.add_argument('metrics', type=str, nargs='*', help='list of metrics to graph over')
 parser.add_argument('--infile', dest='read_metrics', action='store_const', const=read_metrics_file, default=read_cmdline_metrics, help='reads metrics from a file or from command line')
 args= parser.parse_args()
@@ -118,9 +124,7 @@ if args.csv_second != None:
 	data_frame = pd.read_csv(args.csv_second)
 	data_frame.head()
 	data_frame['currentTime'] = data_frame['currentTime'] - data_frame['currentTime'][0]
-
 	data_frame.name=args.csv_second
-
 	dfs.append(data_frame)
 #choosing which method to make the graphs
 
@@ -129,5 +133,5 @@ if args.csv_second != None:
 metrics = args.read_metrics(args.metrics, data_frame)
 
 print(metrics)
-makegraphs(metrics, dfs, args.title, args.x_title, args.y_title)
+makegraphs(metrics, dfs, args.percentage, args.title, args.x_title, args.y_title)
 

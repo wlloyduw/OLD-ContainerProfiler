@@ -9,6 +9,7 @@ import time
 import csv
 import glob
 import shutil
+import re
 
 from collections import namedtuple
 
@@ -60,7 +61,7 @@ for file_name in dirs:
 
 
 		for i in range(0, len(metrics)):
-			contains_metric =  data_frame['pCmdLine'].astype(str).str.contains(metrics[i], na=False)
+			contains_metric =  data_frame['pCmdLine'].astype(str).str.contains(metrics[i], na=False, flags=re.IGNORECASE)
 			filtered = data_frame[contains_metric]
 			filtered.head()
 			if (len(filtered.index) > 1) :
