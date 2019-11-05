@@ -93,6 +93,7 @@ for file in dirs:
             processes[y["pProcesses"][i]["pId"]] = pids
         vm_container[file] = r
 
+
 # Create a separate CSV files for each of the processes
 if not os.path.exists('./process_info/{}'.format(os.path.basename(os.path.normpath(file_path)))):
 	os.makedirs('./process_info/{}'.format(os.path.basename(os.path.normpath(file_path))))

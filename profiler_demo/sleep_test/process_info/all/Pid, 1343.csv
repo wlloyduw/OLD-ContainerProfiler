@@ -1,0 +1,6 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
+4,1572126547,2019_10_26__21_48_06_delta.json,0,0,0,/usr/bin/python2 /usr/bin/aws s3 cp s3://copyofbiodepotseqs ./ --recursive,5594,3834,1343,aws,1,18,87906,384167936,7320
+1,1572126607,2019_10_26__21_48_07_delta.json,0,0,0,/usr/bin/python2 /usr/bin/aws s3 cp s3://copyofbiodepotseqs ./ --recursive,12195,8287,1343,aws,3,18,87597,384737280,12747
+3,1572126667,2019_10_26__21_48_08_delta.json,0,0,0,/usr/bin/python2 /usr/bin/aws s3 cp s3://copyofbiodepotseqs ./ --recursive,18689,12636,1343,aws,6,18,88157,386289664,18055
+2,1572126727,2019_10_26__21_48_09_delta.json,0,0,0,/usr/bin/python2 /usr/bin/aws s3 cp s3://copyofbiodepotseqs ./ --recursive,25168,17054,1343,aws,7,18,87801,386064384,23450
+0,1572126788,2019_10_26__21_48_10_delta.json,0,0,0,/usr/bin/python2 /usr/bin/aws s3 cp s3://copyofbiodepotseqs ./ --recursive,31690,21508,1343,aws,15,18,88151,388825088,36433

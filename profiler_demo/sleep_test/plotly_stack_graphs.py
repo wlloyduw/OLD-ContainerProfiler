@@ -40,32 +40,11 @@ def read_cmdline_metrics(metrics, data_frame):
 	else:
 		return metrics
 
-def graph_selection(graphing_methods, method):
-	method = method.lower()
-	if (method in graphing_methods):
-
-		if (method == "scatter"):
-			return go.Scatter
-		elif (method =="bar"):
-			return go.Bar
-		elif (method =="pie"):
-			return go.Pie
-
-	else:
-		print("Method not listed in implemented graphing options")
 
 
-
-
-
-def makegraphs(metrics, df, graph_function, graph_title, x_title, y_title):
+def makegraphs(metrics, dfs, graph_title, x_title, y_title):
 	start =0
 	fig = go.Figure()
-	for x in metrics:
-		fig.add_trace(graph_function(x=data_frame['currentTime'], y=data_frame[x] / data_frame[x], name=x))
-
-
-
 	fig.update_layout(
 	    title=go.layout.Title(
 		text=graph_title,
@@ -81,9 +60,9 @@ def makegraphs(metrics, df, graph_function, graph_title, x_title, y_title):
 		title=go.layout.xaxis.Title(
 		    text=x_title,
 		    font=dict(
-		        family="Courier New, monospace",
-		        size=18,
-		        color="#7f7f7f"
+			family="Courier New, monospace",
+			size=18,
+			color="#7f7f7f"
 		    )
 		)
 	    ),
@@ -91,27 +70,36 @@ def makegraphs(metrics, df, graph_function, graph_title, x_title, y_title):
 		title=go.layout.yaxis.Title(
 		    text=y_title,
 		    font=dict(
-		        family="Courier New, monospace",
-		        size=18,
-		        color="#7f7f7f"
+			family="Courier New, monospace",
+			size=18,
+			color="#7f7f7f"
 		    )
 		)
 	    )
 	)
-	export_graphs_as_images(fig, df.name, "temp3")
+
+	for df in dfs:
+		for x in metrics:
+			if x in df.columns:
+				fig.add_trace(go.Scatter(x=df['currentTime'], y=df[x]/df[x].max(), name=x))
+				
+	export_graphs_as_images(fig, graph_title, "temp3")
 	fig.show()
 
 
 
 
 
+
 parser = argparse.ArgumentParser(description="generates plotly graphs")
-parser.add_argument('csv_file', action='store', help='csv file')
-parser.add_argument('graph_method', action='store', nargs='?', default='Scatter', help='stores which graphing method to use')
-parser.add_argument('sampling_delta', type=int, nargs='?', help='determines sampling size')
-parser.add_argument('title', action='store', help='graph_title')
-parser.add_argument('x_axis_title', action='store', help='x_axis_title')
-parser.add_argument('y_axis_title', action='store', help='y_axis_title')
+parser.add_argument('-c', "--csv_file", action="store", help='determines sampling size')
+parser.add_argument("-c2", "--csv_second", action="store", help='determines sampling size')
+
+parser.add_argument("-s", "--sampling_interval", type=int, nargs='?', action="store", help='determines sampling size')
+
+parser.add_argument("-t", "--title", action="store", help='determines sampling size')
+parser.add_argument("-xt", "--x_title", action="store", help='determines sampling size')
+parser.add_argument("-yt", "--y_title", action="store", help='determines sampling size')
 
 parser.add_argument('metrics', type=str, nargs='*', help='list of metrics to graph over')
 parser.add_argument('--infile', dest='read_metrics', action='store_const', const=read_metrics_file, default=read_cmdline_metrics, help='reads metrics from a file or from command line')
@@ -122,16 +110,24 @@ data_frame = pd.read_csv(args.csv_file)
 data_frame.head()
 data_frame['currentTime'] = data_frame['currentTime'] - data_frame['currentTime'][0]
 
-data_frame=data_frame.iloc[::args.sampling_delta]
 data_frame.name=args.csv_file
 
+dfs = []
+dfs.append(data_frame)
+if args.csv_second != None:
+	data_frame = pd.read_csv(args.csv_second)
+	data_frame.head()
+	data_frame['currentTime'] = data_frame['currentTime'] - data_frame['currentTime'][0]
+
+	data_frame.name=args.csv_second
+
+	dfs.append(data_frame)
 #choosing which method to make the graphs
-graph_function = graph_selection(graphing_methods, args.graph_method)
 
 #preparing the x axis of time for all graphs
 #obtains the graphs from cmdline, can have no input for every metric in the csv, n metrics space delimited, or a file if --infile tag included at the end
 metrics = args.read_metrics(args.metrics, data_frame)
 
 print(metrics)
-makegraphs(metrics, data_frame, graph_function, args.title, args.x_axis_title, args.y_axis_title)
+makegraphs(metrics, dfs, args.title, args.x_title, args.y_title)
 

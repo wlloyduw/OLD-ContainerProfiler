@@ -1,0 +1,2 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
+0,1572137915,2019_10_27__00_58_35.json,0,0,39,/bin/bash /usr/local/bin/rudataall.sh,0,5,13556,rudataall.sh,28,1,463,2334720,362

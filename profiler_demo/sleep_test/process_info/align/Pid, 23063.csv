@@ -1,0 +1,257 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
+91,1572129453,2019_10_26__22_37_33.json,0,0,0,grep -v '^\@',0,0,23063,grep,1,1,1,1556480,1
+63,1572129463,2019_10_26__22_37_43.json,0,0,0,grep -v '^\@',0,0,23063,grep,1,1,1,1556480,1
+77,1572129474,2019_10_26__22_37_54.json,0,0,0,grep -v '^\@',0,0,23063,grep,1,1,1,1556480,1
+99,1572129484,2019_10_26__22_38_04.json,0,0,0,grep -v '^\@',0,4,23063,grep,123,1,1,1564672,5
+153,1572129494,2019_10_26__22_38_14.json,0,0,0,grep -v '^\@',0,4,23063,grep,123,1,1,1564672,5
+95,1572129496,2019_10_26__22_38_16.json,0,0,0,grep -v '^\@',0,4,23063,grep,123,1,1,1564672,5
+242,1572129501,2019_10_26__22_38_21.json,0,0,0,grep -v '^\@',0,4,23063,grep,123,1,1,1564672,5
+13,1572129512,2019_10_26__22_38_32.json,0,0,0,grep -v '^\@',0,4,23063,grep,123,1,1,1564672,5
+233,1572129522,2019_10_26__22_38_42.json,0,0,0,grep -v '^\@',23,153,23063,grep,19015,1,1,1564672,1091
+243,1572129533,2019_10_26__22_38_53.json,0,0,0,grep -v '^\@',25,170,23063,grep,20462,1,1,1564672,1092
+43,1572129543,2019_10_26__22_39_03.json,0,0,0,grep -v '^\@',25,170,23063,grep,20462,1,1,1564672,1092
+148,1572129553,2019_10_26__22_39_13.json,0,0,0,grep -v '^\@',25,170,23063,grep,20462,1,1,1564672,1092
+73,1572129564,2019_10_26__22_39_24.json,0,0,0,grep -v '^\@',42,271,23063,grep,33111,1,1,1564672,2211
+231,1572129574,2019_10_26__22_39_34.json,0,0,0,grep -v '^\@',52,334,23063,grep,40718,1,1,1564672,2212
+7,1572129584,2019_10_26__22_39_44.json,0,0,0,grep -v '^\@',52,334,23063,grep,40718,1,1,1564672,2212
+85,1572129594,2019_10_26__22_39_54.json,0,0,0,grep -v '^\@',52,334,23063,grep,40718,1,1,1564672,2212
+140,1572129604,2019_10_26__22_40_04.json,0,0,0,grep -v '^\@',52,334,23063,grep,40749,1,1,1564672,2271
+253,1572129615,2019_10_26__22_40_15.json,0,0,0,grep -v '^\@',80,499,23063,grep,60290,1,1,1564672,3360
+201,1572129625,2019_10_26__22_40_25.json,0,0,0,grep -v '^\@',80,499,23063,grep,60290,1,1,1564672,3360
+122,1572129635,2019_10_26__22_40_35.json,0,0,0,grep -v '^\@',80,499,23063,grep,60290,1,1,1564672,3360
+52,1572129645,2019_10_26__22_40_45.json,0,0,0,grep -v '^\@',80,499,23063,grep,60290,1,1,1564672,3360
+50,1572129655,2019_10_26__22_40_55.json,0,0,0,grep -v '^\@',110,660,23063,grep,80478,1,1,1564672,4488
+71,1572129666,2019_10_26__22_41_06.json,0,0,0,grep -v '^\@',110,660,23063,grep,80478,1,1,1564672,4488
+31,1572129674,2019_10_26__22_41_14.json,0,0,0,grep -v '^\@',110,660,23063,grep,80478,1,1,1564672,4488
+172,1572129679,2019_10_26__22_41_19.json,0,0,0,grep -v '^\@',110,660,23063,grep,80478,1,1,1564672,4488
+182,1572129681,2019_10_26__22_41_21.json,0,0,0,grep -v '^\@',110,660,23063,grep,80478,1,1,1564672,4488
+239,1572129682,2019_10_26__22_41_22.json,0,0,0,grep -v '^\@',110,660,23063,grep,80478,1,1,1564672,4488
+132,1572129684,2019_10_26__22_41_24.json,0,0,0,grep -v '^\@',110,660,23063,grep,80478,1,1,1564672,4488
+252,1572129686,2019_10_26__22_41_26.json,0,0,0,grep -v '^\@',110,660,23063,grep,80478,1,1,1564672,4488
+82,1572129696,2019_10_26__22_41_36.json,0,0,0,grep -v '^\@',137,823,23063,grep,100723,1,1,1564672,5567
+72,1572129706,2019_10_26__22_41_46.json,0,0,0,grep -v '^\@',137,823,23063,grep,100723,1,1,1564672,5567
+28,1572129715,2019_10_26__22_41_55.json,0,0,0,grep -v '^\@',137,823,23063,grep,100723,1,1,1564672,5567
+123,1572129725,2019_10_26__22_42_05.json,0,0,0,grep -v '^\@',137,823,23063,grep,100723,1,1,1564672,5567
+238,1572129736,2019_10_26__22_42_16.json,0,0,0,grep -v '^\@',139,832,23063,grep,101700,1,1,1564672,6686
+89,1572129746,2019_10_26__22_42_26.json,0,0,0,grep -v '^\@',161,986,23063,grep,120590,1,1,1564672,6687
+4,1572129756,2019_10_26__22_42_36.json,0,0,0,grep -v '^\@',161,986,23063,grep,120590,1,1,1564672,6687
+74,1572129766,2019_10_26__22_42_46.json,0,0,0,grep -v '^\@',161,986,23063,grep,120590,1,1,1564672,6687
+67,1572129777,2019_10_26__22_42_57.json,0,0,0,grep -v '^\@',161,986,23063,grep,120590,1,1,1564672,6687
+96,1572129787,2019_10_26__22_43_07.json,0,0,0,grep -v '^\@',188,1147,23063,grep,140748,1,1,1564672,7793
+163,1572129797,2019_10_26__22_43_17.json,0,0,0,grep -v '^\@',188,1147,23063,grep,140748,1,1,1564672,7793
+65,1572129807,2019_10_26__22_43_27.json,0,0,0,grep -v '^\@',188,1147,23063,grep,140748,1,1,1564672,7793
+217,1572129817,2019_10_26__22_43_37.json,0,0,0,grep -v '^\@',188,1147,23063,grep,140748,1,1,1564672,7793
+121,1572129828,2019_10_26__22_43_48.json,0,0,0,grep -v '^\@',212,1313,23063,grep,160714,1,1,1564672,8917
+164,1572129838,2019_10_26__22_43_58.json,0,0,0,grep -v '^\@',212,1313,23063,grep,160714,1,1,1564672,8917
+247,1572129848,2019_10_26__22_44_08.json,0,0,0,grep -v '^\@',212,1313,23063,grep,160714,1,1,1564672,8917
+32,1572129858,2019_10_26__22_44_18.json,0,0,0,grep -v '^\@',212,1313,23063,grep,160714,1,1,1564672,8917
+24,1572129869,2019_10_26__22_44_29.json,0,0,0,grep -v '^\@',233,1446,23063,grep,178053,1,1,1564672,10079
+126,1572129879,2019_10_26__22_44_39.json,0,0,0,grep -v '^\@',238,1474,23063,grep,180708,1,1,1564672,10080
+211,1572129888,2019_10_26__22_44_48.json,0,0,0,grep -v '^\@',238,1474,23063,grep,180708,1,1,1564672,10080
+62,1572129895,2019_10_26__22_44_55.json,0,0,0,grep -v '^\@',238,1474,23063,grep,180708,1,1,1564672,10080
+168,1572129906,2019_10_26__22_45_06.json,0,0,0,grep -v '^\@',238,1474,23063,grep,180708,1,1,1564672,10080
+222,1572129916,2019_10_26__22_45_16.json,0,0,0,grep -v '^\@',264,1637,23063,grep,200875,1,1,1564672,11173
+248,1572129926,2019_10_26__22_45_26.json,0,0,0,grep -v '^\@',264,1637,23063,grep,200875,1,1,1564672,11173
+92,1572129937,2019_10_26__22_45_37.json,0,0,0,grep -v '^\@',264,1637,23063,grep,200875,1,1,1564672,11173
+224,1572129947,2019_10_26__22_45_47.json,0,0,0,grep -v '^\@',264,1637,23063,grep,200875,1,1,1564672,11173
+198,1572129957,2019_10_26__22_45_57.json,0,0,0,grep -v '^\@',284,1805,23063,grep,220689,1,1,1564672,12318
+29,1572129967,2019_10_26__22_46_07.json,0,0,0,grep -v '^\@',284,1805,23063,grep,220689,1,1,1564672,12318
+114,1572129977,2019_10_26__22_46_17.json,0,0,0,grep -v '^\@',284,1805,23063,grep,220689,1,1,1564672,12318
+81,1572129988,2019_10_26__22_46_28.json,0,0,0,grep -v '^\@',284,1805,23063,grep,220689,1,1,1564672,12318
+133,1572129998,2019_10_26__22_46_38.json,0,0,0,grep -v '^\@',288,1825,23063,grep,223293,1,1,1564672,13439
+117,1572130008,2019_10_26__22_46_48.json,0,0,0,grep -v '^\@',310,1967,23063,grep,240784,1,1,1564672,13440
+176,1572130018,2019_10_26__22_46_58.json,0,0,0,grep -v '^\@',310,1967,23063,grep,240784,1,1,1564672,13440
+76,1572130029,2019_10_26__22_47_09.json,0,0,0,grep -v '^\@',310,1967,23063,grep,240784,1,1,1564672,13440
+192,1572130039,2019_10_26__22_47_19.json,0,0,0,grep -v '^\@',310,1967,23063,grep,240784,1,1,1564672,13440
+9,1572130049,2019_10_26__22_47_29.json,0,0,0,grep -v '^\@',310,1967,23063,grep,240784,1,1,1564672,13440
+189,1572130059,2019_10_26__22_47_39.json,0,0,0,grep -v '^\@',312,1974,23063,grep,240941,1,1,1564672,13723
+181,1572130063,2019_10_26__22_47_43.json,0,0,0,grep -v '^\@',335,2135,23063,grep,246015,1,1,1564672,14897
+11,1572130072,2019_10_26__22_47_52.json,0,0,0,grep -v '^\@',335,2135,23063,grep,246015,1,1,1564672,14897
+237,1572130082,2019_10_26__22_48_02.json,0,0,0,grep -v '^\@',335,2135,23063,grep,246015,1,1,1564672,14897
+170,1572130093,2019_10_26__22_48_13.json,0,0,0,grep -v '^\@',335,2135,23063,grep,246015,1,1,1564672,14897
+255,1572130103,2019_10_26__22_48_23.json,0,0,0,grep -v '^\@',335,2135,23063,grep,246015,1,1,1564672,14897
+41,1572130109,2019_10_26__22_48_29.json,0,0,0,grep -v '^\@',335,2135,23063,grep,246015,1,1,1564672,14897
+210,1572130111,2019_10_26__22_48_31.json,0,0,0,grep -v '^\@',358,2289,23063,grep,265942,1,1,1564672,14915
+22,1572130121,2019_10_26__22_48_41.json,0,0,0,grep -v '^\@',358,2289,23063,grep,265942,1,1,1564672,14915
+225,1572130131,2019_10_26__22_48_51.json,0,0,0,grep -v '^\@',358,2289,23063,grep,265942,1,1,1564672,14915
+84,1572130141,2019_10_26__22_49_01.json,0,0,0,grep -v '^\@',358,2289,23063,grep,265942,1,1,1564672,14915
+142,1572130151,2019_10_26__22_49_11.json,0,0,0,grep -v '^\@',358,2289,23063,grep,265942,1,1,1564672,14915
+23,1572130161,2019_10_26__22_49_21.json,0,0,0,grep -v '^\@',381,2451,23063,grep,285521,1,1,1564672,16014
+143,1572130171,2019_10_26__22_49_31.json,0,0,0,grep -v '^\@',381,2451,23063,grep,285521,1,1,1564672,16014
+94,1572130182,2019_10_26__22_49_42.json,0,0,0,grep -v '^\@',381,2451,23063,grep,285521,1,1,1564672,16014
+156,1572130192,2019_10_26__22_49_52.json,0,0,0,grep -v '^\@',381,2451,23063,grep,285521,1,1,1564672,16014
+103,1572130203,2019_10_26__22_50_03.json,0,0,0,grep -v '^\@',405,2613,23063,grep,305491,1,1,1564672,17087
+1,1572130213,2019_10_26__22_50_13.json,0,0,0,grep -v '^\@',405,2613,23063,grep,305491,1,1,1564672,17087
+131,1572130224,2019_10_26__22_50_24.json,0,0,0,grep -v '^\@',405,2613,23063,grep,305491,1,1,1564672,17087
+138,1572130234,2019_10_26__22_50_34.json,0,0,0,grep -v '^\@',405,2613,23063,grep,305491,1,1,1564672,17087
+61,1572130244,2019_10_26__22_50_44.json,0,0,0,grep -v '^\@',424,2759,23063,grep,323640,1,1,1564672,18193
+18,1572130254,2019_10_26__22_50_54.json,0,0,0,grep -v '^\@',425,2780,23063,grep,325487,1,1,1564672,18194
+135,1572130265,2019_10_26__22_51_04.json,0,0,0,grep -v '^\@',425,2780,23063,grep,325487,1,1,1564672,18194
+27,1572130275,2019_10_26__22_51_15.json,0,0,0,grep -v '^\@',425,2780,23063,grep,325487,1,1,1564672,18194
+149,1572130285,2019_10_26__22_51_25.json,0,0,0,grep -v '^\@',425,2780,23063,grep,325487,1,1,1564672,18194
+111,1572130295,2019_10_26__22_51_35.json,0,0,0,grep -v '^\@',452,2939,23063,grep,345489,1,1,1564672,19188
+250,1572130305,2019_10_26__22_51_45.json,0,0,0,grep -v '^\@',452,2939,23063,grep,345489,1,1,1564672,19188
+193,1572130315,2019_10_26__22_51_55.json,0,0,0,grep -v '^\@',452,2939,23063,grep,345489,1,1,1564672,19188
+216,1572130325,2019_10_26__22_52_05.json,0,0,0,grep -v '^\@',452,2939,23063,grep,345489,1,1,1564672,19188
+86,1572130335,2019_10_26__22_52_15.json,0,0,0,grep -v '^\@',452,2939,23063,grep,345489,1,1,1564672,19188
+249,1572130346,2019_10_26__22_52_26.json,0,0,0,grep -v '^\@',452,2939,23063,grep,345489,1,1,1564672,19188
+196,1572130356,2019_10_26__22_52_36.json,0,0,0,grep -v '^\@',482,3097,23063,grep,365408,1,1,1564672,20269
+98,1572130366,2019_10_26__22_52_46.json,0,0,0,grep -v '^\@',482,3097,23063,grep,365408,1,1,1564672,20269
+80,1572130376,2019_10_26__22_52_56.json,0,0,0,grep -v '^\@',482,3097,23063,grep,365408,1,1,1564672,20269
+59,1572130386,2019_10_26__22_53_06.json,0,0,0,grep -v '^\@',482,3097,23063,grep,365408,1,1,1564672,20269
+20,1572130397,2019_10_26__22_53_17.json,0,0,0,grep -v '^\@',505,3244,23063,grep,384722,1,1,1564672,21440
+51,1572130407,2019_10_26__22_53_27.json,0,0,0,grep -v '^\@',509,3250,23063,grep,385074,1,1,1564672,21441
+70,1572130417,2019_10_26__22_53_37.json,0,0,0,grep -v '^\@',509,3250,23063,grep,385074,1,1,1564672,21441
+105,1572130427,2019_10_26__22_53_47.json,0,0,0,grep -v '^\@',509,3250,23063,grep,385074,1,1,1564672,21441
+187,1572130437,2019_10_26__22_53_57.json,0,0,0,grep -v '^\@',509,3250,23063,grep,385074,1,1,1564672,21441
+115,1572130447,2019_10_26__22_54_07.json,0,0,0,grep -v '^\@',531,3412,23063,grep,404867,1,1,1564672,23794
+128,1572130458,2019_10_26__22_54_18.json,0,0,0,grep -v '^\@',555,3569,23063,grep,424639,1,1,1564672,23809
+162,1572130468,2019_10_26__22_54_28.json,0,0,0,grep -v '^\@',555,3569,23063,grep,424639,1,1,1564672,23809
+42,1572130478,2019_10_26__22_54_38.json,0,0,0,grep -v '^\@',555,3569,23063,grep,424639,1,1,1564672,23809
+218,1572130488,2019_10_26__22_54_48.json,0,0,0,grep -v '^\@',555,3569,23063,grep,424639,1,1,1564672,23809
+112,1572130499,2019_10_26__22_54_59.json,0,0,0,grep -v '^\@',555,3569,23063,grep,424639,1,1,1564672,23809
+160,1572130509,2019_10_26__22_55_09.json,0,0,0,grep -v '^\@',555,3569,23063,grep,424639,1,1,1564672,23809
+45,1572130519,2019_10_26__22_55_19.json,0,0,0,grep -v '^\@',555,3569,23063,grep,424639,1,1,1564672,23809
+175,1572130530,2019_10_26__22_55_30.json,0,0,0,grep -v '^\@',579,3735,23063,grep,432380,1,1,1564672,25316
+90,1572130535,2019_10_26__22_55_35.json,0,0,0,grep -v '^\@',579,3735,23063,grep,432380,1,1,1564672,25316
+68,1572130543,2019_10_26__22_55_43.json,0,0,0,grep -v '^\@',579,3735,23063,grep,432380,1,1,1564672,25316
+136,1572130554,2019_10_26__22_55_54.json,0,0,0,grep -v '^\@',579,3735,23063,grep,432380,1,1,1564672,25316
+227,1572130564,2019_10_26__22_56_04.json,0,0,0,grep -v '^\@',579,3735,23063,grep,432380,1,1,1564672,25316
+220,1572130574,2019_10_26__22_56_14.json,0,0,0,grep -v '^\@',606,3899,23063,grep,452400,1,1,1564672,26419
+236,1572130585,2019_10_26__22_56_25.json,0,0,0,grep -v '^\@',606,3899,23063,grep,452400,1,1,1564672,26419
+46,1572130595,2019_10_26__22_56_35.json,0,0,0,grep -v '^\@',606,3899,23063,grep,452400,1,1,1564672,26419
+2,1572130605,2019_10_26__22_56_45.json,0,0,0,grep -v '^\@',606,3899,23063,grep,452400,1,1,1564672,26419
+35,1572130616,2019_10_26__22_56_55.json,0,0,0,grep -v '^\@',621,4016,23063,grep,467149,1,1,1564672,27551
+209,1572130626,2019_10_26__22_57_06.json,0,0,0,grep -v '^\@',630,4061,23063,grep,472436,1,1,1564672,27552
+139,1572130636,2019_10_26__22_57_16.json,0,0,0,grep -v '^\@',630,4061,23063,grep,472436,1,1,1564672,27552
+188,1572130646,2019_10_26__22_57_26.json,0,0,0,grep -v '^\@',630,4061,23063,grep,472436,1,1,1564672,27552
+184,1572130656,2019_10_26__22_57_36.json,0,0,0,grep -v '^\@',630,4061,23063,grep,472436,1,1,1564672,27552
+56,1572130666,2019_10_26__22_57_46.json,0,0,0,grep -v '^\@',655,4225,23063,grep,492579,1,1,1564672,28621
+6,1572130676,2019_10_26__22_57_56.json,0,0,0,grep -v '^\@',655,4225,23063,grep,492579,1,1,1564672,28621
+87,1572130679,2019_10_26__22_57_59.json,0,0,0,grep -v '^\@',655,4225,23063,grep,492579,1,1,1564672,28621
+79,1572130688,2019_10_26__22_58_08.json,0,0,0,grep -v '^\@',658,4240,23063,grep,494365,1,1,1564672,29769
+88,1572133420,2019_10_26__23_43_40.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,0,2,23063,bwa,2,1,1195,5402624,2
+245,1572133430,2019_10_26__23_43_50.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,0,2,23063,bwa,2,1,1195,5402624,2
+97,1572133441,2019_10_26__23_44_01.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,0,2,23063,bwa,2,1,1195,5402624,2
+36,1572133451,2019_10_26__23_44_11.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,12,30,23063,bwa,2244,1,36704,150679552,306
+203,1572133461,2019_10_26__23_44_21.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,12,30,23063,bwa,2244,1,36704,150679552,306
+49,1572133471,2019_10_26__23_44_31.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,12,30,23063,bwa,2244,1,36704,150679552,306
+173,1572133482,2019_10_26__23_44_42.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,29,314,23063,bwa,3555,1,38461,157831168,7163
+102,1572133492,2019_10_26__23_44_52.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,42,440,23063,bwa,5865,1,37404,157831168,20074
+171,1572133502,2019_10_26__23_45_02.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,42,440,23063,bwa,5865,1,37404,157831168,20074
+206,1572133512,2019_10_26__23_45_12.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,42,440,23063,bwa,5865,1,37404,157831168,20074
+40,1572133523,2019_10_26__23_45_23.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,53,633,23063,bwa,5972,1,84594,351121408,20074
+34,1572133533,2019_10_26__23_45_33.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,69,851,23063,bwa,9208,1,37387,157831168,40320
+152,1572133543,2019_10_26__23_45_43.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,69,851,23063,bwa,9208,1,37387,157831168,40320
+159,1572133554,2019_10_26__23_45_54.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,69,851,23063,bwa,9208,1,37387,157831168,40320
+146,1572133564,2019_10_26__23_46_04.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,69,851,23063,bwa,9208,1,37387,157831168,40320
+124,1572133574,2019_10_26__23_46_14.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,101,1274,23063,bwa,12531,1,37387,157831168,60458
+246,1572133584,2019_10_26__23_46_24.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,101,1274,23063,bwa,12531,1,37387,157831168,60458
+8,1572133594,2019_10_26__23_46_34.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,101,1274,23063,bwa,12531,1,37387,157831168,60458
+155,1572133604,2019_10_26__23_46_44.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,101,1274,23063,bwa,12531,1,37387,157831168,60458
+195,1572133615,2019_10_26__23_46_55.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,120,1580,23063,bwa,13616,1,38461,157831168,71198
+165,1572133625,2019_10_26__23_47_05.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,134,1676,23063,bwa,15846,1,37453,157831168,80554
+64,1572133635,2019_10_26__23_47_15.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,134,1676,23063,bwa,15846,1,37453,157831168,80554
+234,1572133646,2019_10_26__23_47_26.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,134,1676,23063,bwa,15846,1,37453,157831168,80554
+205,1572133656,2019_10_26__23_47_36.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,144,1795,23063,bwa,15929,1,84643,351121408,80554
+118,1572133666,2019_10_26__23_47_46.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,166,2079,23063,bwa,19359,1,37387,157831168,100625
+104,1572133676,2019_10_26__23_47_56.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,166,2079,23063,bwa,19359,1,37387,157831168,100625
+197,1572133686,2019_10_26__23_48_06.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,166,2079,23063,bwa,19359,1,37387,157831168,100625
+180,1572133696,2019_10_26__23_48_16.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,166,2079,23063,bwa,19359,1,37387,157831168,100625
+254,1572133706,2019_10_26__23_48_26.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,197,2481,23063,bwa,23055,1,37387,157831168,120599
+240,1572133717,2019_10_26__23_48_37.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,197,2481,23063,bwa,23055,1,37387,157831168,120599
+212,1572133727,2019_10_26__23_48_47.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,197,2481,23063,bwa,23055,1,37387,157831168,120599
+33,1572133735,2019_10_26__23_48_55.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,197,2481,23063,bwa,23055,1,37387,157831168,120599
+39,1572133737,2019_10_26__23_48_57.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,197,2481,23063,bwa,23055,1,37387,157831168,120599
+106,1572133747,2019_10_26__23_49_07.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,220,2845,23063,bwa,24367,1,38461,157831168,140394
+5,1572133757,2019_10_26__23_49_17.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,229,2876,23063,bwa,26690,1,38455,157831168,140429
+37,1572133767,2019_10_26__23_49_27.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,229,2876,23063,bwa,26690,1,38455,157831168,140429
+144,1572133778,2019_10_26__23_49_38.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,229,2876,23063,bwa,26690,1,38455,157831168,140429
+215,1572133788,2019_10_26__23_49_48.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,242,3093,23063,bwa,26831,1,40827,286691328,140429
+235,1572133798,2019_10_26__23_49_58.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,261,3287,23063,bwa,30175,1,37423,157831168,160514
+190,1572133808,2019_10_26__23_50_08.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,261,3287,23063,bwa,30175,1,37423,157831168,160514
+179,1572133818,2019_10_26__23_50_18.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,261,3287,23063,bwa,30175,1,37423,157831168,160514
+174,1572133829,2019_10_26__23_50_29.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,261,3287,23063,bwa,30175,1,37423,157831168,160514
+125,1572133837,2019_10_26__23_50_37.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,272,3325,23063,bwa,30226,1,84613,351121408,160514
+151,1572133839,2019_10_26__23_50_39.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,276,3492,23063,bwa,30318,1,45291,190046208,160514
+78,1572133841,2019_10_26__23_50_41.json,32,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,294,3666,23063,bwa,31552,1,27312,157831168,166214
+15,1572133844,2019_10_26__23_50_44.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,297,3677,23063,bwa,33803,1,37423,157831168,166256
+47,1572133854,2019_10_26__23_50_54.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,297,3677,23063,bwa,33803,1,37423,157831168,166256
+16,1572133864,2019_10_26__23_51_04.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,297,3677,23063,bwa,33803,1,37423,157831168,166256
+119,1572133874,2019_10_26__23_51_14.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,307,3883,23063,bwa,33982,1,84613,351121408,166256
+185,1572133884,2019_10_26__23_51_24.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,326,4083,23063,bwa,36281,1,37423,157831168,186367
+55,1572133895,2019_10_26__23_51_35.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,326,4083,23063,bwa,36281,1,37423,157831168,186367
+134,1572133905,2019_10_26__23_51_45.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,326,4083,23063,bwa,36281,1,37423,157831168,186367
+183,1572133915,2019_10_26__23_51_55.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,326,4083,23063,bwa,36281,1,37423,157831168,186367
+150,1572133926,2019_10_26__23_52_05.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,358,4490,23063,bwa,38743,1,37423,157831168,206242
+19,1572133936,2019_10_26__23_52_16.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,358,4490,23063,bwa,38743,1,37423,157831168,206242
+26,1572133946,2019_10_26__23_52_26.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,358,4490,23063,bwa,38743,1,37423,157831168,206242
+199,1572133956,2019_10_26__23_52_36.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,358,4490,23063,bwa,38743,1,37423,157831168,206242
+127,1572133966,2019_10_26__23_52_46.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,373,4773,23063,bwa,40125,1,38461,157831168,210323
+116,1572133977,2019_10_26__23_52_57.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,390,4915,23063,bwa,42399,1,37357,157831168,226130
+53,1572133987,2019_10_26__23_53_07.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,390,4915,23063,bwa,42399,1,37357,157831168,226130
+157,1572133997,2019_10_26__23_53_17.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,390,4915,23063,bwa,42399,1,37357,157831168,226130
+208,1572134007,2019_10_26__23_53_27.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,390,4915,23063,bwa,42399,1,37357,157831168,226130
+58,1572134015,2019_10_26__23_53_35.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,390,4915,23063,bwa,42399,1,37357,157831168,226130
+145,1572134025,2019_10_26__23_53_45.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,422,5307,23063,bwa,45991,1,37425,157831168,245909
+66,1572134036,2019_10_26__23_53_56.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,422,5307,23063,bwa,45991,1,37425,157831168,245909
+213,1572134046,2019_10_26__23_54_06.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,422,5307,23063,bwa,45991,1,37425,157831168,245909
+130,1572134056,2019_10_26__23_54_16.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,422,5307,23063,bwa,45991,1,37425,157831168,245909
+129,1572134066,2019_10_26__23_54_26.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,422,5307,23063,bwa,45991,1,37425,157831168,245909
+154,1572134076,2019_10_26__23_54_36.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,449,5683,23063,bwa,49679,1,37425,157831168,265322
+141,1572134085,2019_10_26__23_54_45.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,450,5685,23063,bwa,49679,1,37425,157831168,265322
+207,1572134088,2019_10_26__23_54_48.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,450,5685,23063,bwa,49679,1,37425,157831168,265322
+194,1572134098,2019_10_26__23_54_58.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,450,5685,23063,bwa,49679,1,37425,157831168,265322
+228,1572134108,2019_10_26__23_55_08.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,450,5685,23063,bwa,49679,1,37425,157831168,265322
+223,1572134118,2019_10_26__23_55_18.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,460,5780,23063,bwa,49872,1,84615,351121408,265322
+108,1572134128,2019_10_26__23_55_28.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,476,6079,23063,bwa,53319,1,37557,157831168,284806
+30,1572134138,2019_10_26__23_55_38.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,476,6079,23063,bwa,53319,1,37557,157831168,284806
+12,1572134148,2019_10_26__23_55_48.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,476,6079,23063,bwa,53319,1,37557,157831168,284806
+167,1572134157,2019_10_26__23_55_57.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,476,6079,23063,bwa,53319,1,37557,157831168,284806
+137,1572134159,2019_10_26__23_55_59.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,476,6079,23063,bwa,53319,1,37557,157831168,284806
+178,1572134170,2019_10_26__23_56_10.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,508,6501,23063,bwa,56916,1,36765,157831168,304511
+109,1572134180,2019_10_26__23_56_20.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,508,6505,23063,bwa,56916,1,37425,157831168,304512
+48,1572134190,2019_10_26__23_56_30.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,508,6505,23063,bwa,56916,1,37425,157831168,304512
+57,1572134194,2019_10_26__23_56_34.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,508,6505,23063,bwa,56916,1,37425,157831168,304512
+202,1572134205,2019_10_26__23_56_44.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,508,6505,23063,bwa,56916,1,37425,157831168,304512
+54,1572134215,2019_10_26__23_56_55.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,519,6520,23063,bwa,56935,1,84615,351121408,304512
+110,1572134225,2019_10_26__23_57_05.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,537,6920,23063,bwa,59569,1,37425,157831168,316855
+93,1572134230,2019_10_26__23_57_10.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,537,6920,23063,bwa,59569,1,37425,157831168,316855
+229,1572134239,2019_10_26__23_57_19.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,537,6920,23063,bwa,59569,1,37425,157831168,316855
+100,1572134249,2019_10_26__23_57_29.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,537,6920,23063,bwa,59569,1,37425,157831168,316855
+101,1572134260,2019_10_26__23_57_40.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,537,6920,23063,bwa,59569,1,37425,157831168,316855
+10,1572134270,2019_10_26__23_57_50.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,537,6920,23063,bwa,59569,1,37425,157831168,316855
+204,1572134280,2019_10_26__23_58_00.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,568,7334,23063,bwa,62880,1,37425,157831168,336645
+251,1572134290,2019_10_26__23_58_10.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,568,7334,23063,bwa,62880,1,37425,157831168,336645
+14,1572134301,2019_10_26__23_58_21.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,568,7334,23063,bwa,62880,1,37425,157831168,336645
+60,1572134311,2019_10_26__23_58_31.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,568,7334,23063,bwa,62880,1,37425,157831168,336645
+25,1572134321,2019_10_26__23_58_41.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,580,7457,23063,bwa,62992,1,84615,351121408,336645
+147,1572134331,2019_10_26__23_58_51.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,602,7733,23063,bwa,66399,1,37557,157831168,356211
+219,1572134341,2019_10_26__23_59_01.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,602,7733,23063,bwa,66399,1,37557,157831168,356211
+241,1572134352,2019_10_26__23_59_12.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,602,7733,23063,bwa,66399,1,37557,157831168,356211
+158,1572134362,2019_10_26__23_59_22.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,602,7733,23063,bwa,66399,1,37557,157831168,356211
+113,1572134372,2019_10_26__23_59_32.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,626,8119,23063,bwa,67964,1,26092,157831168,375548
+3,1572134383,2019_10_26__23_59_43.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,629,8132,23063,bwa,70116,1,37425,157831168,375549
+21,1572134393,2019_10_26__23_59_53.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,629,8132,23063,bwa,70116,1,37425,157831168,375549
+38,1572134403,2019_10_27__00_00_03.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,629,8132,23063,bwa,70116,1,37425,157831168,375549
+120,1572134413,2019_10_27__00_00_13.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,640,8291,23063,bwa,70260,1,84615,351121408,375549
+177,1572134423,2019_10_27__00_00_23.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,661,8537,23063,bwa,72674,1,37491,157831168,395612
+166,1572134434,2019_10_27__00_00_34.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,661,8537,23063,bwa,72674,1,37491,157831168,395612
+169,1572134444,2019_10_27__00_00_44.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,661,8537,23063,bwa,72674,1,37491,157831168,395612
+107,1572134454,2019_10_27__00_00_54.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,661,8537,23063,bwa,72674,1,37491,157831168,395612
+0,1572134464,2019_10_27__00_01_04.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,699,8950,23063,bwa,75910,1,37423,157831168,415267
+75,1572134474,2019_10_27__00_01_14.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,699,8950,23063,bwa,75910,1,37423,157831168,415267
+186,1572134485,2019_10_27__00_01_25.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,699,8950,23063,bwa,75910,1,37423,157831168,415267
+232,1572134495,2019_10_27__00_01_35.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,699,8950,23063,bwa,75910,1,37423,157831168,415267
+69,1572134503,2019_10_27__00_01_43.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,699,8950,23063,bwa,75910,1,37423,157831168,415267
+214,1572134513,2019_10_27__00_01_53.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,735,9370,23063,bwa,79308,1,37357,157831168,433434
+83,1572134523,2019_10_27__00_02_03.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,735,9370,23063,bwa,79308,1,37357,157831168,433434
+191,1572134533,2019_10_27__00_02_13.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,735,9370,23063,bwa,79308,1,37357,157831168,433434
+230,1572134539,2019_10_27__00_02_19.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,735,9370,23063,bwa,79308,1,37357,157831168,433434
+221,1572134549,2019_10_27__00_02_29.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,735,9370,23063,bwa,79310,1,37357,157831168,433434
+244,1572134560,2019_10_27__00_02_40.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,769,9763,23063,bwa,82663,1,37425,157831168,453229
+44,1572134570,2019_10_27__00_02_50.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,769,9763,23063,bwa,82663,1,37425,157831168,453229
+226,1572134580,2019_10_27__00_03_00.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,769,9763,23063,bwa,82663,1,37425,157831168,453229
+161,1572134590,2019_10_27__00_03_10.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,769,9763,23063,bwa,82663,1,37425,157831168,453229
+200,1572134600,2019_10_27__00_03_20.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,789,10124,23063,bwa,83995,1,38461,157831168,470690
+17,1572134611,2019_10_27__00_03_31.json,40,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,801,10175,23063,bwa,86294,1,37423,157831168,473263

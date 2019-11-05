@@ -10,3 +10,7 @@ echo
 #some command in the container
 #make all in one of the directories 
 #or some script
+cd /home/clawpack
+
+make all
+
