@@ -77,36 +77,28 @@ CPU_TYPE=(`cat /proc/cpuinfo | grep 'model name' | cut -d":" -f 2 | sed 's/^ *//
 CPU_MHZ=(`cat /proc/cpuinfo | grep 'cpu MHz' | cut -d":" -f 2 | sed 's/^ *//'`)
 CPUTYPE=${CPU_TYPE[0]}
 CPUMHZ=${CPU_MHZ[0]}
-DISK=($(cat /proc/diskstats | grep 'd.[0-9]') )
 
-unset IFS
-length=${#DISK[@]}
-if [ $length > 1 ]
-then
-  for (( i=0 ; i < length; i++ ))
-  do
-    currdisk=(${DISK[$i]})
-    COMPLETEDREADS=`expr ${currdisk[3]} + $COMPLETEDREADS`
-    MERGEDREADS=`expr ${currdisk[4]} + $MERGEDREADS`
-    SR=`expr ${currdisk[5]} + $SR`
-    READTIME=`expr ${currdisk[6]} + $READTIME`
-    COMPLETEDWRITES=`expr ${currdisk[7]} + $COMPLETEDWRITES`
-    MERGEDWRITES=`expr ${currdisk[8]} + $MERGEDWRITES`
-    SW=`expr ${currdisk[9]} + $SW`
-    WRITETIME=`expr ${currdisk[10]} + $WRITETIME`
-  done
-else
-  DISK=(`cat /proc/diskstats | grep 'xvda1'`)
-  unset DISK[0]
-  COMPLETEDREADS=${DISK[3]}
-  MERGEDREADS=${DISK[4]}
-  SR=${DISK[5]}
-  READTIME=${DISK[6]}
-  COMPLETEDWRITES=${DISK[7]}
-  MERGEDWRITES=${DISK[8]}
-  SW=${DISK[9]}
-  WRITETIME=${DISK[10]}
-fi
+DISK="$(lsblk -nd --output NAME,TYPE | grep disk)"
+DISK=${DISK//disk/}
+DISK=($DISK)
+#DISK is now an array containing all names of our unique disk devices
+
+  unset IFS
+  length=${#DISK[@]}
+
+
+for (( i=0 ; i < length; i++ ))
+    do
+      currdisk=($(cat /proc/diskstats | grep ${DISK[i]}) )
+      COMPLETEDREADS=`expr ${currdisk[3]} + $COMPLETEDREADS`
+      MERGEDREADS=`expr ${currdisk[4]} + $MERGEDREADS`
+      SR=`expr ${currdisk[5]} + $SR`
+      READTIME=`expr ${currdisk[6]} + $READTIME`
+      COMPLETEDWRITES=`expr ${currdisk[7]} + $COMPLETEDWRITES`
+      MERGEDWRITES=`expr ${currdisk[8]} + $MERGEDWRITES`
+      SW=`expr ${currdisk[9]} + $SW`
+      WRITETIME=`expr ${currdisk[10]} + $WRITETIME`
+    done
 
 # Get network stats
 BR=0

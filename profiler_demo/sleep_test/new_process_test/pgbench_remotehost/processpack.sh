@@ -10,7 +10,8 @@ echo
 #some command in the container
 #make all in one of the directories 
 #or some script
-cd /home/clawpack
+#cd /home/clawpack
 
+#make all
+cd /home/clawpack_src/clawpack-v5.6.1/amrclaw/examples/advection_2d_blob
 make all
-
