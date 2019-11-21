@@ -1,0 +1,2 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
+0,1573772821,2019_11_14__23_04_03_delta.json,0,0,0,python /home/clawpack_src/clawpack-v5.6.1/clawutil/src/python/clawutil/runclaw.py xamr _output True None . False False None,10,16,31930,python,39,1,6990,236249088,5

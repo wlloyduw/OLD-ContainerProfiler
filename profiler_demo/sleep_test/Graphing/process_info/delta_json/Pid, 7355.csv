@@ -1,0 +1,6 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
+1,1572128504,2019_10_26__22_19_42_delta.json,0,0,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,7355,start.sh,0,1,265,2281472,1
+2,1572128627,2019_10_26__22_19_44_delta.json,0,0,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,7355,start.sh,0,1,265,2281472,1
+4,1572128750,2019_10_26__22_19_45_delta.json,0,0,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,7355,start.sh,0,1,265,2281472,1
+0,1572128873,2019_10_26__22_19_46_delta.json,0,0,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,7355,start.sh,0,1,265,2281472,1
+3,1572128997,2019_10_26__22_19_47_delta.json,0,0,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,7355,start.sh,0,1,265,2281472,1

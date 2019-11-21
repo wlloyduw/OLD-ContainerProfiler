@@ -1,0 +1,2 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
+0,1573803490,2019_11_15__07_38_10.json,0,2,17,make .htmls -f Makefile /home/ubuntu/clawpack_src/clawpack-v5.6.1/amrclaw/src/2d/Makefile.amr_2d /home/ubuntu/clawpack_src/clawpack-v5.6.1/clawutil/src/Makefile.common,0,0,23185,make,0,1,601,7208960,23
