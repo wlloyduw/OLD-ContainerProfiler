@@ -1,5 +1,6 @@
+#Creates a script based on graph_generation_config.ini to create a delta script to delta certain metrics, and avoids others.
 import argparse
-import os, sys
+import os
 import json
 import ConfigParser
 
@@ -33,7 +34,7 @@ generated_script.write("\t\ttry:\n")
 
 generated_script.write("\t\t\tnew_json_object = json.load(json_file)\n")#, object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))\n")
 generated_script.write("\t\t\tjson_array.append(new_json_object)\n")
-generated_script.write("\t\t\tnew_name= ((file_path+'/delta_json/'+file_name).split('.')[0] + '_delta.json')\n")
+generated_script.write("\t\t\tnew_name= ((file_path+'/delta_json/'+file_name).split('.json')[0] + '_delta.json')\n")
 
 generated_script.write("\t\t\tdelta_name_array.append(new_name)\n\n")
 generated_script.write("\t\texcept Exception as e:\n")

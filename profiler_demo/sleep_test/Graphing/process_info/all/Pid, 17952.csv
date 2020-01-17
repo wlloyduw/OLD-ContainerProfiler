@@ -1,5 +1,0 @@
-,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
-3,1572129445,2019_10_26__22_20_02_delta.json,0,0,0,bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C3/all.fastq,16,992,17952,bwa,652,1,61140,259653632,0
-0,1572129512,2019_10_26__22_20_03_delta.json,0,0,0,bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C3/all.fastq,29,7981,17952,bwa,4741,1,60942,259391488,1919
-2,1572129574,2019_10_26__22_20_04_delta.json,0,0,0,bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C3/all.fastq,39,13611,17952,bwa,8101,1,61351,260177920,3861
-1,1572129635,2019_10_26__22_20_05_delta.json,0,0,0,bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C3/all.fastq,49,19124,17952,bwa,11305,1,63210,260177920,5747

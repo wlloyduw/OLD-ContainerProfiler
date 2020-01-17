@@ -55,7 +55,7 @@ dfObj.insert(len(dfObj.columns) ,"Times Used", used_count)
 dfObj= dfObj.sort_values(by="Times Used", ascending=False)
 
 dfObj.index=dfObj["pId"]
-#dfObj = dfObj.loc[:, ~filtered.columns.str.contains('^Unnamed')]
+dfObj = dfObj.loc[:, ~dfObj.columns.str.contains('^Unnamed')]
 
 dfObj.to_csv("process_info.csv", sep=',')
 

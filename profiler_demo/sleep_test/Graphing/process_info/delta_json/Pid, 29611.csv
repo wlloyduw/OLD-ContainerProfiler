@@ -1,7 +1,0 @@
-,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
-1,1573802326,2019_11_15__07_10_30_delta.json,0,0,1,python /home/ubuntu/clawpack_src/clawpack-v5.6.1/visclaw/src/python/visclaw/plotclaw.py _output _plots setplot.py,298,6918,29611,python,0,16,65918,1120727040,1
-3,1573802386,2019_11_15__07_10_33_delta.json,0,0,1,python /home/ubuntu/clawpack_src/clawpack-v5.6.1/visclaw/src/python/visclaw/plotclaw.py _output _plots setplot.py,302,12908,29611,python,0,16,81602,1185140736,1
-0,1573802886,2019_11_15__07_10_59_delta.json,0,0,1,python /home/ubuntu/clawpack_src/clawpack-v5.6.1/visclaw/src/python/visclaw/plotclaw.py _output _plots setplot.py,944,63376,29611,python,0,16,97755,1251119104,1
-4,1573802946,2019_11_15__07_11_02_delta.json,0,0,1,python /home/ubuntu/clawpack_src/clawpack-v5.6.1/visclaw/src/python/visclaw/plotclaw.py _output _plots setplot.py,1068,69473,29611,python,0,16,97121,1248284672,1
-2,1573803006,2019_11_15__07_11_05_delta.json,0,0,1,python /home/ubuntu/clawpack_src/clawpack-v5.6.1/visclaw/src/python/visclaw/plotclaw.py _output _plots setplot.py,1069,75468,29611,python,0,16,98596,1254576128,1
-5,1573803446,2019_11_15__07_11_27_delta.json,0,0,1,python /home/ubuntu/clawpack_src/clawpack-v5.6.1/visclaw/src/python/visclaw/plotclaw.py _output _plots setplot.py,1567,119882,29611,python,0,16,102101,1268662272,1

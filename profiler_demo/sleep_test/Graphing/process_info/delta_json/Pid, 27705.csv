@@ -1,8 +1,0 @@
-,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
-1,1572140037,2019_10_26__22_29_57_delta.json,0,0,0,grep -v '^\@',30,161,27705,grep,20326,1,1,1564672,1118
-6,1572140159,2019_10_26__22_30_07_delta.json,0,0,0,grep -v '^\@',92,659,27705,grep,79025,1,1,1564672,4472
-5,1572140281,2019_10_26__22_30_13_delta.json,0,0,0,grep -v '^\@',168,1144,27705,grep,139022,1,1,1564672,7806
-2,1572140404,2019_10_26__22_30_15_delta.json,0,0,0,grep -v '^\@',259,1613,27705,grep,198371,1,1,1564672,11275
-4,1572140525,2019_10_26__22_30_17_delta.json,0,0,0,grep -v '^\@',309,1932,27705,grep,237843,1,1,1564672,13382
-0,1572140646,2019_10_26__22_30_19_delta.json,0,0,0,grep -v '^\@',401,2578,27705,grep,241636,1,1,1564672,14020
-3,1572140766,2019_10_26__22_30_23_delta.json,0,0,0,grep -v '^\@',451,2903,27705,grep,242763,1,1,1564672,14277

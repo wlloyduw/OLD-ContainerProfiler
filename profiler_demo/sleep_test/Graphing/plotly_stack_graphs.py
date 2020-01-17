@@ -13,6 +13,9 @@ from os import path
 import math
 
 graphing_methods=['scatter', 'bar']
+FONT_SIZE=26;
+MARGIN_SIZE=20
+TICKFONT_SIZE=20
 
 def export_graphs_as_images(fig, file_name, title):
 	file_name=file_name.split('.',1)[0]
@@ -45,7 +48,7 @@ def update_fig(figure, y_title, the_title):
 	figure.update_layout(
     annotations=[go.layout.Annotation(
             x=.5,
-            y=-0.235,
+            y=-0.29,
             showarrow=False,
             text="Time (Seconds)",
             xref="paper",
@@ -57,7 +60,7 @@ def update_fig(figure, y_title, the_title):
             y=0.5,
 			font=dict(
 		        family="Courier New, monospace",
-		        size=18,
+		        size=FONT_SIZE,
 		        color="#000000"
             ),
             showarrow=False,
@@ -69,11 +72,11 @@ def update_fig(figure, y_title, the_title):
     ],
     #autosize=True,
     margin=dict(
-        b=100
+        b=120,
     ),
 	font=dict(
         family="Courier New, monospace",
-        size=15,
+        size=MARGIN_SIZE,
         color="#000000"
     ),	
 	showlegend=True
@@ -89,11 +92,12 @@ def update_fig(figure, y_title, the_title):
     #tickvals=["2000", "20000", "27500"],
 	#ticktext=["split", "align", "merge"],
 	#tickvals=["10", "2100", "20000"],
+	domain=[0.03, 1],
 	tickangle=45, 
 	showline=True, linewidth=3, linecolor='black', mirror=True, 
 	tickfont=dict(
             family='Courier New, monospace',
-            size=14,
+            size=TICKFONT_SIZE,
             color='black'
         )
 
@@ -101,47 +105,53 @@ def update_fig(figure, y_title, the_title):
 
 	figure.update_yaxes(showline=True, linewidth=3, linecolor='black', mirror=True)
 	figure.update_layout(legend_orientation="h")
-	figure.update_layout(legend=dict(x=0, y=-.23))
-	figure.update_layout(title = { 'text':the_title, 'x':.1, 'y':.87}),
+	figure.update_layout(legend=dict(x=0, y=-.28))
+	figure.update_layout(title = { 'text':the_title, 'x':.1, 'y':.91})
 
+def normalize(data_frame):
+	data_frame["vDiskSectorWrites"] = data_frame["vDiskSectorWrites"]*512;
+	data_frame["cCpuTime"]= data_frame["cCpuTime"]/1000000000;
+	#return data_frame;
 
 
 def make_four(data_frame):
-	titles1=["Cpu Utilization", "Cpu Utilization", "Cpu Utilization", "Cpu Utilization",]
+	titles1=["Cpu Utilization", "Memory Utilization", "Network Utilization", "Disk Utilization"]
 
 
-	ytitles=["% of CPU Utilization", "% of CPU Utilization", "% of CPU Utilization", "% of CPU Utilization"]
-	applypercent=[True, True, True , True]
-	metrics1=["cCpu0TIME", "cCpu1TIME"]
+	ytitles=["% of CPU Utilization", "% Memory Usage Utilization", "# of Bytes recieved/sent", "# of Bytes Read/Written"]
+	applypercent=[True, True, False, False]
+	metrics1=["cCpuTime"]
 
-	metrics2=["cCpu2TIME", "cCpu3TIME"]
-	metrics3=["cCpu4TIME", "cCpu5TIME"]
-	metrics4=["cCpu6TIME", "cCpu7TIME"]
+	metrics2=["cMemoryUsed", "cMemoryMaxUsed"]
+	metrics3=["cNetworkBytesRecvd", "cNetworkBytesSent"]
+	metrics4=["cDiskReadBytes", "cDiskWriteBytes"]
+
 
 	
 	metricslist1 = [metrics1, metrics2, metrics3, metrics4]
 
 
-	titles2=["Cpu Utilization", "Memory Usage Utilization", "Network Utilization", "Load Avg"]
-	ytitles2=["% of CPU Utilization", "Physical Ram (KB)", "# of bytes sent/received", "System load avg (threadcount)"]
-	applypercent=[True, True, False, False]
+	titles2=["Cpu Utilization", "Memory Utilization", "Network Utilization", "Disk Utilization"]
+	ytitles2=["% of CPU Utilization", "Physical Ram (KB)", "# of bytes sent/received", "# of disk reads/writes"]
+	applypercent2=[True, False, False, False]
 
-	metrics1=["vCpuTimeUserMode", "vCpuTimeIOWait", "vCpuTimeKernelMode"]
+	metrics1=["vCpuTime"]
 	metrics2=["vMemoryFree", "vMemoryCached"]
 	metrics3=["vNetworkBytesRecvd", "vNetworkBytesSent"]
-	metrics4=["vLoadAvg"]
+	metrics4=["vDiskSuccessfulReads", "vDiskSuccessfulWrites"]
 
 
 	metricslist2 = [metrics1, metrics2, metrics3, metrics4]
 
 	full_metrics = [metricslist1, metricslist2]
+	all_percents = [applypercent, applypercent2]
 
 	fig = make_subplots(rows=2, cols=2)#, subplot_titles=titles)
 
 	titles_all = [titles1, titles2]
 	ytitles_all = [ytitles, ytitles2]
 	
-
+	folder_names=["Container_images", "VM_images"]
 	num = 0
 	for metrics in  full_metrics:
 		
@@ -156,8 +166,9 @@ def make_four(data_frame):
 
 			for el in sublist:
 
-				the_max= data_frame[sublist].max().max()
-				if applypercent[count] == True:
+				#the_max= data_frame[sublist].max().max()
+				the_max= data_frame[el].max()
+				if all_percents[num][count] == True:
 					fig.add_trace(go.Scatter(x=data_frame['currentTime'], y=data_frame[el]/the_max, name=el, hoverinfo='x+y+name'), row=current_row, col=current_col)
 					export_fig.add_trace(go.Scatter(x=data_frame['currentTime'], y=data_frame[el]/the_max, name=el, hoverinfo='x+y+name'))
 				else:
@@ -179,7 +190,7 @@ def make_four(data_frame):
 			update_fig(export_fig, ytitles_all[num][count], titles_all[num][count])
 			count +=1
 
-			export_graphs_as_images(export_fig, "cpu_{}".format(num), str(count))
+			export_graphs_as_images(export_fig, folder_names[num].format(num), str(count))
 		num +=1
 
 	
@@ -193,7 +204,7 @@ def makegraphs(metrics, dfs, percentage_flag, graph_title, x_title, y_title):
 		x=0,
 		font=dict(
 			family="Courier New, monospace",
-			size=18,
+			size=FONT_SIZE,
 			color="#7f7f7f"
 		)
 	    ),
@@ -202,7 +213,7 @@ def makegraphs(metrics, dfs, percentage_flag, graph_title, x_title, y_title):
 		    text=x_title,
 		    font=dict(
 			family="Courier New, monospace",
-			size=18,
+			size=FONT_SIZE,
 			color="#7f7f7f"
 		    )
 		)
@@ -212,7 +223,7 @@ def makegraphs(metrics, dfs, percentage_flag, graph_title, x_title, y_title):
 		    text=y_title,
 		    font=dict(
 			family="Courier New, monospace",
-			size=18,
+			size=FONT_SIZE,
 			color="#7f7f7f"
 		    )
 		)
@@ -283,4 +294,5 @@ metrics = args.read_metrics(args.metrics, data_frame)
 
 print(metrics)
 #makegraphs(metrics, dfs, args.percentage, args.title, args.x_title, args.y_title)
+normalize(data_frame);
 make_four(data_frame)

@@ -26,7 +26,7 @@ for file_name in dirs:
 		try:
 			new_json_object = json.load(json_file)
 			json_array.append(new_json_object)
-			new_name= ((file_path+'/delta_json/'+file_name).split('.')[0] + '_delta.json')
+			new_name= ((file_path+'/delta_json/'+file_name).split('.json')[0] + '_delta.json')
 			delta_name_array.append(new_name)
 
 		except Exception as e:
