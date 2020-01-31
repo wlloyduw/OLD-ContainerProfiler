@@ -65,9 +65,9 @@ for file in dirs:
         totalProcesses = len(y["pProcesses"]) - 1
 	#print y["pProcesses"][len(y["pProcesses"]) - 1]
 	
-	#for k in y["pProcesses"][totalProcesses]:
-		#if k == "pTime":
-			#r["pTime"] = y["pProcesses"][totalProcesses]["pTime"]
+	for k in y["pProcesses"][totalProcesses]:
+		if k == "pTime":
+			r["pTime"] = y["pProcesses"][totalProcesses]["pTime"]
 	
         # Loop through the process level data
         for i in xrange(totalProcesses):

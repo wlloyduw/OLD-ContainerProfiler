@@ -1,591 +1,307 @@
 ,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
-122,1564552474,2019_07_31__05_54_33_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-355,1564552475,2019_07_31__05_54_34_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-218,1564552476,2019_07_31__05_54_35_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-441,1564552477,2019_07_31__05_54_36_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-535,1564552478,2019_07_31__05_54_37_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-107,1564552479,2019_07_31__05_54_38_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-387,1564552480,2019_07_31__05_54_39_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-142,1564552481,2019_07_31__05_54_40_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-394,1564552482,2019_07_31__05_54_41_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-308,1564552483,2019_07_31__05_54_42_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-201,1564552484,2019_07_31__05_54_43_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-155,1564552485,2019_07_31__05_54_44_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-57,1564552486,2019_07_31__05_54_45_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-425,1564552487,2019_07_31__05_54_46_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-120,1564552488,2019_07_31__05_54_47_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-213,1564552489,2019_07_31__05_54_48_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-356,1564552490,2019_07_31__05_54_49_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-358,1564552491,2019_07_31__05_54_50_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-472,1564552492,2019_07_31__05_54_51_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-271,1564552493,2019_07_31__05_54_52_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-581,1564552494,2019_07_31__05_54_53_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-583,1564552495,2019_07_31__05_54_54_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-319,1564552496,2019_07_31__05_54_55_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-573,1564552498,2019_07_31__05_54_56_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-321,1564552499,2019_07_31__05_54_58_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-453,1564552500,2019_07_31__05_54_59_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-473,1564552501,2019_07_31__05_55_00_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-146,1564552502,2019_07_31__05_55_01_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-297,1564552503,2019_07_31__05_55_02_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-469,1564552504,2019_07_31__05_55_03_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-429,1564552505,2019_07_31__05_55_04_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-564,1564552506,2019_07_31__05_55_05_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-245,1564552507,2019_07_31__05_55_06_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-102,1564552508,2019_07_31__05_55_07_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-197,1564552509,2019_07_31__05_55_08_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-528,1564552510,2019_07_31__05_55_09_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-263,1564552511,2019_07_31__05_55_10_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-207,1564552512,2019_07_31__05_55_11_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-304,1564552513,2019_07_31__05_55_12_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-151,1564552514,2019_07_31__05_55_13_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-257,1564552515,2019_07_31__05_55_14_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-67,1564552516,2019_07_31__05_55_15_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-424,1564552517,2019_07_31__05_55_16_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-323,1564552518,2019_07_31__05_55_17_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-45,1564552519,2019_07_31__05_55_18_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-76,1564552520,2019_07_31__05_55_19_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-141,1564552521,2019_07_31__05_55_20_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-396,1564552522,2019_07_31__05_55_21_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-39,1564552523,2019_07_31__05_55_22_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-238,1564552524,2019_07_31__05_55_23_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-40,1564552525,2019_07_31__05_55_24_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-23,1564552526,2019_07_31__05_55_25_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-147,1564552527,2019_07_31__05_55_26_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-215,1564552528,2019_07_31__05_55_27_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-541,1564552529,2019_07_31__05_55_28_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-474,1564552530,2019_07_31__05_55_29_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-368,1564552531,2019_07_31__05_55_30_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-301,1564552532,2019_07_31__05_55_31_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-326,1564552533,2019_07_31__05_55_32_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-287,1564552534,2019_07_31__05_55_33_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-184,1564552535,2019_07_31__05_55_34_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-113,1564552536,2019_07_31__05_55_35_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-15,1564552537,2019_07_31__05_55_36_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-43,1564552538,2019_07_31__05_55_37_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-46,1564552539,2019_07_31__05_55_38_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-525,1564552540,2019_07_31__05_55_39_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-19,1564552541,2019_07_31__05_55_40_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-136,1564552542,2019_07_31__05_55_41_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-462,1564552543,2019_07_31__05_55_42_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-265,1564552544,2019_07_31__05_55_43_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-138,1564552545,2019_07_31__05_55_44_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-302,1564552546,2019_07_31__05_55_45_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-1,1564552547,2019_07_31__05_55_46_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-37,1564552548,2019_07_31__05_55_47_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-249,1564552549,2019_07_31__05_55_48_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-177,1564552550,2019_07_31__05_55_49_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-139,1564552551,2019_07_31__05_55_50_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-434,1564552552,2019_07_31__05_55_51_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-403,1564552553,2019_07_31__05_55_52_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-152,1564552554,2019_07_31__05_55_53_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-44,1564552555,2019_07_31__05_55_54_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-88,1564552556,2019_07_31__05_55_55_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-504,1564552557,2019_07_31__05_55_56_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-311,1564552558,2019_07_31__05_55_57_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-179,1564552559,2019_07_31__05_55_58_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-185,1564552560,2019_07_31__05_55_59_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-343,1564552561,2019_07_31__05_56_00_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-212,1564552562,2019_07_31__05_56_01_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-579,1564552563,2019_07_31__05_56_02_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-451,1564552564,2019_07_31__05_56_03_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-182,1564552565,2019_07_31__05_56_04_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-432,1564552566,2019_07_31__05_56_05_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-459,1564552567,2019_07_31__05_56_06_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-567,1564552568,2019_07_31__05_56_07_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-537,1564552569,2019_07_31__05_56_08_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-335,1564552570,2019_07_31__05_56_09_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-248,1564552571,2019_07_31__05_56_10_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-464,1564552572,2019_07_31__05_56_11_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-90,1564552574,2019_07_31__05_56_12_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-418,1564552575,2019_07_31__05_56_14_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-137,1564552576,2019_07_31__05_56_15_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-220,1564552577,2019_07_31__05_56_16_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-227,1564552578,2019_07_31__05_56_17_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-229,1564552579,2019_07_31__05_56_18_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-222,1564552580,2019_07_31__05_56_19_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-350,1564552581,2019_07_31__05_56_20_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-488,1564552582,2019_07_31__05_56_21_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-140,1564552583,2019_07_31__05_56_22_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-91,1564552584,2019_07_31__05_56_23_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-170,1564552585,2019_07_31__05_56_24_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-176,1564552586,2019_07_31__05_56_25_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-260,1564552587,2019_07_31__05_56_26_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-539,1564552588,2019_07_31__05_56_27_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-354,1564552589,2019_07_31__05_56_28_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-254,1564552590,2019_07_31__05_56_29_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-32,1564552591,2019_07_31__05_56_30_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-211,1564552592,2019_07_31__05_56_31_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-95,1564552593,2019_07_31__05_56_32_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-428,1564552594,2019_07_31__05_56_33_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-275,1564552595,2019_07_31__05_56_34_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-125,1564552596,2019_07_31__05_56_35_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-316,1564552597,2019_07_31__05_56_36_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-251,1564552598,2019_07_31__05_56_37_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-84,1564552599,2019_07_31__05_56_38_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-273,1564552600,2019_07_31__05_56_39_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-543,1564552601,2019_07_31__05_56_40_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-24,1564552602,2019_07_31__05_56_41_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-414,1564552603,2019_07_31__05_56_42_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-223,1564552604,2019_07_31__05_56_43_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-475,1564552605,2019_07_31__05_56_44_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-439,1564552606,2019_07_31__05_56_45_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-487,1564552607,2019_07_31__05_56_46_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-74,1564552608,2019_07_31__05_56_47_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-124,1564552609,2019_07_31__05_56_48_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-303,1564552610,2019_07_31__05_56_49_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-281,1564552611,2019_07_31__05_56_50_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-495,1564552612,2019_07_31__05_56_51_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-436,1564552613,2019_07_31__05_56_52_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-86,1564552614,2019_07_31__05_56_53_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-379,1564552615,2019_07_31__05_56_54_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-322,1564552616,2019_07_31__05_56_55_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-68,1564552617,2019_07_31__05_56_56_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-523,1564552618,2019_07_31__05_56_57_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-133,1564552619,2019_07_31__05_56_58_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-92,1564552620,2019_07_31__05_56_59_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-126,1564552621,2019_07_31__05_57_00_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-391,1564552622,2019_07_31__05_57_01_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-448,1564552623,2019_07_31__05_57_02_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-121,1564552624,2019_07_31__05_57_03_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-382,1564552625,2019_07_31__05_57_04_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-262,1564552626,2019_07_31__05_57_05_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-398,1564552627,2019_07_31__05_57_06_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-489,1564552628,2019_07_31__05_57_07_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-576,1564552629,2019_07_31__05_57_08_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-89,1564552630,2019_07_31__05_57_09_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-363,1564552631,2019_07_31__05_57_10_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-426,1564552632,2019_07_31__05_57_11_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-244,1564552633,2019_07_31__05_57_12_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-556,1564552634,2019_07_31__05_57_13_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-49,1564552635,2019_07_31__05_57_14_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-585,1564552636,2019_07_31__05_57_15_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-79,1564552637,2019_07_31__05_57_16_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-259,1564552638,2019_07_31__05_57_17_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-162,1564552639,2019_07_31__05_57_18_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-18,1564552640,2019_07_31__05_57_19_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-466,1564552641,2019_07_31__05_57_20_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-427,1564552642,2019_07_31__05_57_21_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-191,1564552643,2019_07_31__05_57_22_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-59,1564552644,2019_07_31__05_57_23_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-225,1564552645,2019_07_31__05_57_24_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-384,1564552646,2019_07_31__05_57_25_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-109,1564552648,2019_07_31__05_57_26_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-446,1564552649,2019_07_31__05_57_28_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-221,1564552650,2019_07_31__05_57_29_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-570,1564552651,2019_07_31__05_57_30_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-187,1564552652,2019_07_31__05_57_31_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-160,1564552653,2019_07_31__05_57_32_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-342,1564552654,2019_07_31__05_57_33_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-346,1564552655,2019_07_31__05_57_34_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-228,1564552656,2019_07_31__05_57_35_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-498,1564552657,2019_07_31__05_57_36_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-361,1564552658,2019_07_31__05_57_37_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-419,1564552659,2019_07_31__05_57_38_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-582,1564552660,2019_07_31__05_57_39_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-234,1564552661,2019_07_31__05_57_40_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-11,1564552662,2019_07_31__05_57_41_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-337,1564552663,2019_07_31__05_57_42_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-404,1564552664,2019_07_31__05_57_43_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-506,1564552665,2019_07_31__05_57_44_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-71,1564552666,2019_07_31__05_57_45_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-524,1564552667,2019_07_31__05_57_46_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-501,1564552668,2019_07_31__05_57_47_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-26,1564552669,2019_07_31__05_57_48_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-360,1564552670,2019_07_31__05_57_49_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-329,1564552671,2019_07_31__05_57_50_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-455,1564552672,2019_07_31__05_57_51_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-108,1564552673,2019_07_31__05_57_52_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-10,1564552674,2019_07_31__05_57_53_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-85,1564552675,2019_07_31__05_57_54_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-208,1564552676,2019_07_31__05_57_55_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-233,1564552677,2019_07_31__05_57_56_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-344,1564552678,2019_07_31__05_57_57_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-56,1564552679,2019_07_31__05_57_58_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-500,1564552680,2019_07_31__05_57_59_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-65,1564552681,2019_07_31__05_58_00_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-305,1564552682,2019_07_31__05_58_01_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-190,1564552683,2019_07_31__05_58_02_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-22,1564552684,2019_07_31__05_58_03_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-231,1564552685,2019_07_31__05_58_04_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-317,1564552686,2019_07_31__05_58_05_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-471,1564552687,2019_07_31__05_58_06_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-276,1564552688,2019_07_31__05_58_07_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-334,1564552689,2019_07_31__05_58_08_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-530,1564552690,2019_07_31__05_58_09_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-173,1564552691,2019_07_31__05_58_10_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-552,1564552692,2019_07_31__05_58_11_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-496,1564552693,2019_07_31__05_58_12_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-291,1564552694,2019_07_31__05_58_13_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-416,1564552695,2019_07_31__05_58_14_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-417,1564552696,2019_07_31__05_58_15_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-397,1564552697,2019_07_31__05_58_16_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-241,1564552698,2019_07_31__05_58_17_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-54,1564552699,2019_07_31__05_58_18_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-269,1564552700,2019_07_31__05_58_19_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-519,1564552701,2019_07_31__05_58_20_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-480,1564552702,2019_07_31__05_58_21_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-145,1564552703,2019_07_31__05_58_22_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-390,1564552704,2019_07_31__05_58_23_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-224,1564552705,2019_07_31__05_58_24_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-111,1564552706,2019_07_31__05_58_25_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-347,1564552707,2019_07_31__05_58_26_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-283,1564552708,2019_07_31__05_58_27_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-458,1564552709,2019_07_31__05_58_28_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-565,1564552710,2019_07_31__05_58_29_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-87,1564552711,2019_07_31__05_58_30_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-510,1564552712,2019_07_31__05_58_31_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-255,1564552713,2019_07_31__05_58_32_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-584,1564552714,2019_07_31__05_58_33_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-312,1564552715,2019_07_31__05_58_34_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-8,1564552716,2019_07_31__05_58_35_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-550,1564552717,2019_07_31__05_58_36_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-196,1564552718,2019_07_31__05_58_37_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-289,1564552719,2019_07_31__05_58_38_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-333,1564552720,2019_07_31__05_58_39_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-33,1564552721,2019_07_31__05_58_40_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-529,1564552722,2019_07_31__05_58_41_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-512,1564552723,2019_07_31__05_58_42_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-521,1564552724,2019_07_31__05_58_43_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-490,1564552726,2019_07_31__05_58_44_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-150,1564552727,2019_07_31__05_58_46_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-544,1564552728,2019_07_31__05_58_47_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-282,1564552729,2019_07_31__05_58_48_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-118,1564552730,2019_07_31__05_58_49_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-577,1564552731,2019_07_31__05_58_50_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-371,1564552732,2019_07_31__05_58_51_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-575,1564552733,2019_07_31__05_58_52_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-422,1564552734,2019_07_31__05_58_53_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-365,1564552735,2019_07_31__05_58_54_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-443,1564552736,2019_07_31__05_58_55_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-72,1564552737,2019_07_31__05_58_56_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-252,1564552738,2019_07_31__05_58_57_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-401,1564552739,2019_07_31__05_58_58_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-399,1564552740,2019_07_31__05_58_59_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-452,1564552741,2019_07_31__05_59_00_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-470,1564552742,2019_07_31__05_59_01_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-4,1564552743,2019_07_31__05_59_02_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-374,1564552744,2019_07_31__05_59_03_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-332,1564552745,2019_07_31__05_59_04_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-580,1564552746,2019_07_31__05_59_05_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-180,1564552747,2019_07_31__05_59_06_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-571,1564552748,2019_07_31__05_59_07_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-534,1564552749,2019_07_31__05_59_08_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-96,1564552750,2019_07_31__05_59_09_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-99,1564552751,2019_07_31__05_59_10_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-38,1564552752,2019_07_31__05_59_11_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-247,1564552753,2019_07_31__05_59_12_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-105,1564552754,2019_07_31__05_59_13_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-331,1564552755,2019_07_31__05_59_14_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-132,1564552756,2019_07_31__05_59_15_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-516,1564552757,2019_07_31__05_59_16_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-115,1564552758,2019_07_31__05_59_17_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-58,1564552759,2019_07_31__05_59_18_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-236,1564552760,2019_07_31__05_59_19_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-423,1564552761,2019_07_31__05_59_20_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-554,1564552762,2019_07_31__05_59_21_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-154,1564552763,2019_07_31__05_59_22_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-431,1564552764,2019_07_31__05_59_23_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-376,1564552765,2019_07_31__05_59_24_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-277,1564552766,2019_07_31__05_59_25_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-405,1564552767,2019_07_31__05_59_26_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-433,1564552768,2019_07_31__05_59_27_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-219,1564552769,2019_07_31__05_59_28_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-9,1564552770,2019_07_31__05_59_29_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-367,1564552771,2019_07_31__05_59_30_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-532,1564552772,2019_07_31__05_59_31_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-442,1564552773,2019_07_31__05_59_32_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-199,1564552774,2019_07_31__05_59_33_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-194,1564552775,2019_07_31__05_59_34_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-268,1564552776,2019_07_31__05_59_35_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-21,1564552777,2019_07_31__05_59_36_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-362,1564552778,2019_07_31__05_59_37_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-175,1564552779,2019_07_31__05_59_38_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-375,1564552780,2019_07_31__05_59_39_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-477,1564552781,2019_07_31__05_59_40_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-42,1564552782,2019_07_31__05_59_41_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-226,1564552783,2019_07_31__05_59_42_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-366,1564552784,2019_07_31__05_59_43_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-5,1564552785,2019_07_31__05_59_44_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-420,1564552786,2019_07_31__05_59_45_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-307,1564552787,2019_07_31__05_59_46_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-135,1564552788,2019_07_31__05_59_47_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-181,1564552789,2019_07_31__05_59_48_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-578,1564552790,2019_07_31__05_59_49_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-285,1564552791,2019_07_31__05_59_50_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-560,1564552792,2019_07_31__05_59_51_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-78,1564552793,2019_07_31__05_59_52_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-171,1564552794,2019_07_31__05_59_53_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-310,1564552795,2019_07_31__05_59_54_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-392,1564552797,2019_07_31__05_59_55_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-450,1564552798,2019_07_31__05_59_57_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-104,1564552799,2019_07_31__05_59_58_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-119,1564552800,2019_07_31__05_59_59_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-476,1564552801,2019_07_31__06_00_00_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-243,1564552802,2019_07_31__06_00_01_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-286,1564552803,2019_07_31__06_00_02_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-377,1564552804,2019_07_31__06_00_03_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-294,1564552805,2019_07_31__06_00_04_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-17,1564552806,2019_07_31__06_00_05_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-267,1564552807,2019_07_31__06_00_06_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-568,1564552808,2019_07_31__06_00_07_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-0,1564552809,2019_07_31__06_00_08_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-110,1564552810,2019_07_31__06_00_09_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-106,1564552811,2019_07_31__06_00_10_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-292,1564552812,2019_07_31__06_00_11_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-128,1564552813,2019_07_31__06_00_12_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-486,1564552814,2019_07_31__06_00_13_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-195,1564552815,2019_07_31__06_00_14_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-364,1564552816,2019_07_31__06_00_15_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-515,1564552817,2019_07_31__06_00_16_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-27,1564552818,2019_07_31__06_00_17_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-485,1564552819,2019_07_31__06_00_18_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-340,1564552820,2019_07_31__06_00_19_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-189,1564552821,2019_07_31__06_00_20_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-203,1564552822,2019_07_31__06_00_21_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-100,1564552823,2019_07_31__06_00_22_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-338,1564552824,2019_07_31__06_00_23_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-2,1564552825,2019_07_31__06_00_24_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-148,1564552826,2019_07_31__06_00_25_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-36,1564552827,2019_07_31__06_00_26_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-586,1564552828,2019_07_31__06_00_27_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-216,1564552829,2019_07_31__06_00_28_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-60,1564552830,2019_07_31__06_00_29_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-117,1564552831,2019_07_31__06_00_30_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-193,1564552832,2019_07_31__06_00_31_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-402,1564552833,2019_07_31__06_00_32_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-349,1564552834,2019_07_31__06_00_33_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-440,1564552835,2019_07_31__06_00_34_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-479,1564552836,2019_07_31__06_00_35_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-98,1564552837,2019_07_31__06_00_36_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-330,1564552838,2019_07_31__06_00_37_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-388,1564552839,2019_07_31__06_00_38_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-437,1564552840,2019_07_31__06_00_39_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-264,1564552841,2019_07_31__06_00_40_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-540,1564552842,2019_07_31__06_00_41_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-386,1564552843,2019_07_31__06_00_42_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-438,1564552844,2019_07_31__06_00_43_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-309,1564552845,2019_07_31__06_00_44_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-143,1564552846,2019_07_31__06_00_45_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-370,1564552847,2019_07_31__06_00_46_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-101,1564552848,2019_07_31__06_00_47_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-230,1564552849,2019_07_31__06_00_48_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-94,1564552850,2019_07_31__06_00_49_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-542,1564552851,2019_07_31__06_00_50_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-169,1564552852,2019_07_31__06_00_51_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-210,1564552853,2019_07_31__06_00_52_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-395,1564552854,2019_07_31__06_00_53_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-192,1564552855,2019_07_31__06_00_54_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-82,1564552856,2019_07_31__06_00_55_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-548,1564552857,2019_07_31__06_00_56_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-114,1564552858,2019_07_31__06_00_57_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-408,1564552859,2019_07_31__06_00_58_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-250,1564552860,2019_07_31__06_00_59_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-293,1564552861,2019_07_31__06_01_00_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-30,1564552862,2019_07_31__06_01_01_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-50,1564552863,2019_07_31__06_01_02_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-299,1564552864,2019_07_31__06_01_03_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-298,1564552865,2019_07_31__06_01_04_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-315,1564552866,2019_07_31__06_01_05_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-131,1564552867,2019_07_31__06_01_06_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-16,1564552868,2019_07_31__06_01_07_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-378,1564552869,2019_07_31__06_01_08_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-62,1564552870,2019_07_31__06_01_09_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-508,1564552871,2019_07_31__06_01_10_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-353,1564552872,2019_07_31__06_01_11_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-29,1564552874,2019_07_31__06_01_12_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-373,1564552875,2019_07_31__06_01_13_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-28,1564552876,2019_07_31__06_01_15_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-35,1564552877,2019_07_31__06_01_16_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-306,1564552878,2019_07_31__06_01_17_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-61,1564552879,2019_07_31__06_01_18_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-256,1564552880,2019_07_31__06_01_19_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-383,1564552881,2019_07_31__06_01_20_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-34,1564552882,2019_07_31__06_01_21_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-204,1564552883,2019_07_31__06_01_22_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-359,1564552884,2019_07_31__06_01_23_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-497,1564552885,2019_07_31__06_01_24_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-242,1564552886,2019_07_31__06_01_25_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-547,1564552887,2019_07_31__06_01_26_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-348,1564552888,2019_07_31__06_01_27_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-209,1564552889,2019_07_31__06_01_28_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-561,1564552890,2019_07_31__06_01_29_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-64,1564552891,2019_07_31__06_01_30_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-153,1564552892,2019_07_31__06_01_31_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-502,1564552893,2019_07_31__06_01_32_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-553,1564552894,2019_07_31__06_01_33_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-483,1564552895,2019_07_31__06_01_34_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-63,1564552896,2019_07_31__06_01_35_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-566,1564552897,2019_07_31__06_01_36_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-314,1564552898,2019_07_31__06_01_37_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-206,1564552899,2019_07_31__06_01_38_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-278,1564552900,2019_07_31__06_01_39_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-164,1564552901,2019_07_31__06_01_40_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-320,1564552902,2019_07_31__06_01_41_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-240,1564552903,2019_07_31__06_01_42_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-284,1564552904,2019_07_31__06_01_43_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-258,1564552905,2019_07_31__06_01_44_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-53,1564552906,2019_07_31__06_01_45_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-313,1564552907,2019_07_31__06_01_46_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-157,1564552908,2019_07_31__06_01_47_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-246,1564552909,2019_07_31__06_01_48_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-545,1564552910,2019_07_31__06_01_49_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-48,1564552911,2019_07_31__06_01_50_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-73,1564552912,2019_07_31__06_01_51_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-7,1564552913,2019_07_31__06_01_52_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-513,1564552914,2019_07_31__06_01_53_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-511,1564552915,2019_07_31__06_01_54_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-351,1564552916,2019_07_31__06_01_55_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-174,1564552917,2019_07_31__06_01_56_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-12,1564552918,2019_07_31__06_01_57_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-14,1564552919,2019_07_31__06_01_58_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-266,1564552920,2019_07_31__06_01_59_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-555,1564552921,2019_07_31__06_02_00_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-352,1564552922,2019_07_31__06_02_01_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-112,1564552923,2019_07_31__06_02_02_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-558,1564552924,2019_07_31__06_02_03_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-81,1564552925,2019_07_31__06_02_04_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-412,1564552926,2019_07_31__06_02_05_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-41,1564552927,2019_07_31__06_02_06_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-413,1564552928,2019_07_31__06_02_07_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-572,1564552929,2019_07_31__06_02_08_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-198,1564552930,2019_07_31__06_02_09_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-522,1564552931,2019_07_31__06_02_10_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-514,1564552932,2019_07_31__06_02_11_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-380,1564552933,2019_07_31__06_02_12_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-546,1564552934,2019_07_31__06_02_13_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-295,1564552935,2019_07_31__06_02_14_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-467,1564552936,2019_07_31__06_02_15_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-93,1564552937,2019_07_31__06_02_16_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-200,1564552938,2019_07_31__06_02_17_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-239,1564552939,2019_07_31__06_02_18_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-562,1564552940,2019_07_31__06_02_19_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-183,1564552941,2019_07_31__06_02_20_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-172,1564552942,2019_07_31__06_02_21_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-551,1564552943,2019_07_31__06_02_22_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-372,1564552944,2019_07_31__06_02_23_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-166,1564552945,2019_07_31__06_02_24_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-232,1564552946,2019_07_31__06_02_25_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-66,1564552947,2019_07_31__06_02_26_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-290,1564552949,2019_07_31__06_02_27_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-536,1564552950,2019_07_31__06_02_29_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-6,1564552951,2019_07_31__06_02_30_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-463,1564552952,2019_07_31__06_02_31_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-411,1564552953,2019_07_31__06_02_32_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-381,1564552954,2019_07_31__06_02_33_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-503,1564552955,2019_07_31__06_02_34_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-400,1564552956,2019_07_31__06_02_35_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-237,1564552957,2019_07_31__06_02_36_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-178,1564552958,2019_07_31__06_02_37_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-478,1564552959,2019_07_31__06_02_38_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-444,1564552960,2019_07_31__06_02_39_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-156,1564552961,2019_07_31__06_02_40_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-491,1564552962,2019_07_31__06_02_41_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-527,1564552963,2019_07_31__06_02_42_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-83,1564552964,2019_07_31__06_02_43_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-494,1564552965,2019_07_31__06_02_44_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-253,1564552966,2019_07_31__06_02_45_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-261,1564552967,2019_07_31__06_02_46_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-588,1564552968,2019_07_31__06_02_47_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-415,1564552969,2019_07_31__06_02_48_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-127,1564552970,2019_07_31__06_02_49_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-569,1564552971,2019_07_31__06_02_50_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-409,1564552972,2019_07_31__06_02_51_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-406,1564552973,2019_07_31__06_02_52_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-51,1564552974,2019_07_31__06_02_53_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-518,1564552975,2019_07_31__06_02_54_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-457,1564552976,2019_07_31__06_02_55_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-186,1564552977,2019_07_31__06_02_56_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-533,1564552978,2019_07_31__06_02_57_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-460,1564552979,2019_07_31__06_02_58_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-393,1564552980,2019_07_31__06_02_59_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-134,1564552981,2019_07_31__06_03_00_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-461,1564552982,2019_07_31__06_03_01_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-123,1564552983,2019_07_31__06_03_02_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-492,1564552984,2019_07_31__06_03_03_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-493,1564552985,2019_07_31__06_03_04_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-70,1564552986,2019_07_31__06_03_05_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-484,1564552987,2019_07_31__06_03_06_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-279,1564552988,2019_07_31__06_03_07_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-357,1564552989,2019_07_31__06_03_08_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-509,1564552990,2019_07_31__06_03_09_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-341,1564552991,2019_07_31__06_03_10_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-456,1564552992,2019_07_31__06_03_11_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-507,1564552993,2019_07_31__06_03_12_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-77,1564552994,2019_07_31__06_03_13_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-75,1564552995,2019_07_31__06_03_14_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-214,1564552996,2019_07_31__06_03_15_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-318,1564552997,2019_07_31__06_03_16_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-430,1564552998,2019_07_31__06_03_17_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-202,1564552999,2019_07_31__06_03_18_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-589,1564553000,2019_07_31__06_03_19_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-482,1564553001,2019_07_31__06_03_20_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-217,1564553002,2019_07_31__06_03_21_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-481,1564553003,2019_07_31__06_03_22_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-327,1564553004,2019_07_31__06_03_23_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-339,1564553005,2019_07_31__06_03_24_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-205,1564553006,2019_07_31__06_03_25_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-149,1564553007,2019_07_31__06_03_26_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-159,1564553008,2019_07_31__06_03_27_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-465,1564553009,2019_07_31__06_03_28_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-300,1564553010,2019_07_31__06_03_29_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-13,1564553011,2019_07_31__06_03_30_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-410,1564553012,2019_07_31__06_03_31_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-270,1564553013,2019_07_31__06_03_32_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-563,1564553014,2019_07_31__06_03_33_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-454,1564553015,2019_07_31__06_03_34_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-345,1564553016,2019_07_31__06_03_35_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-421,1564553017,2019_07_31__06_03_36_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-336,1564553018,2019_07_31__06_03_37_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-235,1564553019,2019_07_31__06_03_38_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-531,1564553020,2019_07_31__06_03_39_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-328,1564553021,2019_07_31__06_03_40_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-324,1564553023,2019_07_31__06_03_41_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-557,1564553024,2019_07_31__06_03_43_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-103,1564553025,2019_07_31__06_03_44_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-468,1564553026,2019_07_31__06_03_45_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-369,1564553027,2019_07_31__06_03_46_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-144,1564553028,2019_07_31__06_03_47_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-505,1564553029,2019_07_31__06_03_48_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-325,1564553030,2019_07_31__06_03_49_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-167,1564553031,2019_07_31__06_03_50_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-445,1564553032,2019_07_31__06_03_51_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-407,1564553033,2019_07_31__06_03_52_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-280,1564553034,2019_07_31__06_03_53_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-587,1564553035,2019_07_31__06_03_54_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-188,1564553036,2019_07_31__06_03_55_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-158,1564553037,2019_07_31__06_03_56_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-385,1564553038,2019_07_31__06_03_57_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-129,1564553039,2019_07_31__06_03_58_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-435,1564553040,2019_07_31__06_03_59_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-168,1564553041,2019_07_31__06_04_00_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-31,1564553042,2019_07_31__06_04_01_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-288,1564553043,2019_07_31__06_04_02_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-272,1564553044,2019_07_31__06_04_03_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-517,1564553045,2019_07_31__06_04_04_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-3,1564553046,2019_07_31__06_04_05_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-97,1564553047,2019_07_31__06_04_06_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-499,1564553048,2019_07_31__06_04_07_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-526,1564553049,2019_07_31__06_04_08_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-47,1564553050,2019_07_31__06_04_09_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-55,1564553051,2019_07_31__06_04_10_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-52,1564553052,2019_07_31__06_04_11_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-80,1564553053,2019_07_31__06_04_12_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-447,1564553054,2019_07_31__06_04_13_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-165,1564553055,2019_07_31__06_04_14_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-296,1564553056,2019_07_31__06_04_15_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-389,1564553057,2019_07_31__06_04_16_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-130,1564553058,2019_07_31__06_04_17_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-274,1564553059,2019_07_31__06_04_18_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-20,1564553060,2019_07_31__06_04_19_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-163,1564553061,2019_07_31__06_04_20_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-449,1564553062,2019_07_31__06_04_21_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-25,1564553063,2019_07_31__06_04_22_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-549,1564553064,2019_07_31__06_04_23_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-520,1564553065,2019_07_31__06_04_24_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-559,1564553066,2019_07_31__06_04_25_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-69,1564553067,2019_07_31__06_04_26_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-116,1564553068,2019_07_31__06_04_27_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-538,1564553069,2019_07_31__06_04_28_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-161,1564553070,2019_07_31__06_04_29_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
-574,1564553071,2019_07_31__06_04_30_delta.json,0,0,0,/bin/bash /data/processpack.sh,0,0,6,processpack.sh,2,1,760,18817024,1
+69,1575250325,2019_12_02__01_31_02_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+303,1575250392,2019_12_02__01_31_04_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+264,1575250452,2019_12_02__01_31_05_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+241,1575250519,2019_12_02__01_31_06_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+55,1575250580,2019_12_02__01_31_07_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+127,1575250640,2019_12_02__01_31_09_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+118,1575250702,2019_12_02__01_31_10_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+74,1575250763,2019_12_02__01_31_11_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+211,1575250824,2019_12_02__01_31_12_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+73,1575250884,2019_12_02__01_31_14_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+126,1575250946,2019_12_02__01_31_15_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+26,1575251007,2019_12_02__01_31_16_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+11,1575251070,2019_12_02__01_31_17_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+249,1575251131,2019_12_02__01_31_18_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+269,1575251191,2019_12_02__01_31_20_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+248,1575251253,2019_12_02__01_31_21_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+58,1575251323,2019_12_02__01_31_22_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+279,1575251384,2019_12_02__01_31_23_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+121,1575251445,2019_12_02__01_31_25_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+298,1575251506,2019_12_02__01_31_26_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+254,1575251568,2019_12_02__01_31_27_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+214,1575251628,2019_12_02__01_31_28_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+100,1575251691,2019_12_02__01_31_30_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+189,1575251752,2019_12_02__01_31_31_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+135,1575251813,2019_12_02__01_31_32_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+224,1575251874,2019_12_02__01_31_33_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+166,1575251935,2019_12_02__01_31_35_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+176,1575251996,2019_12_02__01_31_36_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+305,1575252056,2019_12_02__01_31_37_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+235,1575252121,2019_12_02__01_31_38_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+289,1575252183,2019_12_02__01_31_40_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+277,1575252244,2019_12_02__01_31_41_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+70,1575252305,2019_12_02__01_31_42_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+169,1575252367,2019_12_02__01_31_44_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+273,1575252429,2019_12_02__01_31_45_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+253,1575252489,2019_12_02__01_31_47_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+101,1575252554,2019_12_02__01_31_49_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+178,1575252615,2019_12_02__01_31_51_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+19,1575252676,2019_12_02__01_31_55_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,397,2220032,10
+222,1575252739,2019_12_02__01_32_05_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,281,2220032,10
+99,1575252800,2019_12_02__01_32_16_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,281,2220032,10
+91,1575252862,2019_12_02__01_32_25_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,281,2220032,10
+141,1575252924,2019_12_02__01_32_32_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,281,2220032,10
+250,1575252988,2019_12_02__01_32_41_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,281,2220032,10
+142,1575253051,2019_12_02__01_32_52_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,281,2220032,10
+288,1575253112,2019_12_02__01_33_02_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,281,2220032,10
+97,1575253173,2019_12_02__01_33_12_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,281,2220032,10
+88,1575253235,2019_12_02__01_33_22_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,281,2220032,10
+206,1575253296,2019_12_02__01_33_31_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,281,2220032,10
+193,1575253364,2019_12_02__01_33_41_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+76,1575253426,2019_12_02__01_33_52_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+236,1575253487,2019_12_02__01_34_02_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+28,1575253548,2019_12_02__01_34_12_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+284,1575253614,2019_12_02__01_34_22_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+113,1575253675,2019_12_02__01_34_33_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+21,1575253735,2019_12_02__01_34_43_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+218,1575253800,2019_12_02__01_34_53_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+191,1575253869,2019_12_02__01_34_58_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+228,1575253937,2019_12_02__01_35_09_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+79,1575254002,2019_12_02__01_35_19_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+86,1575254062,2019_12_02__01_35_29_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+66,1575254125,2019_12_02__01_35_39_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+272,1575254186,2019_12_02__01_35_49_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+202,1575254251,2019_12_02__01_35_59_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+16,1575254314,2019_12_02__01_36_10_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+227,1575254382,2019_12_02__01_36_20_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+219,1575254444,2019_12_02__01_36_30_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+137,1575254506,2019_12_02__01_36_40_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+109,1575254569,2019_12_02__01_36_51_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+268,1575254634,2019_12_02__01_37_01_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+129,1575254694,2019_12_02__01_37_11_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+15,1575254755,2019_12_02__01_37_20_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+96,1575254815,2019_12_02__01_37_30_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+14,1575254876,2019_12_02__01_37_41_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+34,1575254944,2019_12_02__01_37_51_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+37,1575255008,2019_12_02__01_38_02_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+35,1575255069,2019_12_02__01_38_12_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+46,1575255130,2019_12_02__01_38_22_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+156,1575255190,2019_12_02__01_38_32_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+12,1575255253,2019_12_02__01_38_42_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+296,1575255314,2019_12_02__01_38_52_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+80,1575255378,2019_12_02__01_39_03_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+301,1575255446,2019_12_02__01_39_13_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+114,1575255507,2019_12_02__01_39_23_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+251,1575255568,2019_12_02__01_39_33_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+4,1575255628,2019_12_02__01_39_44_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+283,1575255690,2019_12_02__01_39_54_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+261,1575255751,2019_12_02__01_40_03_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+256,1575255820,2019_12_02__01_40_14_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+281,1575255886,2019_12_02__01_40_24_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+260,1575255955,2019_12_02__01_40_34_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+45,1575256015,2019_12_02__01_40_44_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+148,1575256084,2019_12_02__01_40_54_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+171,1575256145,2019_12_02__01_41_04_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+31,1575256205,2019_12_02__01_41_14_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+143,1575256274,2019_12_02__01_41_24_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+225,1575256339,2019_12_02__01_41_34_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+160,1575256399,2019_12_02__01_41_44_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+217,1575256466,2019_12_02__01_41_55_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+161,1575256535,2019_12_02__01_42_05_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+92,1575256596,2019_12_02__01_42_07_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+258,1575256657,2019_12_02__01_42_09_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+133,1575256725,2019_12_02__01_42_11_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+130,1575256786,2019_12_02__01_42_15_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+98,1575256847,2019_12_02__01_42_26_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+9,1575256916,2019_12_02__01_42_36_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+215,1575256978,2019_12_02__01_42_46_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+44,1575257046,2019_12_02__01_42_56_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+65,1575257113,2019_12_02__01_43_06_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+144,1575257174,2019_12_02__01_43_17_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+286,1575257243,2019_12_02__01_43_27_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+238,1575257306,2019_12_02__01_43_38_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+275,1575257366,2019_12_02__01_43_47_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+247,1575257427,2019_12_02__01_43_58_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+111,1575257488,2019_12_02__01_44_08_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+158,1575257549,2019_12_02__01_44_19_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+223,1575257610,2019_12_02__01_44_30_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+124,1575257680,2019_12_02__01_44_40_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+138,1575257740,2019_12_02__01_44_50_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+155,1575257807,2019_12_02__01_45_00_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+257,1575257874,2019_12_02__01_45_11_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+152,1575257936,2019_12_02__01_45_21_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+67,1575257997,2019_12_02__01_45_31_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+117,1575258057,2019_12_02__01_45_41_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+52,1575258123,2019_12_02__01_45_51_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+0,1575258185,2019_12_02__01_46_01_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+149,1575258246,2019_12_02__01_46_12_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+47,1575258307,2019_12_02__01_46_22_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+42,1575258369,2019_12_02__01_46_31_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+112,1575258429,2019_12_02__01_46_42_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+177,1575258496,2019_12_02__01_46_52_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+246,1575258556,2019_12_02__01_47_02_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+278,1575258618,2019_12_02__01_47_12_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+110,1575258680,2019_12_02__01_47_23_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+182,1575258749,2019_12_02__01_47_33_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+85,1575258813,2019_12_02__01_47_43_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+62,1575258873,2019_12_02__01_47_53_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+157,1575258942,2019_12_02__01_48_03_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+263,1575259006,2019_12_02__01_48_13_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+8,1575259067,2019_12_02__01_48_23_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+209,1575259136,2019_12_02__01_48_32_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+163,1575259203,2019_12_02__01_48_43_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+56,1575259264,2019_12_02__01_48_53_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+119,1575259324,2019_12_02__01_49_03_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+187,1575259394,2019_12_02__01_49_13_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+82,1575259461,2019_12_02__01_49_23_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+40,1575259521,2019_12_02__01_49_30_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+90,1575259581,2019_12_02__01_49_40_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+232,1575259642,2019_12_02__01_49_42_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+271,1575259703,2019_12_02__01_49_44_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+186,1575259764,2019_12_02__01_49_45_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+146,1575259830,2019_12_02__01_49_47_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+83,1575259897,2019_12_02__01_49_50_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+95,1575259957,2019_12_02__01_50_00_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+120,1575260017,2019_12_02__01_50_10_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+32,1575260077,2019_12_02__01_50_21_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+181,1575260138,2019_12_02__01_50_30_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+267,1575260199,2019_12_02__01_50_32_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+81,1575260269,2019_12_02__01_50_34_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+30,1575260330,2019_12_02__01_50_45_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+293,1575260390,2019_12_02__01_50_55_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+199,1575260451,2019_12_02__01_51_05_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+297,1575260511,2019_12_02__01_51_16_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+105,1575260581,2019_12_02__01_51_26_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+173,1575260642,2019_12_02__01_51_35_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+27,1575260702,2019_12_02__01_51_46_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+255,1575260767,2019_12_02__01_51_56_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+136,1575260829,2019_12_02__01_52_06_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+167,1575260890,2019_12_02__01_52_17_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+10,1575260960,2019_12_02__01_52_27_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+291,1575261021,2019_12_02__01_52_37_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+147,1575261082,2019_12_02__01_52_48_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+63,1575261143,2019_12_02__01_52_57_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+94,1575261203,2019_12_02__01_53_08_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+140,1575261273,2019_12_02__01_53_18_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+64,1575261341,2019_12_02__01_53_29_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+39,1575261409,2019_12_02__01_53_39_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+259,1575261471,2019_12_02__01_53_44_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+78,1575261531,2019_12_02__01_53_46_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+72,1575261592,2019_12_02__01_53_48_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+159,1575261652,2019_12_02__01_53_49_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+174,1575261712,2019_12_02__01_53_51_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+2,1575261777,2019_12_02__01_53_53_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+208,1575261846,2019_12_02__01_53_59_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+244,1575261906,2019_12_02__01_54_10_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+198,1575261966,2019_12_02__01_54_19_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+6,1575262028,2019_12_02__01_54_30_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+220,1575262096,2019_12_02__01_54_40_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+172,1575262158,2019_12_02__01_54_51_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+274,1575262219,2019_12_02__01_55_00_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+165,1575262280,2019_12_02__01_55_11_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+243,1575262344,2019_12_02__01_55_22_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+84,1575262405,2019_12_02__01_55_32_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+170,1575262467,2019_12_02__01_55_42_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+151,1575262530,2019_12_02__01_55_52_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+104,1575262591,2019_12_02__01_56_02_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+89,1575262660,2019_12_02__01_56_12_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+197,1575262721,2019_12_02__01_56_22_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+270,1575262783,2019_12_02__01_56_33_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+304,1575262844,2019_12_02__01_56_43_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+17,1575262906,2019_12_02__01_56_53_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+43,1575262969,2019_12_02__01_57_03_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+185,1575263029,2019_12_02__01_57_14_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+24,1575263092,2019_12_02__01_57_23_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+190,1575263152,2019_12_02__01_57_28_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+61,1575263213,2019_12_02__01_57_34_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+57,1575263273,2019_12_02__01_57_44_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+153,1575263334,2019_12_02__01_57_54_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+229,1575263394,2019_12_02__01_58_04_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+132,1575263454,2019_12_02__01_58_14_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+183,1575263514,2019_12_02__01_58_25_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+245,1575263574,2019_12_02__01_58_35_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+36,1575263634,2019_12_02__01_58_45_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+265,1575263695,2019_12_02__01_58_55_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+205,1575263755,2019_12_02__01_59_05_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+103,1575263815,2019_12_02__01_59_15_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+226,1575263875,2019_12_02__01_59_25_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+25,1575263935,2019_12_02__01_59_35_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+150,1575263995,2019_12_02__01_59_46_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+29,1575264055,2019_12_02__01_59_56_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+239,1575264115,2019_12_02__02_00_07_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+115,1575264176,2019_12_02__02_00_17_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+48,1575264236,2019_12_02__02_00_27_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+242,1575264296,2019_12_02__02_00_30_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+108,1575264356,2019_12_02__02_00_35_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+1,1575264417,2019_12_02__02_00_45_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+262,1575264477,2019_12_02__02_00_56_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+53,1575264537,2019_12_02__02_01_06_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+233,1575264597,2019_12_02__02_01_16_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+252,1575264657,2019_12_02__02_01_19_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+154,1575264717,2019_12_02__02_01_21_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+194,1575264778,2019_12_02__02_01_31_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+266,1575264838,2019_12_02__02_01_41_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+87,1575264898,2019_12_02__02_01_52_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+54,1575264958,2019_12_02__02_02_01_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+139,1575265018,2019_12_02__02_02_11_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+134,1575265078,2019_12_02__02_02_21_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+210,1575265139,2019_12_02__02_02_32_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+302,1575265199,2019_12_02__02_02_42_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+203,1575265259,2019_12_02__02_02_53_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+60,1575265319,2019_12_02__02_03_03_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+201,1575265379,2019_12_02__02_03_13_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+116,1575265439,2019_12_02__02_03_23_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+33,1575265499,2019_12_02__02_03_34_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+299,1575265559,2019_12_02__02_03_44_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+179,1575265619,2019_12_02__02_03_54_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+282,1575265679,2019_12_02__02_04_04_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+68,1575265739,2019_12_02__02_04_14_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+164,1575265799,2019_12_02__02_04_24_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+41,1575265859,2019_12_02__02_04_34_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+180,1575265920,2019_12_02__02_04_44_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+221,1575265980,2019_12_02__02_04_55_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+77,1575266040,2019_12_02__02_05_05_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+230,1575266100,2019_12_02__02_05_15_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+287,1575266160,2019_12_02__02_05_26_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+195,1575266220,2019_12_02__02_05_36_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+212,1575266280,2019_12_02__02_05_46_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+196,1575266340,2019_12_02__02_05_57_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+125,1575266400,2019_12_02__02_06_07_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+216,1575266460,2019_12_02__02_06_17_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+290,1575266520,2019_12_02__02_06_28_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+300,1575266580,2019_12_02__02_06_38_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+240,1575266640,2019_12_02__02_06_48_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+204,1575266700,2019_12_02__02_06_59_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+38,1575266760,2019_12_02__02_07_09_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+188,1575266821,2019_12_02__02_07_19_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+59,1575266881,2019_12_02__02_07_29_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+231,1575266941,2019_12_02__02_07_39_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+20,1575267001,2019_12_02__02_07_49_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+292,1575267061,2019_12_02__02_07_58_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+23,1575267121,2019_12_02__02_08_09_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+51,1575267181,2019_12_02__02_08_19_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+13,1575267241,2019_12_02__02_08_29_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+237,1575267301,2019_12_02__02_08_40_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+93,1575267361,2019_12_02__02_08_49_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+184,1575267422,2019_12_02__02_08_51_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+192,1575267482,2019_12_02__02_08_53_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+3,1575267542,2019_12_02__02_09_04_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+276,1575267602,2019_12_02__02_09_14_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+107,1575267663,2019_12_02__02_09_24_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+102,1575267723,2019_12_02__02_09_34_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+49,1575267783,2019_12_02__02_09_45_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+294,1575267843,2019_12_02__02_09_55_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+285,1575267903,2019_12_02__02_10_05_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+145,1575267964,2019_12_02__02_10_15_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+295,1575268024,2019_12_02__02_10_25_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+168,1575268084,2019_12_02__02_10_36_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+207,1575268144,2019_12_02__02_10_46_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+162,1575268204,2019_12_02__02_10_56_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+131,1575268264,2019_12_02__02_11_06_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+71,1575268324,2019_12_02__02_11_16_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+234,1575268384,2019_12_02__02_11_18_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+22,1575268444,2019_12_02__02_11_25_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+175,1575268505,2019_12_02__02_11_35_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+7,1575268565,2019_12_02__02_11_43_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+75,1575268625,2019_12_02__02_11_47_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+18,1575268685,2019_12_02__02_11_55_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+106,1575268746,2019_12_02__02_11_57_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+5,1575268806,2019_12_02__02_11_59_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+213,1575268866,2019_12_02__02_12_08_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+128,1575268926,2019_12_02__02_12_19_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+123,1575268986,2019_12_02__02_12_29_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+122,1575269047,2019_12_02__02_12_39_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+200,1575269107,2019_12_02__02_12_49_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+50,1575269167,2019_12_02__02_13_00_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
+280,1575269227,2019_12_02__02_13_10_delta.json,0,1,0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0,0,6,start.sh,0,1,280,2220032,10
