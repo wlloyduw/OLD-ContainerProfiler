@@ -187,6 +187,17 @@ for (( i=0 ; i < length; i++ ))
   T_VM_2=$(date +%s%3N)
   let T_VM=$T_VM_2-$T_VM_1
 
+	
+ #experimental pagefault
+ filedata() {
+    volumes=$(cat $1 | grep $2)
+    tr " " "\n" <<< $volumes | tail -n1 
+   
+ }
+ pgfault=$(filedata "/proc/vmstat" "pgfault")
+ majorpgfault=$(filedata "/proc/vmstat" "pgmajfault")
+ #
+
   
   echo "  \"currentTime\": $epochtime," >> $outfile
   echo "  \"vMetricType\": \"VM level\"," >> $outfile
@@ -199,6 +210,8 @@ for (( i=0 ; i < length; i++ ))
   echo "  \"vDiskSectorWrites\": $SW," >> $outfile
   echo "  \"vNetworkBytesRecvd\": $BR," >> $outfile
   echo "  \"vNetworkBytesSent\": $BT," >> $outfile
+  echo "  \"vPgFault\": $pgfault," >> $outfile
+  echo "  \"vMajorPageFault\": $majorpgfault," >> $outfile
   echo "  \"vCpuTimeUserMode\": $CPUUSR," >> $outfile
   echo "  \"tvCpuTimeUserMode\": $T_CPUUSR," >> $outfile
   echo "  \"vCpuTimeKernelMode\": $CPUKRN," >> $outfile
