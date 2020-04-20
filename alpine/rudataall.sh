@@ -190,12 +190,12 @@ for (( i=0 ; i < length; i++ ))
 	
  #experimental pagefault
  filedata() {
-    volumes=$(cat $1 | grep $2)
-    tr " " "\n" <<< $volumes | tail -n1 
-   
+     volumes=$(cat $1 | grep -m 1 -i $2)
+     tr " " "\n" <<< $volumes | tail -n1 
+    
  }
- pgfault=$(filedata "/proc/vmstat" "pgfault")
- majorpgfault=$(filedata "/proc/vmstat" "pgmajfault")
+ vPGFault=$(filedata "/proc/vmstat" "pgfault")
+ vMajorPGFault=$(filedata "/proc/vmstat" "pgmajfault")
  #
 
   
@@ -210,8 +210,8 @@ for (( i=0 ; i < length; i++ ))
   echo "  \"vDiskSectorWrites\": $SW," >> $outfile
   echo "  \"vNetworkBytesRecvd\": $BR," >> $outfile
   echo "  \"vNetworkBytesSent\": $BT," >> $outfile
-  echo "  \"vPgFault\": $pgfault," >> $outfile
-  echo "  \"vMajorPageFault\": $majorpgfault," >> $outfile
+  echo "  \"vPgFault\": $vPGFault," >> $outfile
+  echo "  \"vMajorPageFault\": $vMajorPGFault," >> $outfile
   echo "  \"vCpuTimeUserMode\": $CPUUSR," >> $outfile
   echo "  \"tvCpuTimeUserMode\": $T_CPUUSR," >> $outfile
   echo "  \"vCpuTimeKernelMode\": $CPUKRN," >> $outfile
@@ -372,11 +372,17 @@ then
   T_CNT_2=$(date +%s%3N)
   let T_CNT=$T_CNT_2-T_CNT_1
 
+  cPGFault=$(filedata "/sys/fs/cgroup/memory/memory.stat" "pgfault")
+  cMajorPGFault=$(filedata "/sys/fs/cgroup/memory/memory.stat" "pgmajfault")
+
+
   # print container level data
   echo "  \"cTime\": $T_CNT, " >> $outfile
   echo "  \"cCpuTime\": $CPUTOTC," >> $outfile     # ns
   echo "  \"tcCpuTime\": $T_CPUTOTC," >> $outfile
   echo "  \"cNumProcessors\": $NUMPROS," >> $outfile
+  echo "  \"cPGFault\": $cPGFault," >> $outfile
+  echo "  \"cMajorPGFault\": $cMajorPGFault," >> $outfile
   echo "  \"tcNumProcessors\": $T_NUMPROS," >> $outfile
   echo "  \"cProcessorStats\": {" >> $outfile
   for (( i=0; i<NUMPROS; i++ ))
@@ -449,6 +455,8 @@ then
 
 	  # Get process disk stats
 	  DELAYIO=${STAT[41]}
+	  pPGFault=$(cat /proc/$pid/stat | cut -d' ' -f 10)
+	  pMajorPGFault=$(cat /proc/$pid/stat | cut -d' ' -f 12)
 
 	  # Get process memory stats
 	  VSIZE=${STAT[22]} # in Bytes
@@ -466,6 +474,8 @@ then
 	  echo "  \"pCpuTimeUserMode\": $UTIME, " >> $outfile         # cs
 	  echo "  \"pCpuTimeKernelMode\": $STIME, " >> $outfile       # cs
 	  echo "  \"pChildrenUserMode\": $CUTIME, " >> $outfile       # cs
+	  echo "  \"pPGFault\": $pPGFault, " >> $outfile 
+	  echo "  \"pMajorPGFault\": $pMajorPGFault, " >> $outfile 
 	  echo "  \"pChildrenKernelMode\": $CSTIME, " >> $outfile     # cs
 	  echo "  \"pVoluntaryContextSwitches\": $VCSWITCH, " >> $outfile
 	  echo "  \"pNonvoluntaryContextSwitches\": $NVCSSWITCH, " >> $outfile
