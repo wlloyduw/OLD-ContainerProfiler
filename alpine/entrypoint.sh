@@ -13,22 +13,20 @@ if [ ! -d "$OUTPUTDIR" ]; then
 	${@}
 	exit
 fi
+echo "Command is: ${@}"
 #run command goes in background
 ${@} &
 #capture the pid of the run command
 rpid=$!
 #kill the runcmd if there is an error
 trap "kill -9 $rpid 2> /dev/null" EXIT
-SECONDS=0
+SECONDS=0 && rudataall.sh  > "${OUTPUTDIR}/$(date '+%Y_%m_%d__%H_%M_%S').json"
 while [ -n "$rpid" -a -e /proc/$rpid ]
 do
     if [ "$SECONDS" -ge "$DELTA" ]; then
-      today=`date '+%Y_%m_%d__%H_%M_%S'`;
-      file_name="$today.json"
-      rudataall.sh  > "${OUTPUTDIR}/${file_name}"
-      SECONDS=0
+      SECONDS=0 && rudataall.sh  > "${OUTPUTDIR}/$(date '+%Y_%m_%d__%H_%M_%S').json"
     fi
     sleep 1
 done
-
+rudataall.sh  > "${OUTPUTDIR}/$(date '+%Y_%m_%d__%H_%M_%S').json"
 
