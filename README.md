@@ -8,14 +8,11 @@ University of Washington Tacoma
          * [Why should I use the Container Profiler?](#why-should-i-use-the-Container-Profiler)
       * [Usage](#usage)
          * [How do I use Container Profiler on my own container?](#how-do-i-use-the-Container-Profiler-on-my-own-container)
-      * [Common problems](#common-problems)
-         * [Maybe a section for Alpine?]
       * [Miscellaneous](#miscellaneous)
          * [How should I reference the Container Profiler if I use it?](#how-should-i-reference-the-Container-Profiler-if-i-use-it)
    * [MANUAL](#manual)
       * [GENERAL INFORMATION](#general-information)
          * [Overview: Running the Container Profiler](#overview-running-the-container-Profiler)
-      * [Setting up the Container Profiler](#Setting-up-the-contaniner-Profiler)
       * [Container Profiler](#container-profiler-1)
          * [Function Reference](#function-reference)
          * [Metrics Description](#metrics-description)
@@ -39,8 +36,11 @@ University of Washington Tacoma
 
 ### How do I use the Container Profiler on my own container?
 
-## Common problems
+1\. Install the Container Profiler
 
+2\. Set up the Container Profiler scripts to use your Container by editing the processpack.sh script and the runDockerProfiler.sh.
+
+3\. Start the Profiler by running the runDockerProfile.sh script.
 ## Miscellaneous
 ### How should I reference the Container Profiler if I use it?
 
@@ -50,18 +50,6 @@ The Container Profiler can be used as a tool to profile an application or workfl
 
 In order to use the Container Profiler, a container with an application/workflow/script to be run and profiled is needed.
 ### Overview: Running the Container Profiler
-
-1\. Install the Container Profiler
-
-2\. Set up the Container Profiler scripts to use your Container
-
-3\. Start the Profiler
-## Installing the Container Profiler
-
-
-
-
-## Setting up the contaniner Profiler
 
 
 ## Container Profiler
