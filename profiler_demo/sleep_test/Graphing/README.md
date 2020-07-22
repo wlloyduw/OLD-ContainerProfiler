@@ -13,7 +13,7 @@
       * [Graphing](#graphing)
 	 * [Metrics](#metrics)
 	 * [Flags](#flags)
-	 * [Example Runs](#example-runs
+	 * [Example Runs](#example-runs)
 
 # FAQ
 ## General
