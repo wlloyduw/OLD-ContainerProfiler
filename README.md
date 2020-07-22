@@ -74,8 +74,6 @@ ContainerProfiler includes bash scripts **rudataall.sh** to profile the resource
 
 **GitHub:**    https://github.com/wlloyduw/ContainerProfiler
 
-**Video:**     https://youtu.be/X-_7zqeyffk
-
 **License:**   Copyright.
 
 
@@ -193,10 +191,31 @@ https://github.com/wlloyduw/ContainerProfiler/blob/master/metrics_description_fo
 ## Tutorial: Profiling a Container
 
 ## Video Demonstration
-
+**Video:**     https://youtu.be/X-_7zqeyffk
 ## Install the Container Profiler
+```bash
+git clone https://github.com/wlloyduw/ContainerProfiler
+```
 
 ## Preparing the Container Profiler
+Navigate to /ContainerProfile/profiler_demo/sleep_test
+
+
+Open "Dockerfile"
+  3a) Make sure the line "ENTRYPOINT ["/entrypoint_test.sh", "6000"]" is commented out. It should already be.
+  3b) Keep the first run line ("RUN apt-get install update") but delete the other "RUN" commands.
+  3c) Insert your own RUN commands to set up your ubuntu enviroment.  Make sure to use "install -y" for each command that  requires the user to confirm "yes" to proceed. (?? you want to use the extra disk space. ??)
+
+Open "runDockerProfile.sh". The line starting with "DOCKERCMD=" is doing a lot of stuff.  It is building the command that will start the docker container and mounts the directory on the host machine that is running the tool to the data directory in the container.  This is necessary in order to get the json ouput files containing all your metrics onto your host machine.  Otherwise they would go away when the container dies.
+
+After the "-v" in that line you should see "host_path:data", change the "host_path" to the path on your machine where the tool is running (Can use "pwd" in terminal to confirm the directory is correct).
+
+At the end of this command you should see "sysbench" telling the docker to start the sysbench image.  You need to change this to 'container-name', whatever you chose in step 4.
+
+Open "process_pack.sh".  This file contains the bash commands that will be executed in the container.  It contains the commands for sysbench and stress-ng by default.  Delete them and enter your own commands for the job you'd like to profile.
+
 
 ## Starting the Profiler
+
+run "sudo ./runDockerProfile" at the terminal and see that it is creating json ouput files.
 
