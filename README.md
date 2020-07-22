@@ -16,7 +16,7 @@ University of Washington Tacoma
       * [GENERAL INFORMATION](#general-information)
          * [Overview: Running the Container Profiler](#overview-running-the-container-Profiler)
       * [Setting up the Container Profiler](#Setting-up-the-contaniner-Profiler)
-      * [Container Profiler](#container-profiler)
+      * [Container Profiler](#container-profiler-1)
          * [Function Reference](#function-reference)
          * [Metrics Description](#metrics-description)
          * [VM Level Metrics](#vm-level-metrics)
@@ -190,7 +190,7 @@ https://github.com/wlloyduw/ContainerProfiler/blob/master/metrics_description_fo
 
        
 
-## Tutorial - Profiling a Container
+## Tutorial: Profiling a Container
 
 ## Video Demonstration
 
