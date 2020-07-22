@@ -8,41 +8,36 @@ University of Washington Tacoma
          * [Why should I use the Container Profiler?](#why-should-i-use-the-Container-Profiler)
       * [Usage](#usage)
          * [How do I use Container Profiler on my own container?](#how-do-i-use-the-Container-Profiler-on-my-own-container)
-         * [Where are the sample containers and workflows?](#where-are-the-sample-workflows-and-datasets)
       * [Common problems](#common-problems)
          * [Maybe a section for Alpine?]
       * [Miscellaneous](#miscellaneous)
          * [How should I reference the Container Profiler if I use it?](#how-should-i-reference-the-Container-Profiler-if-i-use-it)
    * [MANUAL](#manual)
       * [GENERAL INFORMATION](#general-information)
-         * [Overview: Running the Container Profiler](#overview-running-cProfiler)
-      * [Setting up the Container Profiler](#setting up)
-      * [Container Profiler](#cProfiler)
+         * [Overview: Running the Container Profiler](#overview-running-the-container-Profiler)
+      * [Setting up the Container Profiler](#Setting-up-the-contaniner-Profiler)
+      * [Container Profiler](#container-profiler)
          * [Function Reference](#function-reference)
-         * [Metric Description](#metric-description)
+         * [Metrics Description](#metrics-description)
          * [VM Level Metrics](#vm-level-metrics)
          * [Container Level Metrics](#container-level-metrics)
          * [Process Level Metrics](#process-level-metrics)
-      * [Tutorial - Profiling a Container](#tutorial-profiling-container)
-         * [Overview](#overview-1)
-         * [Video Demonstration](#video-demo)
-         * [Install the Container Profiler](#Install-Profiler)
-         * [Preparing the Container Profiler](#prepapring-profiler)
-         * [Starting the Profiler](#starting-profiler)
+      * [Tutorial - Profiling a Container](#tutorial-profiling-a-container)
+         * [Video Demonstration](#video-demonstration)
+         * [Install the Container Profiler](#Install-the-Container-Profiler)
+         * [Preparing the Container Profiler](#Preparing-the-Container-Profiler)
+         * [Starting the Profiler](#starting-the-profiler)
 
 # FAQ
 ## General
 
-### Why should I use use the Container Profiler?
+### Why should I use the Container Profiler?
 
 #### Easy to use profiling for applications or workflows in a container. 
 
 ## Usage
 
 ### How do I use the Container Profiler on my own container?
-
-### Where are the sample workflows and datasets?
-Bwb includes a set of sample workflows. These are found under the /workflows directory. Data are typically **NOT** included with the containers. This maximizes the portability of the containers for different workflows and makes them easier to download. Instead we use of the provided downloadURL widget to download files from an external source (eg. a Google drive) for use with the containers. This is the mechanism that we use in all our examples. You can use our widget to download the data or look at the widget parameters to find the URL of the files and download them yourself. Then you can save these files if you wish and use them directly.
 
 ## Common problems
 
@@ -66,7 +61,7 @@ In order to use the Container Profiler, a container with an application/workflow
 
 
 
-## Setting up the cotaniner Profiler
+## Setting up the contaniner Profiler
 
 
 ## Container Profiler
@@ -86,32 +81,32 @@ ContainerProfiler includes bash scripts **rudataall.sh** to profile the resource
 
 
 
-##Function Reference
+## Function Reference
 ======
 
 **deltav2**.sh calculates the delta from 2 json files produced by **rudataall.sh**
 
 It writes the deltas to stdout in json format and the missing fields to stderr
 
-####Delta Script Usage:
+#### Delta Script Usage:
 ```bash
 deltav2.sh file1.json file2.json 2>missing.txt 1>delta.json
 ```
 Test file and scripts are found in testFiles
 
-####Description
+#### Description
 Basically it loops through file1 to find key : numeric_value pairs and store them in an associative array. It then loops through file2 to print out the json elements and calculate deltas. Missing values in file1 are printed here and a second key numericValue associative array is mad. A third loop then searches through the first associative array to fine missing values in file2. 
 
 As long as there is no more than one key : value pair per line in the json files and the key is unique (i.e. doesn't depend on the structure of the higher order json objects), the script should work fine. It is tolerant of order permutations, new or different fields, and missing lines but depends on file2 being valid json.
 
-##Metrics Description 
+## Metrics Description 
 =======
 
 The text below describes the metrics captured by the script **rudataall.sh** for profiling resource utilization on the 
 virtual machine (VM) level, container level and process level. A complete metrics description spreadsheet can be found at 
 https://github.com/wlloyduw/ContainerProfiler/blob/master/metrics_description_for_rudataall.xlsx 
 
-##VM Level Metrics
+## VM Level Metrics
 ----------------
 
 
@@ -152,7 +147,7 @@ https://github.com/wlloyduw/ContainerProfiler/blob/master/metrics_description_fo
       
           
           
-##Container Level Metrics
+## Container Level Metrics
 ----------------
 
 | **Attribute** | **Description** |
@@ -175,7 +170,7 @@ https://github.com/wlloyduw/ContainerProfiler/blob/master/metrics_description_fo
 
         
 
-##Process Level Metrics
+## Process Level Metrics
 ----------------
 
 | **Attribute** | **Description** |
@@ -197,13 +192,11 @@ https://github.com/wlloyduw/ContainerProfiler/blob/master/metrics_description_fo
 
 ## Tutorial - Profiling a Container
 
-###Overview
+## Video Demonstration
 
-###Video Demonstration
+## Install the Container Profiler
 
-###Install the Container Profiler
+## Preparing the Container Profiler
 
-###Preparing the Container Profiler
-
-###Starting the Profiler
+## Starting the Profiler
 
