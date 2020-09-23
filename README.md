@@ -126,6 +126,8 @@ https://github.com/wlloyduw/ContainerProfiler/blob/master/metrics_description_fo
 | vNetworkBytesRecvd | Network Bytes received assumes eth0 in bytes |
 | vNetworkBytesSent | Network Bytes written assumes eth0 in bytes |
 | vLoadAvg | The system load average as an average number of running plus waiting threads over the last minute |
+| vPgFault | type of exception raised by computer hardware when a running program accesses a memory page that is not currently mapped by the memory management unit (MMU) into the virtual address space of a process|
+| vMajorPageFault | Major page faults are expected when a prdocess starts or needs to read in additional data and in these cases do not indicate a problem condition |
 | vId | VM ID (default is "unavailable") |
 | currentTime | Number of seconds (s) that have elapsed since January 1, 1970 (midnight UTC/GMT) |
 
@@ -154,7 +156,7 @@ https://github.com/wlloyduw/ContainerProfiler/blob/master/metrics_description_fo
 | cId | Container ID |
 
 
-        
+##
 
 ## Process Level Metrics
 ----------------
@@ -185,9 +187,8 @@ https://github.com/wlloyduw/ContainerProfiler/blob/master/metrics_description_fo
 git clone https://github.com/wlloyduw/ContainerProfiler
 ```
 
-## Preparing the Container Profiler
+## Preparing the Container Profiler - Method 1
 Navigate to /ContainerProfile/profiler_demo/sleep_test
-
 
 Open "Dockerfile"
   3a) Make sure the line "ENTRYPOINT ["/entrypoint_test.sh", "6000"]" is commented out. It should already be.
@@ -201,6 +202,35 @@ After the "-v" in that line you should see "host_path:data", change the "host_pa
 At the end of this command you should see "sysbench" telling the docker to start the sysbench image.  You need to change this to 'container-name', whatever you chose in step 4.
 
 Open "process_pack.sh".  This file contains the bash commands that will be executed in the container.  It contains the commands for sysbench and stress-ng by default.  Delete them and enter your own commands for the job you'd like to profile.
+
+## Preparing the Container Profiler - Method 2
+An alternate method to using the container profiler by downloading the alpine/ubuntu containerized version.
+
+To build
+
+docker build -t biodepot/profiler:alpine_3.7 .
+To use the alpine container
+
+docker run --rm  -it -v $PWD:/.cprofiles  biodepot/profiler:alpine_3.7 sleep 10
+If you leave out the volume mapping
+
+-v <host_dir>:/.cprofiles
+then no profiling will take place. Otherwise the json files will appear in <host_dir>
+
+The delta is set to 1 second by default. This can be changed by changing the DELTA environment variable i.e.
+
+The following command collects data every 2 seconds
+
+docker run --rm  -it -v $PWD:/.cprofiles -e DELTA=2 biodepot/profiler:alpine_3.7 sleep 10
+Finally, internally the json files are stored in the /.cprofiles directory. This can be changed using the OUTPUTDIR environment variable i.e. to have the json files written internally to /var/profiles:
+
+docker run --rm  -it -v $PWD:/var/profiles -e OUTPUTDIR='/var/profiles' biodepot/profiler:alpine_3.7 sleep 10
+This option is included on the off-chance that the default /.cprofiles is in use for something else.
+
+
+## Graph Visualizations
+
+The container profiler offers scripts that can be used to graph JSON output from the container profilers.
 
 
 ## Starting the Profiler

@@ -6,7 +6,7 @@ echo "The fisrt process: "
 echo ""
 echo 
 echo
-sysbench --test=cpu --cpu-max-prime=200000  --time=600 run
+sleep 60
 
 
 #echo

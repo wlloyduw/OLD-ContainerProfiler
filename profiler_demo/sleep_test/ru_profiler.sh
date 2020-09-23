@@ -23,12 +23,12 @@ echo "processname: " $pname
 ppid=$(pgrep -x "${pname}") 
 echo "parent process ID: " $ppid
 
-mydir=(`date '+%Y_%m_%d__%H_%M_%S'`)
-mkdir -m 777 /data/${mydir}
 
 #Keep track of min and max profiling time
 let min=2**31
 let max=0
+
+#echo "" > "/data/sample_times.txt"
 
 while true; do
   cpids=($(get_cpid $ppid | xargs))
@@ -37,7 +37,7 @@ while true; do
     today=`date '+%Y_%m_%d__%H_%M_%S'`;
     file_name="$today.json"
     t1=$(date '+%s%3N')
-    /data/rudataall.sh  > "/data/${mydir}/${file_name}"
+    /data/rudataall.sh -c >"/data/${file_name}"
     t2=$(date '+%s%3N')
 
     #Test to see if we have a new min or max profiling time
@@ -49,6 +49,10 @@ while true; do
     then
       let max=$profile_time
     fi
+
+    #Write out the time it takes to collect each sample to another file
+
+    #echo "$profile_time" >> "/data/sample_times.txt"
     
     #Difference between desired sampling rate and time used to run profiling script
     let sleep_time=$deltaT-$profile_time
@@ -67,4 +71,3 @@ echo '**************************************************************************
 echo 'Max profiling time is: ' `echo $max / 1000 | bc -l`
 echo 'Min profiling time is: ' `echo $min / 1000 | bc -l`
 echo '******************************************************************************************'
-
