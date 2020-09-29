@@ -196,9 +196,6 @@ Open "Dockerfile"
 
 ![](./profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_2.png)
 
-![](./profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_2.png) 
-
-
   1) This file determines how your container is built and with what packages. Make sure you keep the first run line ("RUN apt-get install update -y"), but remove/add any other packages you may need. For this tutorial, leave this file unedited.
 
 Now that the dockerfile is set up, you can build the container with the command "sudo docker build -t 'container-name' ." (Can replace container-name with any name). To confirm the creation of the container, typing sudo docker images into the console will let you see if the container has been created.
