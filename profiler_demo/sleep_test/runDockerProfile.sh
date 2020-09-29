@@ -1,8 +1,8 @@
 #!/bin/bash
 
 NWELLS=96
-container_name="sleep_test"
-host_path="/home/david/ContainerProfiler/profiler_demo/sleep_test"
+container_name=""
+host_path=""
 # mount the container profiler directory on host machine into /data directory in container
 # then start the sysbench container
 #DOCKERCMD="docker run -d --rm -v /home/ubuntu/profiler_demo/container_profiler:/data -e NWELLS=$NWELLS sysbench"

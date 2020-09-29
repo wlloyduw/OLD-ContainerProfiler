@@ -196,6 +196,9 @@ Open "Dockerfile"
 
 ![Image of tutorial_method1_2](https://github.com/wlloyduw/ContainerProfiler/tree/david/profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_2.png)
 
+![](https://github.com/wlloyduw/ContainerProfiler/tree/david/profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_2.png) 
+
+
   1) This file determines how your container is built and with what packages. Make sure you keep the first run line ("RUN apt-get install update -y"), but remove/add any other packages you may need. For this tutorial, leave this file unedited.
 
 Now that the dockerfile is set up, you can build the container with the command "sudo docker build -t 'container-name' ." (Can replace container-name with any name). To confirm the creation of the container, typing sudo docker images into the console will let you see if the container has been created.
@@ -241,12 +244,16 @@ docker run --rm  -it -v $PWD:/var/profiles -e OUTPUTDIR='/var/profiles' biodepot
 This option is included on the off-chance that the default /.cprofiles is in use for something else.
 
 
+
 ## Graph Visualizations
 
-The container profiler offers scripts that can be used to graph JSON output from the container profilers.
+The container profiler offers scripts that can be used to graph JSON output from the container profiler.
+
+The guide to using the graphing scripts can be found here: [link to Graphing scripts!](https://github.com/wlloyduw/ContainerProfiler/tree/david/profiler_demo/sleep_test/Graphing)
 
 
-## Starting the Profiler
+## JSON to CSV
 
-run "sudo ./runDockerProfile" at the terminal and see that it is creating json ouput files.
 
+
+The tutorial for these gra
