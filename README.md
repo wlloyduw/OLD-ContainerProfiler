@@ -190,32 +190,32 @@ git clone https://github.com/wlloyduw/ContainerProfiler
 ## Preparing the Container Profiler - Method 1
 Navigate to /ContainerProfile/profiler_demo/sleep_test
 
-![Image of tutorial_method1_1](https://github.com/wlloyduw/ContainerProfiler/tree/david/profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_1.png)
+![](./profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_1.png)
 
 Open "Dockerfile"
 
-![Image of tutorial_method1_2](https://github.com/wlloyduw/ContainerProfiler/tree/david/profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_2.png)
+![](./profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_2.png)
 
-![](https://github.com/wlloyduw/ContainerProfiler/tree/david/profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_2.png) 
+![](./profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_2.png) 
 
 
   1) This file determines how your container is built and with what packages. Make sure you keep the first run line ("RUN apt-get install update -y"), but remove/add any other packages you may need. For this tutorial, leave this file unedited.
 
 Now that the dockerfile is set up, you can build the container with the command "sudo docker build -t 'container-name' ." (Can replace container-name with any name). To confirm the creation of the container, typing sudo docker images into the console will let you see if the container has been created.
 
-![Image of tutorial_method1_3](https://github.com/wlloyduw/ContainerProfiler/tree/david/profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_3.png)
+![](./profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_3.png)
  
 Open "runDockerProfile.sh". The line starting with "DOCKERCMD=" is doing a lot of stuff.  It is building the command that will start the docker container and mounts the directory on the host machine that is running the tool to the data directory in the container.  This is necessary in order to get the json ouput files containing all your metrics onto your host machine.  Otherwise they would go away when the container dies.
 
-![Image of tutorial_method1_5](https://github.com/wlloyduw/ContainerProfiler/tree/david/profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_5.png)
+![](./profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_5.png)
 
 There are two empty variables in this file that need to be set. One is the container name, and the other is your host path. The container name needs to be the name of the container you are running, and the host path is the path to where the tool is running (Can use "pwd" in terminal to confirm the directory is correct).
 
-![Image of tutorial_method1_6](https://github.com/wlloyduw/ContainerProfiler/tree/david/profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_6.png)
+![](./profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_6.png)
 
 Open "process_pack.sh".  This file contains the bash commands that will be executed in the container.  It contains the commands for sysbench and stress-ng by default.  Delete them and enter your own commands for the job you'd like to profile. For this tutorial, you should leave this file unedited.
 
-![Image of tutorial_method1_7](https://github.com/wlloyduw/ContainerProfiler/tree/david/profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_7.png)
+![](./profiler_demo/sleep_test/Tutorial_1_pics/tutorial_method1_7.png)
 
 
 
@@ -253,7 +253,4 @@ The guide to using the graphing scripts can be found here: [link to Graphing scr
 
 
 ## JSON to CSV
-
-
-
-The tutorial for these gra
+In addition to graphing scripts, we also provide a script to convert JSON data to CSV files. Each JSON file correspond to a row in a CSV file, and the column data will be the resource utilization metrics. The JSONtoCSV script can be found here:
