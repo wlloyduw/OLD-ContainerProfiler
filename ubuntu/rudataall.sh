@@ -254,6 +254,7 @@ for (( i=0 ; i < length; i++ ))
   	echo "  \"tvCpuMhz\": $T_CPUMHZ," >> $outfile
   else
 	echo "  \"tvCpuMhz\": $T_CPUMHZ" >> $outfile
+  fi
 fi
 
 
@@ -423,7 +424,7 @@ then
     echo "  \"pMetricType\": \"Process level\"," >> $outfile
   else
     echo "  \"pMetricType\": \"Process level\"" >> $outfile
-fi
+  fi
 fi
 
 ## Process level metrics
@@ -480,7 +481,7 @@ then
 	  echo "  {" >> $outfile
 	  echo "  \"pId\": $PID, " >> $outfile
 	  
-      if jq -e . >/dev/null 2>&1 <<<"$PNAME"; then
+      	  if jq -e . >/dev/null 2>&1 <<<"$PNAME"; then
 		:
 	  else
 		pCmdLine="Invalid Json"
@@ -496,16 +497,25 @@ then
 	  echo "  \"pPGFault\": $pPGFault, " >> $outfile 
 	  echo "  \"pMajorPGFault\": $pMajorPGFault, " >> $outfile 
 	  echo "  \"pChildrenKernelMode\": $CSTIME, " >> $outfile     # cs
+	  
+
+
 	  if  [ -z "$VCSWITCH" ];
 	  then
 		VCSWITCH="NA"
 	  fi
 	  echo "  \"pVoluntaryContextSwitches\": $VCSWITCH, " >> $outfile
+	  
+
 	  if  [ -z "$NVCSSWITCH" ];
 	  then
 		NVCSSWITCH="NA"
 	  fi
 	  echo "  \"pNonvoluntaryContextSwitches\": $NVCSSWITCH, " >> $outfile
+
+
+
+
 	  echo "  \"pBlockIODelays\": $DELAYIO, " >> $outfile         # cs
 	  echo "  \"pVirtualMemoryBytes\": $VSIZE, " >> $outfile
 	  echo "  \"pResidentSetSize\": $RSS " >> $outfile            # page
