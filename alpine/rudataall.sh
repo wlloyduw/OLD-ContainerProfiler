@@ -248,7 +248,12 @@ for (( i=0 ; i < length; i++ ))
   echo "  \"vCpuType\": \"$CPUTYPE\"," >> $outfile
   echo "  \"tvCpuType\": $T_CPUTYPE," >> $outfile
   echo "  \"vCpuMhz\": \"$CPUMHZ\"," >> $outfile
-  echo "  \"tvCpuMhz\": $T_CPUMHZ," >> $outfile
+
+  if [ $CONTAINER = true ] || [ $PROCESS = true ];
+  then
+  	echo "  \"tvCpuMhz\": $T_CPUMHZ," >> $outfile
+  else
+	echo "  \"tvCpuMhz\": $T_CPUMHZ" >> $outfile
 fi
 
 
@@ -412,7 +417,13 @@ then
   echo "  \"cId\": \"$CIDS\"," >> $outfile
   echo "  \"cNumProcesses\": $PIDS," >> $outfile
 
-  echo "  \"pMetricType\": \"Process level\"," >> $outfile
+
+  if [ $PROCESS = true ];
+  then
+    echo "  \"pMetricType\": \"Process level\"," >> $outfile
+  else
+    echo "  \"pMetricType\": \"Process level\"" >> $outfile
+fi
 fi
 
 ## Process level metrics
@@ -468,6 +479,14 @@ then
 	  # print process level data
 	  echo "  {" >> $outfile
 	  echo "  \"pId\": $PID, " >> $outfile
+	  
+      if jq -e . >/dev/null 2>&1 <<<"$PNAME"; then
+		:
+	  else
+		pCmdLine="Invalid Json"
+	  fi
+
+
 	  echo "  \"pCmdLine\":\"$PNAME\", " >> $outfile                    # process cmdline
 	  echo "  \"pName\":\"$PSHORT\", " >> $outfile          # process cmd short version
 	  echo "  \"pNumThreads\": $NUMTHRDS, " >> $outfile
@@ -477,7 +496,15 @@ then
 	  echo "  \"pPGFault\": $pPGFault, " >> $outfile 
 	  echo "  \"pMajorPGFault\": $pMajorPGFault, " >> $outfile 
 	  echo "  \"pChildrenKernelMode\": $CSTIME, " >> $outfile     # cs
+	  if  [ -z "$VCSWITCH" ];
+	  then
+		VCSWITCH="NA"
+	  fi
 	  echo "  \"pVoluntaryContextSwitches\": $VCSWITCH, " >> $outfile
+	  if  [ -z "$NVCSSWITCH" ];
+	  then
+		NVCSSWITCH="NA"
+	  fi
 	  echo "  \"pNonvoluntaryContextSwitches\": $NVCSSWITCH, " >> $outfile
 	  echo "  \"pBlockIODelays\": $DELAYIO, " >> $outfile         # cs
 	  echo "  \"pVirtualMemoryBytes\": $VSIZE, " >> $outfile
