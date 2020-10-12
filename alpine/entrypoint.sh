@@ -26,7 +26,7 @@ while [ -n "$rpid" -a -e /proc/$rpid ]
 do
 
     t1=$(date '+%s%3N')
-    rudataall.sh >"/data/${file_name}"
+    rudataall.sh > "${OUTPUTDIR}/$(date '+%Y_%m_%d__%H_%M_%S').json" &
     t2=$(date '+%s%3N')
     let profile_time=$t2-$t1
     let sleep_time=$DELTA-$profile_time

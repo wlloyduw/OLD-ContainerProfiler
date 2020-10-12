@@ -26,13 +26,14 @@ while [ -n "$rpid" -a -e /proc/$rpid ]
 do
 
     t1=$(date '+%s%3N')
-    rudataall.sh > "${OUTPUTDIR}/$(date '+%Y_%m_%d__%H_%M_%S').json"
+    rudataall.sh > "${OUTPUTDIR}/$(date '+%Y_%m_%d__%H_%M_%S').json" &
     t2=$(date '+%s%3N')
     let profile_time=$t2-$t1
     let sleep_time=$DELTA-$profile_time
     sleep_time=`echo $sleep_time / 1000 | bc -l`
-    sleep $sleep_time
 
+    #if $sleep_time is negative, will result in non-crashing error. Is it faster to let this error happen or to do a check to not sleep if negative?
+    sleep $sleep_time
 done
 #rudataall.sh > "${OUTPUTDIR}/$(date '+%Y_%m_%d__%H_%M_%S').json"
 
