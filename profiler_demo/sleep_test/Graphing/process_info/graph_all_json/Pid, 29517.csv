@@ -1,4 +1,0 @@
-,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
-1,1575257488,2019_12_02__01_44_08_delta.json,0,0,0,grep -v '^\@',0,0,29517,grep,2,1,1,1556480,1
-2,1575257807,2019_12_02__01_45_00_delta.json,0,0,0,grep -v '^\@',172,1011,29517,grep,115245,1,1,1564672,6826
-0,1575258123,2019_12_02__01_45_51_delta.json,0,0,0,grep -v '^\@',355,2214,29517,grep,253892,1,1,1564672,13884

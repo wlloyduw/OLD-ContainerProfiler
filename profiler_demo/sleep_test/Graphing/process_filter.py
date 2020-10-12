@@ -3,22 +3,22 @@ import os
 import sys
 import json
 import copy
-import ConfigParser
+#import ConfigParser
 import pandas as pd
 import time
 import csv
 import glob
 import shutil
 import re
-
+#import path
 from collections import namedtuple
 
 
 def read_metrics_file(metrics):
 
-	if (len(metrics) == 1 and path.exists(metrics[0])):
+	if (len(metrics) == 1): #and path.exists(metrics[0])):
 		metrics_file= metrics[0]
-		with open(metrics_file, 'r') as f:
+		with open(metrics_file, 'r')                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        as f:
 			metrics= f.readline().split()
 			print(metrics)
 		f.close()
@@ -66,20 +66,23 @@ for file_name in dirs:
 			filtered.head()
 			if (len(filtered.index) > 1) :
 				filtered = filtered.loc[:, ~filtered.columns.str.contains('^Unnamed')]
-     				filtered.to_csv('{}/{}/{}'.format(file_path, metrics[i], file_name))
+				filtered.to_csv('{}/{}/{}'.format(file_path, metrics[i], file_name))
 
 
 
 for i in range(0, len(metrics)):
-	path = "{}/{}".format(file_path, metrics[i])
+	#path = "{}/{}".format(file_path, metrics[i])
+	path = file_path
 	all_files = glob.glob(path+ "/*.csv")
 	li = []
+	print(path)
 	for filtered_file in all_files:
 		df = pd.read_csv(filtered_file, index_col=None, header=0)
 		li.append(df)
-			
+		print(filtered_file)
+
 	frame = pd.concat(li, axis=0, ignore_index=True)
-        frame = frame.sort_values(by='currentTime', ascending=True)
+	frame = frame.sort_values(by='currentTime', ascending=True)
 	frame = frame.loc[:, ~frame.columns.str.contains('^Unnamed: 0')]
 	frame.drop(frame.columns[0], axis=1)
 	#frame= frame.groupby(['currentTime']).agg({                         

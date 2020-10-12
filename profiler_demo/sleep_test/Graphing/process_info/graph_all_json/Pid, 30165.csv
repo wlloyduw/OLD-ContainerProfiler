@@ -1,18 +1,4 @@
 ,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
-2,1575254944,2019_12_02__01_37_51_delta.json,0,0,0,grep -v '^\@',0,0,30165,grep,0,1,1,1556480,1
-4,1575255008,2019_12_02__01_38_02_delta.json,0,0,0,grep -v '^\@',10,101,30165,grep,11519,1,1,1564672,559
-3,1575255069,2019_12_02__01_38_12_delta.json,0,0,0,grep -v '^\@',44,355,30165,grep,40719,1,1,1564672,1555
-5,1575255130,2019_12_02__01_38_22_delta.json,0,0,0,grep -v '^\@',68,527,30165,grep,60757,1,1,1564672,2638
-8,1575255190,2019_12_02__01_38_32_delta.json,0,0,0,grep -v '^\@',93,699,30165,grep,70996,1,1,1564672,3563
-1,1575255253,2019_12_02__01_38_42_delta.json,0,0,0,grep -v '^\@',152,1033,30165,grep,111051,1,1,1564672,5537
-15,1575255314,2019_12_02__01_38_52_delta.json,0,0,0,grep -v '^\@',181,1199,30165,grep,131104,1,1,1564672,6692
-6,1575255378,2019_12_02__01_39_03_delta.json,0,0,0,grep -v '^\@',204,1372,30165,grep,151088,1,1,1564672,7785
-16,1575255446,2019_12_02__01_39_13_delta.json,0,0,0,grep -v '^\@',251,1717,30165,grep,191184,1,1,1564672,9978
-7,1575255507,2019_12_02__01_39_23_delta.json,0,0,0,grep -v '^\@',277,1883,30165,grep,210520,1,1,1564672,11078
-9,1575255568,2019_12_02__01_39_33_delta.json,0,0,0,grep -v '^\@',307,2045,30165,grep,230122,1,1,1564672,12138
-0,1575255628,2019_12_02__01_39_44_delta.json,0,0,0,grep -v '^\@',327,2222,30165,grep,249651,1,1,1564672,13136
-14,1575255690,2019_12_02__01_39_54_delta.json,0,0,0,grep -v '^\@',352,2393,30165,grep,269413,1,1,1564672,14266
-12,1575255751,2019_12_02__01_40_03_delta.json,0,0,0,grep -v '^\@',406,2728,30165,grep,309413,1,1,1564672,15313
-10,1575255820,2019_12_02__01_40_14_delta.json,0,0,0,grep -v '^\@',433,2915,30165,grep,329390,1,1,1564672,16268
-13,1575255886,2019_12_02__01_40_24_delta.json,0,0,0,grep -v '^\@',462,3083,30165,grep,348791,1,1,1564672,17354
-11,1575255955,2019_12_02__01_40_34_delta.json,0,0,0,grep -v '^\@',508,3432,30165,grep,388828,1,1,1564672,19520
+1,1602004348,2020_10_06__17_12_23_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F4/all.fastq,0,3,30165,bwa,3,1,1614,19496960,1
+2,1602004357,2020_10_06__17_12_28_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F4/all.fastq,0,3,30165,bwa,3,1,1614,19496960,1
+0,1602004367,2020_10_06__17_12_37_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F4/all.fastq,0,3,30165,bwa,3,1,1614,19496960,1

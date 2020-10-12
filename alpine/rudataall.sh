@@ -55,9 +55,12 @@ else
   done
 fi    
 
+output=$''
 outfile=rudata_all.json
+output+=$'{\n'
 echo "{" > $outfile
 epochtime=$(date +%s)
+write_time_start=$(date '+%s%3N')
 
 # Find the number of processes inside the container
 IFS=$'\n'
@@ -198,62 +201,106 @@ for (( i=0 ; i < length; i++ ))
  vMajorPGFault=$(filedata "/proc/vmstat" "pgmajfault")
  #
 
-  
-  echo "  \"currentTime\": $epochtime," >> $outfile
-  echo "  \"vMetricType\": \"VM level\"," >> $outfile
-  echo "  \"vTime\": $T_VM," >> $outfile 
+  output+=$'  \"currentTime\": '"$epochtime"
+  output+=$',\n'
+  output+=$'  \"vMetricType\": \"VM level\",\n'
+  output+=$'  \"vTime\": '"$T_VM"
+  output+=$',\n'
+
   ## print VM level data 
-  echo "  \"vCpuTime\": $CPUTOT," >> $outfile
-  echo "  \"tvCpuTime\": $T_CPUTOT," >> $outfile
-  echo "  \"vDiskSectorReads\": $SR," >> $outfile
+  output+="  \"vCpuTime\": $CPUTOT"
+  output+=$',\n'
+  output+="  \"tvCpuTime\": $T_CPUTOT"
+  output+=$',\n'
+  output+="  \"vDiskSectorReads\": $SR"
+  output+=$',\n'
+  output+="  \"vDiskSectorWrites\": $SW"
+  output+=$',\n'
+  output+="  \"vNetworkBytesRecvd\": $BR"
+  output+=$',\n'
+  output+="  \"vNetworkBytesSent\": $BT"
+  output+=$',\n'
+  output+="  \"vPgFault\": $vPGFault"
+  output+=$',\n'
+  output+="  \"vMajorPageFault\": $vMajorPGFault"
+  output+=$',\n'
+  output+="  \"vCpuTimeUserMode\": $CPUUSR"
+  output+=$',\n'
+  output+="  \"tvCpuTimeUserMode\": $T_CPUUSR"
+  output+=$',\n'
+  output+="  \"vCpuTimeKernelMode\": $CPUKRN"
+  output+=$',\n'
+  output+="  \"tvCpuTimeKernelMode\": $T_CPUKRN"
+  output+=$',\n'
+  output+="  \"vCpuIdleTime\": $CPUIDLE"
+  output+=$',\n'
+  output+="  \"tvCpuIdleTime\": $T_CPUIDLE"
+  output+=$',\n'
+  output+="  \"vCpuTimeIOWait\": $CPUIOWAIT"
+  output+=$',\n'
+  output+="  \"tvCpuTimeIOWait\": $T_CPUIOWAIT"
+  output+=$',\n'
+  output+="  \"vCpuTimeIntSrvc\": $CPUIRQ"
+  output+=$',\n'
+  output+="  \"tvCpuTimeIntSrvc\": $T_CPUIRQ"
+  output+=$',\n'
+  output+="  \"vCpuTimeSoftIntSrvc\": $CPUSOFTIRQ"
+  output+=$',\n'
+  output+="  \"tvCpuTimeSoftIntSrvc\": $T_CPUSOFTIRQ"
+  output+=$',\n'
+  output+="  \"vCpuContextSwitches\": $CSWITCH"
+  output+=$',\n'
+  output+="  \"tvCpuContextSwitches\": $T_CSWITCH"
+  output+=$',\n'
+  output+="  \"vCpuNice\": $CPUNICE"
+  output+=$',\n'
+  output+="  \"tvCpuNice\": $T_CPUNICE"
+  output+=$',\n'
+  output+="  \"vCpuSteal\": $CPUSTEAL"
+  output+=$',\n'
+  output+="  \"tvCpuSteal\": $T_CPUSTEAL"
+  output+=$',\n'
+  output+="  \"vDiskSuccessfulReads\": $COMPLETEDREADS"
+  output+=$',\n'
+  output+="  \"vDiskMergedReads\": $MERGEDREADS"
+  output+=$',\n'
+  output+="  \"vDiskReadTime\": $READTIME"
+  output+=$',\n'
+  output+="  \"vDiskSuccessfulWrites\": $COMPLETEDWRITES"
+  output+=$',\n'
+  output+="  \"vDiskMergedWrites\": $MERGEDWRITES"
+  output+=$',\n'
+  output+="  \"vDiskWriteTime\": $WRITETIME"
+  output+=$',\n'
+  output+="  \"vMemoryTotal\": $MEMTOT" 
+  output+=$',\n'
+  output+="  \"vMemoryFree\": $MEMFREE"
+  output+=$',\n'
+  output+="  \"vMemoryBuffers\": $BUFFERS"
+  output+=$',\n'
+  output+="  \"vMemoryCached\": $CACHED"
+  output+=$',\n'
+  output+="  \"vLoadAvg\": $LAVG"
+  output+=$',\n'
+  output+="  \"vId\": \"$vmid\""
+  output+=$',\n'
+  output+="  \"vCpuType\": \"$CPUTYPE\""
+  output+=$',\n'
+  output+="  \"tvCpuType\": $T_CPUTYPE"
+  output+=$',\n'
+  output+="  \"vCpuMhz\": \"$CPUMHZ\""
+  output+=$',\n'
+  
 
-  echo "  \"vDiskSectorWrites\": $SW," >> $outfile
-  echo "  \"vNetworkBytesRecvd\": $BR," >> $outfile
-  echo "  \"vNetworkBytesSent\": $BT," >> $outfile
-  echo "  \"vPgFault\": $vPGFault," >> $outfile
-  echo "  \"vMajorPageFault\": $vMajorPGFault," >> $outfile
-  echo "  \"vCpuTimeUserMode\": $CPUUSR," >> $outfile
-  echo "  \"tvCpuTimeUserMode\": $T_CPUUSR," >> $outfile
-  echo "  \"vCpuTimeKernelMode\": $CPUKRN," >> $outfile
-  echo "  \"tvCpuTimeKernelMode\": $T_CPUKRN," >> $outfile
-  echo "  \"vCpuIdleTime\": $CPUIDLE," >> $outfile
-  echo "  \"tvCpuIdleTime\": $T_CPUIDLE," >> $outfile
-  echo "  \"vCpuTimeIOWait\": $CPUIOWAIT," >> $outfile
-  echo "  \"tvCpuTimeIOWait\": $T_CPUIOWAIT," >> $outfile
-  echo "  \"vCpuTimeIntSrvc\": $CPUIRQ," >> $outfile
-  echo "  \"tvCpuTimeIntSrvc\": $T_CPUIRQ," >> $outfile
-  echo "  \"vCpuTimeSoftIntSrvc\": $CPUSOFTIRQ," >> $outfile
-  echo "  \"tvCpuTimeSoftIntSrvc\": $T_CPUSOFTIRQ," >> $outfile
-  echo "  \"vCpuContextSwitches\": $CSWITCH," >> $outfile
-  echo "  \"tvCpuContextSwitches\": $T_CSWITCH," >> $outfile
-  echo "  \"vCpuNice\": $CPUNICE," >> $outfile
-  echo "  \"tvCpuNice\": $T_CPUNICE," >> $outfile
-  echo "  \"vCpuSteal\": $CPUSTEAL," >> $outfile
-  echo "  \"tvCpuSteal\": $T_CPUSTEAL," >> $outfile
-  echo "  \"vDiskSuccessfulReads\": $COMPLETEDREADS," >> $outfile
-  echo "  \"vDiskMergedReads\": $MERGEDREADS," >> $outfile
-  echo "  \"vDiskReadTime\": $READTIME," >> $outfile
-  echo "  \"vDiskSuccessfulWrites\": $COMPLETEDWRITES," >> $outfile
-  echo "  \"vDiskMergedWrites\": $MERGEDWRITES," >> $outfile
-  echo "  \"vDiskWriteTime\": $WRITETIME," >> $outfile
-
-  echo "  \"vMemoryTotal\": $MEMTOT," >> $outfile     # KB
-  echo "  \"vMemoryFree\": $MEMFREE," >> $outfile     # KB
-  echo "  \"vMemoryBuffers\": $BUFFERS," >> $outfile  # KB
-  echo "  \"vMemoryCached\": $CACHED," >> $outfile    # KB
-
-
-  echo "  \"vLoadAvg\": $LAVG," >> $outfile
-  echo "  \"vId\": \"$vmid\"," >> $outfile
-  echo "  \"vCpuType\": \"$CPUTYPE\"," >> $outfile
-  echo "  \"tvCpuType\": $T_CPUTYPE," >> $outfile
-  echo "  \"vCpuMhz\": \"$CPUMHZ\"," >> $outfile
 
   if [ $CONTAINER = true ] || [ $PROCESS = true ];
   then
-  	echo "  \"tvCpuMhz\": $T_CPUMHZ," >> $outfile
+	output+=$'  \"tvCpuMhz\": '"$T_CPUMHZ"
+	output+=$',\n'
   else
-	echo "  \"tvCpuMhz\": $T_CPUMHZ" >> $outfile
+	output+=$'  \"tvCpuMhz\": '"$T_CPUMHZ"
+	output+=$'\n'
+  fi
 fi
 
 
@@ -263,7 +310,8 @@ then
   #echo "CONTAINER is Running!!"
   T_CNT_1=$(date +%s%3N)
 
-  echo "  \"cMetricType\": \"Container level\"," >> $outfile
+  output+=$'  \"cMetricType\": '"\"Container level\""
+  output+=$',\n'
 
   # Get CPU stats
 
@@ -382,48 +430,72 @@ then
 
 
   # print container level data
-  echo "  \"cTime\": $T_CNT, " >> $outfile
-  echo "  \"cCpuTime\": $CPUTOTC," >> $outfile     # ns
-  echo "  \"tcCpuTime\": $T_CPUTOTC," >> $outfile
-  echo "  \"cNumProcessors\": $NUMPROS," >> $outfile
-  echo "  \"cPGFault\": $cPGFault," >> $outfile
-  echo "  \"cMajorPGFault\": $cMajorPGFault," >> $outfile
-  echo "  \"tcNumProcessors\": $T_NUMPROS," >> $outfile
-  echo "  \"cProcessorStats\": {" >> $outfile
+  output+="  \"cTime\": $T_CNT"
+  output+=$',\n'
+  output+="  \"cCpuTime\": $CPUTOTC"
+  output+=$',\n'
+  output+="  \"tcCpuTime\": $T_CPUTOTC"
+  output+=$',\n'
+  output+="  \"cNumProcessors\": $NUMPROS"
+  output+=$',\n'
+  output+="  \"cPGFault\": $cPGFault"
+  output+=$',\n'
+  output+="  \"cMajorPGFault\": $cMajorPGFault"
+  output+=$',\n'
+  output+="  \"tcNumProcessors\": $T_NUMPROS"
+  output+=$',\n'
+  output+="  \"cProcessorStats\": {"
+  output+=$'\n'
+
+
   for (( i=0; i<NUMPROS; i++ ))
   do 
-    echo "  \"cCpu${i}TIME\": ${CPUPERC[$i]}, " >> $outfile
+    output+=$"  \"cCpu${i}TIME\": ${CPUPERC[$i]}"
+    output+=$',\n'
   done
-  echo "  \"tcCpu#TIME\": $T_CPUPERC," >> $outfile
-  echo "  \"cNumProcessors\": $NUMPROS" >> $outfile
-  echo "  }," >> $outfile
 
-  echo "  \"cCpuTimeUserMode\": $CPUUSRC," >> $outfile    # cs
-  echo "  \"tcCpuTimeUserMode\": $T_CPUUSRC," >> $outfile
-  echo "  \"cCpuTimeKernelMode\": $CPUKRNC," >> $outfile  # cs
-  echo "  \"tcCpuTimeKernelMode\": $T_CPUKRNC," >> $outfile
+  output+="  \"tcCpu#TIME\": $T_CPUPERC"
+  output+=$',\n'
+  output+="  \"cNumProcessors\": $NUMPROS"
+  output+=$'\n  },\n'
+  output+="  \"cCpuTimeUserMode\": $CPUUSRC"
+  output+=$',\n'
+  output+="  \"tcCpuTimeUserMode\": $T_CPUUSRC"
+  output+=$',\n'
+  output+="  \"cCpuTimeKernelMode\": $CPUKRNC"
+  output+=$',\n'
+  output+="  \"tcCpuTimeKernelMode\": $T_CPUKRNC"
+  output+=$',\n'
+  output+="  \"cDiskSectorIO\": $SRWC"
+  output+=$',\n'
+  output+="  \"cDiskReadBytes\": $BRC"
+  output+=$',\n'
+  output+="  \"cDiskWriteBytes\": $BWC"
+  output+=$',\n'
+  output+="  \"cNetworkBytesRecvd\": $NRC"
+  output+=$',\n'
+  output+="  \"cNetworkBytesSent\": $NTC"
+  output+=$',\n'
+  output+="  \"cMemoryUsed\": $MEMUSEDC"
+  output+=$',\n'
 
-  echo "  \"cDiskSectorIO\": $SRWC," >> $outfile
-  echo "  \"cDiskReadBytes\": $BRC," >> $outfile
-  echo "  \"cDiskWriteBytes\": $BWC," >> $outfile
 
-  echo "  \"cNetworkBytesRecvd\": $NRC," >> $outfile
-  echo "  \"cNetworkBytesSent\": $NTC," >> $outfile
+  output+="  \"cMemoryMaxUsed\": $MEMMAXC"
+  output+=$',\n'
+  output+="  \"cId\": \"$CIDS\""
+  output+=$',\n'
+  output+="  \"cNumProcesses\": $PIDS"
+  output+=$',\n'
+  output+="  \"pMetricType\": \"Process level\""
 
-  echo "  \"cMemoryUsed\": $MEMUSEDC," >> $outfile
-  echo "  \"cMemoryMaxUsed\": $MEMMAXC," >> $outfile
-
-
-  echo "  \"cId\": \"$CIDS\"," >> $outfile
-  echo "  \"cNumProcesses\": $PIDS," >> $outfile
 
 
   if [ $PROCESS = true ];
   then
-    echo "  \"pMetricType\": \"Process level\"," >> $outfile
+    output+=$',\n'
   else
-    echo "  \"pMetricType\": \"Process level\"" >> $outfile
-fi
+    output+=$'\n'
+  fi
 fi
 
 ## Process level metrics
@@ -438,92 +510,127 @@ then
   # command cat $outfile in the last line of the script
   # and ./rudataall.sh are counted as 2 extra processes, so -2 here for PIDS
 
-  echo "  \"pProcesses\": [" >> $outfile
+  output+="  \"pProcesses\": ["
+  output+=$'\n'
+
 
   for (( i=0; i<PIDS; i++ ))
   do 
     pid=${PPS[i]}
-    #check if pid still exists
-    STAT=(`cat /proc/$pid/stat 2>/dev/null`)
-    if (( ${#STAT[@]} )); then
-	  PID=${STAT[0]}
-	  PSHORT=$(echo $(echo ${STAT[1]} | cut -d'(' -f 2 ))
-	  PSHORT=${PSHORT%?}
-	  NUMTHRDS=${STAT[19]}
+    PNAME=$(cat /proc/$pid/cmdline | tr "\0" " ")
+    PNAME=${PNAME%?}
+    SUB="rudataall"
+#'rudataall.sh'
+	if [[ "$PNAME" != *"$SUB"* ]]; then
+		#check if pid still exists
+		STAT=(`cat /proc/$pid/stat 2>/dev/null`)
+		if (( ${#STAT[@]} )); then
+		  PID=${STAT[0]}
+		  PSHORT=$(echo $(echo ${STAT[1]} | cut -d'(' -f 2 ))
+		  PSHORT=${PSHORT%?}
+		  NUMTHRDS=${STAT[19]}
 
-	  # Get process CPU stats
-	  UTIME=${STAT[13]}
-	  STIME=${STAT[14]}
-	  CUTIME=${STAT[15]}
-	  CSTIME=${STAT[16]}
-	  TOTTIME=$((${UTIME} + ${STIME}))
+		  # Get process CPU stats
+		  UTIME=${STAT[13]}
+		  STIME=${STAT[14]}
+		  CUTIME=${STAT[15]}
+		  CSTIME=${STAT[16]}
+		  TOTTIME=$((${UTIME} + ${STIME}))
 
-	  # context switch  !! need double check result format
-	  VCSWITCH=$(cat /proc/$pid/status | grep "^voluntary_ctxt_switches" | \
-        cut -d":" -f 2 | sed 's/^[ \t]*//') 
-	  NVCSSWITCH=$(cat /proc/$pid/status | grep "^nonvoluntary_ctxt_switches" | \
-        cut -d":" -f 2 | sed 's/^[ \t]*//') 
+		  # context switch  !! need double check result format
+		  VCSWITCH=$(cat /proc/$pid/status | grep "^voluntary_ctxt_switches" | \
+		    cut -d":" -f 2 | sed 's/^[ \t]*//') 
+		  NVCSSWITCH=$(cat /proc/$pid/status | grep "^nonvoluntary_ctxt_switches" | \
+		    cut -d":" -f 2 | sed 's/^[ \t]*//') 
 
-	  # Get process disk stats
-	  DELAYIO=${STAT[41]}
-	  pPGFault=$(cat /proc/$pid/stat | cut -d' ' -f 10)
-	  pMajorPGFault=$(cat /proc/$pid/stat | cut -d' ' -f 12)
+		  # Get process disk stats
+		  DELAYIO=${STAT[41]}
+		  pPGFault=$(cat /proc/$pid/stat | cut -d' ' -f 10)
+		  pMajorPGFault=$(cat /proc/$pid/stat | cut -d' ' -f 12)
 
-	  # Get process memory stats
-	  VSIZE=${STAT[22]} # in Bytes
-	  RSS=${STAT[23]} # in pages
+		  # Get process memory stats
+		  VSIZE=${STAT[22]} # in Bytes
+		  RSS=${STAT[23]} # in pages
 
-	  PNAME=$(cat /proc/$pid/cmdline | tr "\0" " ")
-	  PNAME=${PNAME%?}
+		  
 
-	  # print process level data
-	  echo "  {" >> $outfile
-	  echo "  \"pId\": $PID, " >> $outfile
-	  
-      if jq -e . >/dev/null 2>&1 <<<"$PNAME"; then
-		:
-	  else
-		pCmdLine="Invalid Json"
-	  fi
+		  # print process level data
+   		  output+=$'  {\n'
+   		  output+="  \"pId\": $PID"
+   		  output+=$',\n'
+  
 
 
-	  echo "  \"pCmdLine\":\"$PNAME\", " >> $outfile                    # process cmdline
-	  echo "  \"pName\":\"$PSHORT\", " >> $outfile          # process cmd short version
-	  echo "  \"pNumThreads\": $NUMTHRDS, " >> $outfile
-	  echo "  \"pCpuTimeUserMode\": $UTIME, " >> $outfile         # cs
-	  echo "  \"pCpuTimeKernelMode\": $STIME, " >> $outfile       # cs
-	  echo "  \"pChildrenUserMode\": $CUTIME, " >> $outfile       # cs
-	  echo "  \"pPGFault\": $pPGFault, " >> $outfile 
-	  echo "  \"pMajorPGFault\": $pMajorPGFault, " >> $outfile 
-	  echo "  \"pChildrenKernelMode\": $CSTIME, " >> $outfile     # cs
-	  if  [ -z "$VCSWITCH" ];
-	  then
-		VCSWITCH="NA"
-	  fi
-	  echo "  \"pVoluntaryContextSwitches\": $VCSWITCH, " >> $outfile
-	  if  [ -z "$NVCSSWITCH" ];
-	  then
-		NVCSSWITCH="NA"
-	  fi
-	  echo "  \"pNonvoluntaryContextSwitches\": $NVCSSWITCH, " >> $outfile
-	  echo "  \"pBlockIODelays\": $DELAYIO, " >> $outfile         # cs
-	  echo "  \"pVirtualMemoryBytes\": $VSIZE, " >> $outfile
-	  echo "  \"pResidentSetSize\": $RSS " >> $outfile            # page
-	  echo "  }, " >> $outfile
-   fi	
-  done
+		  
+		  if jq -e . >/dev/null 2>&1 <<<"\"$PNAME\""; then
+			:
+		  else
+			echo "invalid json: $PNAME"
+			PNAME="Invalid Json"
+		  fi
+
+
+   		  output+="  \"pCmdLine\":\"$PNAME\""
+   		  output+=$',\n'
+   		  output+="  \"pName\":\"$PSHORT\""
+   		  output+=$',\n'
+   		  output+="  \"pNumThreads\": $NUMTHRDS"
+   		  output+=$',\n'
+   		  output+="  \"pCpuTimeUserMode\": $UTIME"
+   		  output+=$',\n'
+   		  output+="  \"pCpuTimeKernelMode\": $STIME"
+   		  output+=$',\n'
+   		  output+="  \"pChildrenUserMode\": $CUTIME"
+   		  output+=$',\n'
+   		  output+="  \"pPGFault\": $pPGFault"
+   		  output+=$',\n'
+   		  output+="  \"pMajorPGFault\": $pMajorPGFault"
+   		  output+=$',\n'
+   		  output+="  \"pChildrenKernelMode\": $CSTIME"
+   		  output+=$',\n'
+
+
+
+		  if  [ -z "$VCSWITCH" ];
+		  then
+			VCSWITCH="NA"
+		  fi
+		  output+="  \"pVoluntaryContextSwitches\": $VCSWITCH"
+		  output+=$',\n'
+
+		  if  [ -z "$NVCSSWITCH" ];
+		  then
+			NVCSSWITCH="NA"
+		  fi
+                  output+="  \"pNonvoluntaryContextSwitches\": $NVCSSWITCH"
+                  output+=$',\n'
+
+
+
+		  output+="  \"pBlockIODelays\": $DELAYIO"
+		  output+=$',\n'
+		  output+="  \"pVirtualMemoryBytes\": $VSIZE"
+		  output+=$',\n'
+		  output+="  \"pResidentSetSize\": $RSS"
+		  output+=$'\n  }, \n'
+	   fi
+	fi	
+  done    
   T_PRC_2=$(date +%s%3N)
   let T_PRC=$T_PRC_2-$T_PRC_1
-  echo "  {\"cNumProcesses\": $PIDS," >> $outfile
-  echo "  \"pTime\": $T_PRC }" >> $outfile
-  echo "  ]" >> $outfile
+  output+="  {\"cNumProcesses\": $PIDS"
+  output+=$',\n'
+  output+="  \"pTime\": $T_PRC"
+  output+=$',\n'
+  write_time_end=$(date '+%s%3N')
+  let profile_time=$write_time_end-$write_time_start
+  output+="  \"profileTime\": $profile_time"
+  output+=$'}'
+  
+  
+  output+=$'\n  ]\n'
 fi
 
-echo "}" >> $outfile
-
-cat $outfile
-
-
-
-
+output+=$'}'
+echo "$output"
 
