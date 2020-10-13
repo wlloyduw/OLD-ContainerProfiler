@@ -56,9 +56,7 @@ else
 fi    
 
 output=$''
-outfile=rudata_all.json
 output+=$'{\n'
-echo "{" > $outfile
 epochtime=$(date +%s)
 write_time_start=$(date '+%s%3N')
 
@@ -514,108 +512,112 @@ then
   output+=$'\n'
 
 
-  for (( i=0; i<PIDS; i++ ))
-  do 
-    pid=${PPS[i]}
-    PNAME=$(cat /proc/$pid/cmdline | tr "\0" " ")
-    PNAME=${PNAME%?}
-    SUB="rudataall"
-#'rudataall.sh'
-	if [[ "$PNAME" != *"$SUB"* ]]; then
+  declare -A "profilerPid=( $(pgrep "rudataall.sh" -v | sed 's/[^ ]*/[&]=&/g') )"
+  for i in "${!profilerPid[@]}"
+  do
+	parent=$(ps -o ppid= ${profilerPid[$i]})
+	parent_nowhite_space="$(echo -e "${parent}" | tr -d '[:space:]')"
+	
+	if [[ ! " ${profilerPid[@]} " =~ " ${parent_nowhite_space} " ]]; then		
+		#this if statement checks if parent of pid is not in the list of all profiler proesses.
 		#check if pid still exists
-		STAT=(`cat /proc/$pid/stat 2>/dev/null`)
+
+		STAT=(`cat /proc/${profilerPid[$i]}/stat 2>/dev/null`)
 		if (( ${#STAT[@]} )); then
-		  PID=${STAT[0]}
-		  PSHORT=$(echo $(echo ${STAT[1]} | cut -d'(' -f 2 ))
-		  PSHORT=${PSHORT%?}
-		  NUMTHRDS=${STAT[19]}
+			  PID=${STAT[0]}
+			  PSHORT=$(echo $(echo ${STAT[1]} | cut -d'(' -f 2 ))
+			  PSHORT=${PSHORT%?}
+			  NUMTHRDS=${STAT[19]}
 
-		  # Get process CPU stats
-		  UTIME=${STAT[13]}
-		  STIME=${STAT[14]}
-		  CUTIME=${STAT[15]}
-		  CSTIME=${STAT[16]}
-		  TOTTIME=$((${UTIME} + ${STIME}))
+			  # Get process CPU stats
+			  UTIME=${STAT[13]}
+			  STIME=${STAT[14]}
+			  CUTIME=${STAT[15]}
+			  CSTIME=${STAT[16]}
+			  TOTTIME=$((${UTIME} + ${STIME}))
 
-		  # context switch  !! need double check result format
-		  VCSWITCH=$(cat /proc/$pid/status | grep "^voluntary_ctxt_switches" | \
-		    cut -d":" -f 2 | sed 's/^[ \t]*//') 
-		  NVCSSWITCH=$(cat /proc/$pid/status | grep "^nonvoluntary_ctxt_switches" | \
-		    cut -d":" -f 2 | sed 's/^[ \t]*//') 
+			  # context switch  !! need double check result format
+			  VCSWITCH=$(cat /proc/${profilerPid[$i]}/status | grep "^voluntary_ctxt_switches" | \
+			    cut -d":" -f 2 | sed 's/^[ \t]*//') 
+			  NVCSSWITCH=$(cat /proc/${profilerPid[$i]}/status | grep "^nonvoluntary_ctxt_switches" | \
+			    cut -d":" -f 2 | sed 's/^[ \t]*//') 
 
-		  # Get process disk stats
-		  DELAYIO=${STAT[41]}
-		  pPGFault=$(cat /proc/$pid/stat | cut -d' ' -f 10)
-		  pMajorPGFault=$(cat /proc/$pid/stat | cut -d' ' -f 12)
+			  # Get process disk stats
+			  DELAYIO=${STAT[41]}
+			  pPGFault=$(cat /proc/${profilerPid[$i]}/stat | cut -d' ' -f 10)
+			  pMajorPGFault=$(cat /proc/${profilerPid[$i]}/stat | cut -d' ' -f 12)
 
-		  # Get process memory stats
-		  VSIZE=${STAT[22]} # in Bytes
-		  RSS=${STAT[23]} # in pages
+			  # Get process memory stats
+			  VSIZE=${STAT[22]} # in Bytes
+			  RSS=${STAT[23]} # in pages
 
-		  
+			  PNAME=$(cat /proc/${profilerPid[$i]}/cmdline | tr "\0" " ")
+	    		  PNAME=${PNAME%?}
 
-		  # print process level data
-   		  output+=$'  {\n'
-   		  output+="  \"pId\": $PID"
-   		  output+=$',\n'
-  
-
-
-		  
-		  if jq -e . >/dev/null 2>&1 <<<"\"$PNAME\""; then
-			:
-		  else
-			echo "invalid json: $PNAME"
-			PNAME="Invalid Json"
-		  fi
+			  # print process level data
+	   		  output+=$'  {\n'
+	   		  output+="  \"pId\": $PID"
+	   		  output+=$',\n'
+	  
 
 
-   		  output+="  \"pCmdLine\":\"$PNAME\""
-   		  output+=$',\n'
-   		  output+="  \"pName\":\"$PSHORT\""
-   		  output+=$',\n'
-   		  output+="  \"pNumThreads\": $NUMTHRDS"
-   		  output+=$',\n'
-   		  output+="  \"pCpuTimeUserMode\": $UTIME"
-   		  output+=$',\n'
-   		  output+="  \"pCpuTimeKernelMode\": $STIME"
-   		  output+=$',\n'
-   		  output+="  \"pChildrenUserMode\": $CUTIME"
-   		  output+=$',\n'
-   		  output+="  \"pPGFault\": $pPGFault"
-   		  output+=$',\n'
-   		  output+="  \"pMajorPGFault\": $pMajorPGFault"
-   		  output+=$',\n'
-   		  output+="  \"pChildrenKernelMode\": $CSTIME"
-   		  output+=$',\n'
+			  
+			  if jq -e . >/dev/null 2>&1 <<<"\"$PNAME\""; then
+				:
+			  else
+				PNAME="Invalid Json"
+			  fi
 
 
-
-		  if  [ -z "$VCSWITCH" ];
-		  then
-			VCSWITCH="NA"
-		  fi
-		  output+="  \"pVoluntaryContextSwitches\": $VCSWITCH"
-		  output+=$',\n'
-
-		  if  [ -z "$NVCSSWITCH" ];
-		  then
-			NVCSSWITCH="NA"
-		  fi
-                  output+="  \"pNonvoluntaryContextSwitches\": $NVCSSWITCH"
-                  output+=$',\n'
+	   		  output+="  \"pCmdLine\":\"$PNAME\""
+	   		  output+=$',\n'
+	   		  output+="  \"pName\":\"$PSHORT\""
+	   		  output+=$',\n'
+	   		  output+="  \"pNumThreads\": $NUMTHRDS"
+	   		  output+=$',\n'
+	   		  output+="  \"pCpuTimeUserMode\": $UTIME"
+	   		  output+=$',\n'
+	   		  output+="  \"pCpuTimeKernelMode\": $STIME"
+	   		  output+=$',\n'
+	   		  output+="  \"pChildrenUserMode\": $CUTIME"
+	   		  output+=$',\n'
+	   		  output+="  \"pPGFault\": $pPGFault"
+	   		  output+=$',\n'
+	   		  output+="  \"pMajorPGFault\": $pMajorPGFault"
+	   		  output+=$',\n'
+	   		  output+="  \"pChildrenKernelMode\": $CSTIME"
+	   		  output+=$',\n'
 
 
 
-		  output+="  \"pBlockIODelays\": $DELAYIO"
-		  output+=$',\n'
-		  output+="  \"pVirtualMemoryBytes\": $VSIZE"
-		  output+=$',\n'
-		  output+="  \"pResidentSetSize\": $RSS"
-		  output+=$'\n  }, \n'
-	   fi
-	fi	
-  done    
+			  if  [ -z "$VCSWITCH" ];
+			  then
+				VCSWITCH="NA"
+			  fi
+			  output+="  \"pVoluntaryContextSwitches\": $VCSWITCH"
+			  output+=$',\n'
+
+			  if  [ -z "$NVCSSWITCH" ];
+			  then
+				NVCSSWITCH="NA"
+			  fi
+		          output+="  \"pNonvoluntaryContextSwitches\": $NVCSSWITCH"
+		          output+=$',\n'
+
+
+
+			  output+="  \"pBlockIODelays\": $DELAYIO"
+			  output+=$',\n'
+			  output+="  \"pVirtualMemoryBytes\": $VSIZE"
+			  output+=$',\n'
+			  output+="  \"pResidentSetSize\": $RSS"
+			  output+=$'\n  }, \n'
+		fi
+	fi
+
+
+  done
+
   T_PRC_2=$(date +%s%3N)
   let T_PRC=$T_PRC_2-$T_PRC_1
   output+="  {\"cNumProcesses\": $PIDS"
@@ -632,5 +634,5 @@ then
 fi
 
 output+=$'}'
-echo "$output"
+echo "$output" & > experimental.json
 
