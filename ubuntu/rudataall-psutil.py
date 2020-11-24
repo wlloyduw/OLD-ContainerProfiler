@@ -4,7 +4,6 @@ import argparse
 from datetime import datetime
 import re      
 import subprocess
-import os
 
 #add the virtual level.
 CORRECTION_MULTIPLIER=100
@@ -301,9 +300,15 @@ if args.processor_profiling == True:
 
 	output_dict["pProcesses"] = procces_info
 
-output_dict["VM_Write_Time"] = VM_write_time.total_seconds()
-output_dict["Container_Write_Time"] = container_write_time.total_seconds()
-output_dict["Process_Write_Time"] = process_write_time.total_seconds()
+
+if args.vm_profiling == True:
+	output_dict["VM_Write_Time"] = VM_write_time.total_seconds()
+if args.container_profiling == True:
+	output_dict["Container_Write_Time"] = container_write_time.total_seconds()
+if args.processor_profiling == True:
+	output_dict["Process_Write_Time"] = process_write_time.total_seconds()
+
+
 
 
 
