@@ -1,2 +1,15 @@
-,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
-0,1602005928,2020_10_06__17_38_47_delta.json,0,2,16,/bin/bash /usr/local/bin/rudataall.sh,1,0,19763,rudataall.sh,0,1,813,18927616,162
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pMajorPGFault,pName,pNonvoluntaryContextSwitches,pNumThreads,pPGFault,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
+7,1602567342,2020_10_13__05_35_35_delta.json,0,0,0,Invalid Json,0,0,19763,0,grep,60,1,131,279,11735040,642
+9,1602567345,2020_10_13__05_35_42_delta.json,0,0,0,Invalid Json,0,0,19763,0,grep,63,1,131,279,11735040,653
+6,1602567353,2020_10_13__05_35_45_delta.json,0,0,0,Invalid Json,0,0,19763,0,grep,64,1,131,279,11735040,664
+11,1602567365,2020_10_13__05_35_53_delta.json,0,0,0,Invalid Json,0,0,19763,0,grep,64,1,131,279,11735040,675
+2,1602567377,2020_10_13__05_36_05_delta.json,0,0,0,Invalid Json,0,0,19763,0,grep,65,1,140,279,11735040,686
+4,1602567388,2020_10_13__05_36_17_delta.json,0,0,0,Invalid Json,0,0,19763,0,grep,66,1,140,279,11735040,697
+0,1602567400,2020_10_13__05_36_28_delta.json,0,0,0,Invalid Json,0,0,19763,0,grep,66,1,140,279,11735040,708
+10,1602567412,2020_10_13__05_36_40_delta.json,0,0,0,Invalid Json,0,0,19763,0,grep,66,1,140,279,11735040,719
+5,1602567417,2020_10_13__05_36_52_delta.json,0,0,0,Invalid Json,9,6,19763,0,grep,66,1,140,279,11735040,730
+13,1602567429,2020_10_13__05_36_57_delta.json,0,0,0,Invalid Json,9,6,19763,0,grep,67,1,140,279,11735040,741
+8,1602567441,2020_10_13__05_37_09_delta.json,0,0,0,Invalid Json,9,6,19763,0,grep,70,1,140,279,11735040,752
+1,1602567450,2020_10_13__05_37_21_delta.json,0,0,0,Invalid Json,9,6,19763,0,grep,71,1,140,279,11735040,763
+12,1602567462,2020_10_13__05_37_30_delta.json,0,0,0,Invalid Json,9,6,19763,0,grep,72,1,140,279,11735040,774
+3,1602567474,2020_10_13__05_37_42_delta.json,0,0,0,Invalid Json,20,11,19763,0,grep,72,1,140,279,11735040,784

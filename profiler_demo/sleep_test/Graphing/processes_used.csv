@@ -1,216 +1,227 @@
 ,pCmdLine
-/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,9522.0
-grep -v '^\@',3038.0
-/bin/bash /usr/local/bin/entrypoint.sh start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,1009.0
-/usr/bin/python2 /usr/bin/aws s3 cp s3://container-profiler-overhead/100MilFastQFiles ./downloaded_seq_files --recursive,929.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/X/all.fastq,799.0
-/bin/bash /usr/local/bin/rudataall.sh,691.0
-umisplit -v -l 16 -m 0 -N 0 -o /data/Aligns -t 8 -b /data/References/Broad_UMI/barcodes_trugrade_96_set4.dat /data/Seqs/RNAseq_20150409_Lane1_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane1_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane2_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane2_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane3_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane3_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane4_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane4_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane5_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane5_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane6_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane6_R2.fastq.gz,544.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B9/all.fastq,526.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B9/all.fastq,525.0
-umimerge_parallel -i RNAseq_20150409 -s /data/References/Broad_UMI/Human_RefSeq/refGene.hg19.sym2ref.dat -e /data/References/Broad_UMI/ERCC92.fa -b /data/References/Broad_UMI/barcodes_trugrade_96_set4.dat -a /data/Aligns -o /data/Counts -t 8,376.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/X/all.fastq,269.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E10/all.fastq,123.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E10/all.fastq,122.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F5/all.fastq,91.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F5/all.fastq,90.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E8/all.fastq,69.0
-/bin/bash /usr/local/bin/start.sh umisplit -v -l 16 -m 0 -N 0 -o /data/Aligns -t 8 -b /data/References/Broad_UMI/barcodes_trugrade_96_set4.dat /data/Seqs/RNAseq_20150409_Lane1_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane1_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane2_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane2_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane3_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane3_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane4_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane4_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane5_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane5_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane6_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane6_R2.fastq.gz,69.0
-/bin/bash /usr/local/bin/entrypoint.sh start.sh umisplit -v -l 16 -m 0 -N 0 -o /data/Aligns -t 8 -b /data/References/Broad_UMI/barcodes_trugrade_96_set4.dat /data/Seqs/RNAseq_20150409_Lane1_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane1_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane2_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane2_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane3_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane3_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane4_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane4_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane5_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane5_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane6_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane6_R2.fastq.gz,69.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E8/all.fastq,68.0
-/bin/bash /usr/local/bin/entrypoint.sh aws s3 cp s3://container-profiler-overhead/100MilFastQFiles ./downloaded_seq_files --recursive,53.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D8/all.fastq,50.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D8/all.fastq,49.0
-/bin/bash /usr/local/bin/entrypoint.sh start.sh umimerge_parallel -i RNAseq_20150409 -s /data/References/Broad_UMI/Human_RefSeq/refGene.hg19.sym2ref.dat -e /data/References/Broad_UMI/ERCC92.fa -b /data/References/Broad_UMI/barcodes_trugrade_96_set4.dat -a /data/Aligns -o /data/Counts -t 8,47.0
-/bin/bash /usr/local/bin/start.sh umimerge_parallel -i RNAseq_20150409 -s /data/References/Broad_UMI/Human_RefSeq/refGene.hg19.sym2ref.dat -e /data/References/Broad_UMI/ERCC92.fa -b /data/References/Broad_UMI/barcodes_trugrade_96_set4.dat -a /data/Aligns -o /data/Counts -t 8,47.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E9/all.fastq,47.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E9/all.fastq,47.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G10/all.fastq,45.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B7/all.fastq,45.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B7/all.fastq,45.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G10/all.fastq,44.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E11/all.fastq,41.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D9/all.fastq,39.0
+/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,10481.0
+Invalid Json,4005.0
+/bin/bash /usr/local/bin/entrypoint.sh start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,1175.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/X/all.fastq,983.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/X/all.fastq,982.0
+/usr/bin/python2 /usr/bin/aws s3 cp s3://container-profiler-overhead/100MilFastQFiles ./downloaded_seq_files --recursive,981.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B9/all.fastq,672.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B9/all.fastq,670.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E10/all.fastq,176.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E10/all.fastq,175.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F5/all.fastq,136.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F5/all.fastq,136.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E8/all.fastq,105.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E8/all.fastq,103.0
+umisplit -v -l 16 -m 0 -N 0 -o /data/Aligns -t 8 -b /data/References/Broad_UMI/barcodes_trugrade_96_set4.dat /data/Seqs/RNAseq_20150409_Lane1_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane1_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane2_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane2_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane3_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane3_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane4_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane4_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane5_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane5_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane6_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane6_R2.fastq.gz,85.0
+/bin/bash /usr/local/bin/start.sh umisplit -v -l 16 -m 0 -N 0 -o /data/Aligns -t 8 -b /data/References/Broad_UMI/barcodes_trugrade_96_set4.dat /data/Seqs/RNAseq_20150409_Lane1_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane1_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane2_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane2_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane3_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane3_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane4_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane4_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane5_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane5_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane6_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane6_R2.fastq.gz,85.0
+/bin/bash /usr/local/bin/entrypoint.sh start.sh umisplit -v -l 16 -m 0 -N 0 -o /data/Aligns -t 8 -b /data/References/Broad_UMI/barcodes_trugrade_96_set4.dat /data/Seqs/RNAseq_20150409_Lane1_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane1_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane2_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane2_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane3_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane3_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane4_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane4_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane5_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane5_R2.fastq.gz /data/Seqs/RNAseq_20150409_Lane6_R1.fastq.gz /data/Seqs/RNAseq_20150409_Lane6_R2.fastq.gz,85.0
+umimerge_parallel -i RNAseq_20150409 -s /data/References/Broad_UMI/Human_RefSeq/refGene.hg19.sym2ref.dat -e /data/References/Broad_UMI/ERCC92.fa -b /data/References/Broad_UMI/barcodes_trugrade_96_set4.dat -a /data/Aligns -o /data/Counts -t 8,79.0
+/bin/bash /usr/local/bin/start.sh umimerge_parallel -i RNAseq_20150409 -s /data/References/Broad_UMI/Human_RefSeq/refGene.hg19.sym2ref.dat -e /data/References/Broad_UMI/ERCC92.fa -b /data/References/Broad_UMI/barcodes_trugrade_96_set4.dat -a /data/Aligns -o /data/Counts -t 8,79.0
+/bin/bash /usr/local/bin/entrypoint.sh start.sh umimerge_parallel -i RNAseq_20150409 -s /data/References/Broad_UMI/Human_RefSeq/refGene.hg19.sym2ref.dat -e /data/References/Broad_UMI/ERCC92.fa -b /data/References/Broad_UMI/barcodes_trugrade_96_set4.dat -a /data/Aligns -o /data/Counts -t 8,79.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B7/all.fastq,75.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B7/all.fastq,75.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G10/all.fastq,63.0
+/bin/bash /usr/local/bin/entrypoint.sh aws s3 cp s3://container-profiler-overhead/100MilFastQFiles ./downloaded_seq_files --recursive,63.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G10/all.fastq,60.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E9/all.fastq,46.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E9/all.fastq,46.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D8/all.fastq,43.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D8/all.fastq,41.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D9/all.fastq,38.0
 bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D9/all.fastq,38.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C11/all.fastq,38.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C11/all.fastq,38.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D2/all.fastq,37.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D2/all.fastq,36.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A6/all.fastq,36.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A6/all.fastq,35.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D1/all.fastq,34.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D1/all.fastq,34.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E11/all.fastq,32.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A9/all.fastq,32.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A9/all.fastq,30.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A8/all.fastq,29.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F11/all.fastq,29.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F11/all.fastq,29.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H8/all.fastq,29.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B11/all.fastq,29.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H8/all.fastq,29.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H6/all.fastq,28.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G2/all.fastq,28.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G2/all.fastq,28.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A8/all.fastq,28.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D4/all.fastq,27.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,27.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H6/all.fastq,27.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F10/all.fastq,27.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B10/all.fastq,27.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F1/all.fastq,27.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F10/all.fastq,27.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F1/all.fastq,27.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D12/all.fastq,27.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D11/all.fastq,27.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B10/all.fastq,27.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C12/all.fastq,27.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A7/all.fastq,26.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A10/all.fastq,26.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C12/all.fastq,26.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B4/all.fastq,26.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A7/all.fastq,26.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D12/all.fastq,26.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D11/all.fastq,26.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D4/all.fastq,26.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C9/all.fastq,25.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A10/all.fastq,25.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H4/all.fastq,25.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E11/all.fastq,35.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E11/all.fastq,35.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D2/all.fastq,34.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D2/all.fastq,34.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C11/all.fastq,33.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C11/all.fastq,33.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B11/all.fastq,31.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A6/all.fastq,31.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D1/all.fastq,31.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D1/all.fastq,31.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B11/all.fastq,30.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A6/all.fastq,30.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A9/all.fastq,27.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A9/all.fastq,26.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D11/all.fastq,26.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D11/all.fastq,25.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A8/all.fastq,25.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D4/all.fastq,25.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F1/all.fastq,25.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F10/all.fastq,25.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F1/all.fastq,25.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D4/all.fastq,25.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A8/all.fastq,25.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H6/all.fastq,25.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H6/all.fastq,25.0
 bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H4/all.fastq,25.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C9/all.fastq,25.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D3/all.fastq,25.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G1/all.fastq,24.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F3/all.fastq,24.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H9/all.fastq,24.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H9/all.fastq,24.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D5/all.fastq,24.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B2/all.fastq,24.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G7/all.fastq,24.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F4/all.fastq,24.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G7/all.fastq,24.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D5/all.fastq,24.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B2/all.fastq,24.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F3/all.fastq,24.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B6/all.fastq,24.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B1/all.fastq,23.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H7/all.fastq,23.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B1/all.fastq,23.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G12/all.fastq,23.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B5/all.fastq,23.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B5/all.fastq,23.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H4/all.fastq,25.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F11/all.fastq,24.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H8/all.fastq,24.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H8/all.fastq,24.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F10/all.fastq,24.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D12/all.fastq,24.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D12/all.fastq,24.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B6/all.fastq,23.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C12/all.fastq,23.0
 bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H7/all.fastq,23.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A3/all.fastq,23.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H11/all.fastq,23.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G1/all.fastq,23.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G12/all.fastq,23.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E3/all.fastq,22.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F2/all.fastq,22.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C10/all.fastq,22.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G8/all.fastq,22.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C7/all.fastq,22.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B8/all.fastq,22.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D6/all.fastq,22.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F2/all.fastq,22.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B12/all.fastq,22.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E3/all.fastq,22.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C7/all.fastq,22.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B12/all.fastq,22.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G6/all.fastq,22.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G8/all.fastq,22.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D6/all.fastq,22.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G6/all.fastq,22.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C10/all.fastq,21.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E5/all.fastq,21.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C6/all.fastq,21.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E5/all.fastq,21.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A2/all.fastq,21.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B8/all.fastq,21.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A2/all.fastq,21.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E4/all.fastq,21.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E4/all.fastq,21.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,20.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F9/all.fastq,20.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G3/all.fastq,20.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F12/all.fastq,20.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G4/all.fastq,20.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A11/all.fastq,20.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C6/all.fastq,20.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F12/all.fastq,20.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G3/all.fastq,20.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G4/all.fastq,20.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A11/all.fastq,20.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A4/all.fastq,19.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E1/all.fastq,19.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A4/all.fastq,19.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E6/all.fastq,19.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E6/all.fastq,19.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B11/all.fastq,19.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H2/all.fastq,19.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A1/all.fastq,18.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E2/all.fastq,18.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H1/all.fastq,18.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H10/all.fastq,18.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E1/all.fastq,18.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H2/all.fastq,18.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H3/all.fastq,18.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G11/all.fastq,18.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G5/all.fastq,18.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H3/all.fastq,18.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H1/all.fastq,18.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E7/all.fastq,18.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F11/all.fastq,23.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B10/all.fastq,23.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G2/all.fastq,23.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A7/all.fastq,23.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G2/all.fastq,23.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B6/all.fastq,23.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H7/all.fastq,23.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B10/all.fastq,23.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C12/all.fastq,23.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D5/all.fastq,22.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A10/all.fastq,22.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B1/all.fastq,22.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F3/all.fastq,22.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B4/all.fastq,22.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D5/all.fastq,22.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B4/all.fastq,22.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A10/all.fastq,22.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A7/all.fastq,22.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B1/all.fastq,22.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D3/all.fastq,22.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D3/all.fastq,22.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C9/all.fastq,22.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C9/all.fastq,22.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F3/all.fastq,22.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B5/all.fastq,21.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H9/all.fastq,21.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H9/all.fastq,21.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B5/all.fastq,21.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F4/all.fastq,21.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G7/all.fastq,21.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F4/all.fastq,21.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F2/all.fastq,21.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G7/all.fastq,21.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H11/all.fastq,20.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F2/all.fastq,20.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A3/all.fastq,20.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A3/all.fastq,20.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G12/all.fastq,20.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G12/all.fastq,20.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H11/all.fastq,20.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C10/all.fastq,19.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B12/all.fastq,19.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,19.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G1/all.fastq,19.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D6/all.fastq,19.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E5/all.fastq,19.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B2/all.fastq,19.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G8/all.fastq,19.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E3/all.fastq,19.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B12/all.fastq,19.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C10/all.fastq,19.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E5/all.fastq,19.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F9/all.fastq,19.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G1/all.fastq,19.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D6/all.fastq,19.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A2/all.fastq,18.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C7/all.fastq,18.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E6/all.fastq,18.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E6/all.fastq,18.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A2/all.fastq,18.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G4/all.fastq,18.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G6/all.fastq,18.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E3/all.fastq,18.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G8/all.fastq,18.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C7/all.fastq,18.0
 bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G11/all.fastq,18.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A1/all.fastq,18.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E2/all.fastq,18.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A12/all.fastq,17.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A12/all.fastq,17.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B3/all.fastq,17.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E4/all.fastq,18.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H2/all.fastq,18.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G4/all.fastq,18.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B8/all.fastq,18.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H2/all.fastq,18.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G6/all.fastq,18.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B8/all.fastq,18.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B2/all.fastq,18.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G3/all.fastq,17.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A11/all.fastq,17.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E1/all.fastq,17.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E4/all.fastq,17.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H10/all.fastq,17.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G11/all.fastq,17.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G3/all.fastq,17.0
 bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G5/all.fastq,17.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B3/all.fastq,17.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F8/all.fastq,15.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E12/all.fastq,15.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E12/all.fastq,15.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H5/all.fastq,15.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H5/all.fastq,15.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C6/all.fastq,17.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G5/all.fastq,17.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C6/all.fastq,17.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E1/all.fastq,17.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A11/all.fastq,16.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E2/all.fastq,16.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F12/all.fastq,16.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E2/all.fastq,16.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/B3/all.fastq,16.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A4/all.fastq,16.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F12/all.fastq,16.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A4/all.fastq,16.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H10/all.fastq,16.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B3/all.fastq,16.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A1/all.fastq,16.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H3/all.fastq,15.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H1/all.fastq,15.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H1/all.fastq,15.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A1/all.fastq,15.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H3/all.fastq,15.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E12/all.fastq,14.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H5/all.fastq,14.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H5/all.fastq,14.0
 bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F7/all.fastq,14.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D10/all.fastq,14.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F8/all.fastq,14.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F6/all.fastq,14.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D10/all.fastq,14.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E7/all.fastq,14.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A12/all.fastq,14.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/E12/all.fastq,14.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A12/all.fastq,14.0
 bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F7/all.fastq,14.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C1/all.fastq,13.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H12/all.fastq,13.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F6/all.fastq,13.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C1/all.fastq,13.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H12/all.fastq,13.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A5/all.fastq,11.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A5/all.fastq,11.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H10/all.fastq,10.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C8/all.fastq,9.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C5/all.fastq,9.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C5/all.fastq,9.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C8/all.fastq,9.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A3/all.fastq,8.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D7/all.fastq,8.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D7/all.fastq,7.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C2/all.fastq,7.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C4/all.fastq,6.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E7/all.fastq,14.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F8/all.fastq,12.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D10/all.fastq,12.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D10/all.fastq,12.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F8/all.fastq,12.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H12/all.fastq,12.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H12/all.fastq,12.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C1/all.fastq,11.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C1/all.fastq,11.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/F6/all.fastq,11.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F6/all.fastq,11.0
+cat /data/Aligns/X/RNAseq_20150409_Lane1_R1R2_X_0.fq /data/Aligns/X/RNAseq_20150409_Lane2_R1R2_X_0.fq /data/Aligns/X/RNAseq_20150409_Lane3_R1R2_X_0.fq /data/Aligns/X/RNAseq_20150409_Lane4_R1R2_X_0.fq /data/Aligns/X/RNAseq_20150409_Lane5_R1R2_X_0.fq /data/Aligns/X/RNAseq_20150409_Lane6_R1R2_X_0.fq,10.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A5/all.fastq,10.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/A5/all.fastq,9.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C8/all.fastq,8.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C5/all.fastq,8.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C8/all.fastq,8.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C5/all.fastq,8.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C2/all.fastq,6.0
 bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C2/all.fastq,6.0
-cat /data/Aligns/X/RNAseq_20150409_Lane1_R1R2_X_0.fq /data/Aligns/X/RNAseq_20150409_Lane2_R1R2_X_0.fq /data/Aligns/X/RNAseq_20150409_Lane3_R1R2_X_0.fq /data/Aligns/X/RNAseq_20150409_Lane4_R1R2_X_0.fq /data/Aligns/X/RNAseq_20150409_Lane5_R1R2_X_0.fq /data/Aligns/X/RNAseq_20150409_Lane6_R1R2_X_0.fq,5.0
-bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C3/all.fastq,5.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/D7/all.fastq,6.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D7/all.fastq,6.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C4/all.fastq,5.0
 bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C3/all.fastq,5.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C4/all.fastq,4.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E7/all.fastq,4.0
+bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/C4/all.fastq,5.0
+bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/C3/all.fastq,4.0
+cat /data/Aligns/B9/RNAseq_20150409_Lane1_R1R2_B9_0.fq /data/Aligns/B9/RNAseq_20150409_Lane2_R1R2_B9_0.fq /data/Aligns/B9/RNAseq_20150409_Lane3_R1R2_B9_0.fq /data/Aligns/B9/RNAseq_20150409_Lane4_R1R2_B9_0.fq /data/Aligns/B9/RNAseq_20150409_Lane5_R1R2_B9_0.fq /data/Aligns/B9/RNAseq_20150409_Lane6_R1R2_B9_0.fq,3.0
 bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/G9/all.fastq,3.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/D3/all.fastq,3.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F4/all.fastq,3.0
 bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G9/all.fastq,3.0
-cat /data/Aligns/B9/RNAseq_20150409_Lane1_R1R2_B9_0.fq /data/Aligns/B9/RNAseq_20150409_Lane2_R1R2_B9_0.fq /data/Aligns/B9/RNAseq_20150409_Lane3_R1R2_B9_0.fq /data/Aligns/B9/RNAseq_20150409_Lane4_R1R2_B9_0.fq /data/Aligns/B9/RNAseq_20150409_Lane5_R1R2_B9_0.fq /data/Aligns/B9/RNAseq_20150409_Lane6_R1R2_B9_0.fq,2.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/B6/all.fastq,2.0
-cat /data/Aligns/A6/RNAseq_20150409_Lane1_R1R2_A6_0.fq /data/Aligns/A6/RNAseq_20150409_Lane2_R1R2_A6_0.fq /data/Aligns/A6/RNAseq_20150409_Lane3_R1R2_A6_0.fq /data/Aligns/A6/RNAseq_20150409_Lane4_R1R2_A6_0.fq /data/Aligns/A6/RNAseq_20150409_Lane5_R1R2_A6_0.fq /data/Aligns/A6/RNAseq_20150409_Lane6_R1R2_A6_0.fq,1.0
-cat /data/Aligns/B8/RNAseq_20150409_Lane1_R1R2_B8_0.fq /data/Aligns/B8/RNAseq_20150409_Lane2_R1R2_B8_0.fq /data/Aligns/B8/RNAseq_20150409_Lane3_R1R2_B8_0.fq /data/Aligns/B8/RNAseq_20150409_Lane4_R1R2_B8_0.fq /data/Aligns/B8/RNAseq_20150409_Lane5_R1R2_B8_0.fq /data/Aligns/B8/RNAseq_20150409_Lane6_R1R2_B8_0.fq,1.0
-cat /data/Aligns/C10/RNAseq_20150409_Lane1_R1R2_C10_0.fq /data/Aligns/C10/RNAseq_20150409_Lane2_R1R2_C10_0.fq /data/Aligns/C10/RNAseq_20150409_Lane3_R1R2_C10_0.fq /data/Aligns/C10/RNAseq_20150409_Lane4_R1R2_C10_0.fq /data/Aligns/C10/RNAseq_20150409_Lane5_R1R2_C10_0.fq /data/Aligns/C10/RNAseq_20150409_Lane6_R1R2_C10_0.fq,1.0
-cat /data/Aligns/E3/RNAseq_20150409_Lane1_R1R2_E3_0.fq /data/Aligns/E3/RNAseq_20150409_Lane2_R1R2_E3_0.fq /data/Aligns/E3/RNAseq_20150409_Lane3_R1R2_E3_0.fq /data/Aligns/E3/RNAseq_20150409_Lane4_R1R2_E3_0.fq /data/Aligns/E3/RNAseq_20150409_Lane5_R1R2_E3_0.fq /data/Aligns/E3/RNAseq_20150409_Lane6_R1R2_E3_0.fq,1.0
-cat /data/Aligns/F11/RNAseq_20150409_Lane1_R1R2_F11_0.fq /data/Aligns/F11/RNAseq_20150409_Lane2_R1R2_F11_0.fq /data/Aligns/F11/RNAseq_20150409_Lane3_R1R2_F11_0.fq /data/Aligns/F11/RNAseq_20150409_Lane4_R1R2_F11_0.fq /data/Aligns/F11/RNAseq_20150409_Lane5_R1R2_F11_0.fq /data/Aligns/F11/RNAseq_20150409_Lane6_R1R2_F11_0.fq,1.0
-cat /data/Aligns/G1/RNAseq_20150409_Lane1_R1R2_G1_0.fq /data/Aligns/G1/RNAseq_20150409_Lane2_R1R2_G1_0.fq /data/Aligns/G1/RNAseq_20150409_Lane3_R1R2_G1_0.fq /data/Aligns/G1/RNAseq_20150409_Lane4_R1R2_G1_0.fq /data/Aligns/G1/RNAseq_20150409_Lane5_R1R2_G1_0.fq /data/Aligns/G1/RNAseq_20150409_Lane6_R1R2_G1_0.fq,1.0
-cat /data/Aligns/G12/RNAseq_20150409_Lane1_R1R2_G12_0.fq /data/Aligns/G12/RNAseq_20150409_Lane2_R1R2_G12_0.fq /data/Aligns/G12/RNAseq_20150409_Lane3_R1R2_G12_0.fq /data/Aligns/G12/RNAseq_20150409_Lane4_R1R2_G12_0.fq /data/Aligns/G12/RNAseq_20150409_Lane5_R1R2_G12_0.fq /data/Aligns/G12/RNAseq_20150409_Lane6_R1R2_G12_0.fq,1.0
-bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/H11/all.fastq,1.0
+cat /data/Aligns/B8/RNAseq_20150409_Lane1_R1R2_B8_0.fq /data/Aligns/B8/RNAseq_20150409_Lane2_R1R2_B8_0.fq /data/Aligns/B8/RNAseq_20150409_Lane3_R1R2_B8_0.fq /data/Aligns/B8/RNAseq_20150409_Lane4_R1R2_B8_0.fq /data/Aligns/B8/RNAseq_20150409_Lane5_R1R2_B8_0.fq /data/Aligns/B8/RNAseq_20150409_Lane6_R1R2_B8_0.fq,2.0
+cat /data/Aligns/F11/RNAseq_20150409_Lane1_R1R2_F11_0.fq /data/Aligns/F11/RNAseq_20150409_Lane2_R1R2_F11_0.fq /data/Aligns/F11/RNAseq_20150409_Lane3_R1R2_F11_0.fq /data/Aligns/F11/RNAseq_20150409_Lane4_R1R2_F11_0.fq /data/Aligns/F11/RNAseq_20150409_Lane5_R1R2_F11_0.fq /data/Aligns/F11/RNAseq_20150409_Lane6_R1R2_F11_0.fq,2.0
+cat /data/Aligns/H7/RNAseq_20150409_Lane1_R1R2_H7_0.fq /data/Aligns/H7/RNAseq_20150409_Lane2_R1R2_H7_0.fq /data/Aligns/H7/RNAseq_20150409_Lane3_R1R2_H7_0.fq /data/Aligns/H7/RNAseq_20150409_Lane4_R1R2_H7_0.fq /data/Aligns/H7/RNAseq_20150409_Lane5_R1R2_H7_0.fq /data/Aligns/H7/RNAseq_20150409_Lane6_R1R2_H7_0.fq,2.0
+cat /data/Aligns/G12/RNAseq_20150409_Lane1_R1R2_G12_0.fq /data/Aligns/G12/RNAseq_20150409_Lane2_R1R2_G12_0.fq /data/Aligns/G12/RNAseq_20150409_Lane3_R1R2_G12_0.fq /data/Aligns/G12/RNAseq_20150409_Lane4_R1R2_G12_0.fq /data/Aligns/G12/RNAseq_20150409_Lane5_R1R2_G12_0.fq /data/Aligns/G12/RNAseq_20150409_Lane6_R1R2_G12_0.fq,2.0
+cat /data/Aligns/A6/RNAseq_20150409_Lane1_R1R2_A6_0.fq /data/Aligns/A6/RNAseq_20150409_Lane2_R1R2_A6_0.fq /data/Aligns/A6/RNAseq_20150409_Lane3_R1R2_A6_0.fq /data/Aligns/A6/RNAseq_20150409_Lane4_R1R2_A6_0.fq /data/Aligns/A6/RNAseq_20150409_Lane5_R1R2_A6_0.fq /data/Aligns/A6/RNAseq_20150409_Lane6_R1R2_A6_0.fq,2.0
+cat /data/Aligns/G1/RNAseq_20150409_Lane1_R1R2_G1_0.fq /data/Aligns/G1/RNAseq_20150409_Lane2_R1R2_G1_0.fq /data/Aligns/G1/RNAseq_20150409_Lane3_R1R2_G1_0.fq /data/Aligns/G1/RNAseq_20150409_Lane4_R1R2_G1_0.fq /data/Aligns/G1/RNAseq_20150409_Lane5_R1R2_G1_0.fq /data/Aligns/G1/RNAseq_20150409_Lane6_R1R2_G1_0.fq,2.0
+cat /data/Aligns/C10/RNAseq_20150409_Lane1_R1R2_C10_0.fq /data/Aligns/C10/RNAseq_20150409_Lane2_R1R2_C10_0.fq /data/Aligns/C10/RNAseq_20150409_Lane3_R1R2_C10_0.fq /data/Aligns/C10/RNAseq_20150409_Lane4_R1R2_C10_0.fq /data/Aligns/C10/RNAseq_20150409_Lane5_R1R2_C10_0.fq /data/Aligns/C10/RNAseq_20150409_Lane6_R1R2_C10_0.fq,2.0
+cat /data/Aligns/E3/RNAseq_20150409_Lane1_R1R2_E3_0.fq /data/Aligns/E3/RNAseq_20150409_Lane2_R1R2_E3_0.fq /data/Aligns/E3/RNAseq_20150409_Lane3_R1R2_E3_0.fq /data/Aligns/E3/RNAseq_20150409_Lane4_R1R2_E3_0.fq /data/Aligns/E3/RNAseq_20150409_Lane5_R1R2_E3_0.fq /data/Aligns/E3/RNAseq_20150409_Lane6_R1R2_E3_0.fq,2.0
+cat /data/Aligns/F8/RNAseq_20150409_Lane1_R1R2_F8_0.fq /data/Aligns/F8/RNAseq_20150409_Lane2_R1R2_F8_0.fq /data/Aligns/F8/RNAseq_20150409_Lane3_R1R2_F8_0.fq /data/Aligns/F8/RNAseq_20150409_Lane4_R1R2_F8_0.fq /data/Aligns/F8/RNAseq_20150409_Lane5_R1R2_F8_0.fq /data/Aligns/F8/RNAseq_20150409_Lane6_R1R2_F8_0.fq,1.0
+cat /data/Aligns/E8/RNAseq_20150409_Lane1_R1R2_E8_0.fq /data/Aligns/E8/RNAseq_20150409_Lane2_R1R2_E8_0.fq /data/Aligns/E8/RNAseq_20150409_Lane3_R1R2_E8_0.fq /data/Aligns/E8/RNAseq_20150409_Lane4_R1R2_E8_0.fq /data/Aligns/E8/RNAseq_20150409_Lane5_R1R2_E8_0.fq /data/Aligns/E8/RNAseq_20150409_Lane6_R1R2_E8_0.fq,1.0
+cat /data/Aligns/E2/RNAseq_20150409_Lane1_R1R2_E2_0.fq /data/Aligns/E2/RNAseq_20150409_Lane2_R1R2_E2_0.fq /data/Aligns/E2/RNAseq_20150409_Lane3_R1R2_E2_0.fq /data/Aligns/E2/RNAseq_20150409_Lane4_R1R2_E2_0.fq /data/Aligns/E2/RNAseq_20150409_Lane5_R1R2_E2_0.fq /data/Aligns/E2/RNAseq_20150409_Lane6_R1R2_E2_0.fq,1.0
+cat /data/Aligns/G4/RNAseq_20150409_Lane1_R1R2_G4_0.fq /data/Aligns/G4/RNAseq_20150409_Lane2_R1R2_G4_0.fq /data/Aligns/G4/RNAseq_20150409_Lane3_R1R2_G4_0.fq /data/Aligns/G4/RNAseq_20150409_Lane4_R1R2_G4_0.fq /data/Aligns/G4/RNAseq_20150409_Lane5_R1R2_G4_0.fq /data/Aligns/G4/RNAseq_20150409_Lane6_R1R2_G4_0.fq,1.0
+cat /data/Aligns/H2/RNAseq_20150409_Lane1_R1R2_H2_0.fq /data/Aligns/H2/RNAseq_20150409_Lane2_R1R2_H2_0.fq /data/Aligns/H2/RNAseq_20150409_Lane3_R1R2_H2_0.fq /data/Aligns/H2/RNAseq_20150409_Lane4_R1R2_H2_0.fq /data/Aligns/H2/RNAseq_20150409_Lane5_R1R2_H2_0.fq /data/Aligns/H2/RNAseq_20150409_Lane6_R1R2_H2_0.fq,1.0
+cat /data/Aligns/H3/RNAseq_20150409_Lane1_R1R2_H3_0.fq /data/Aligns/H3/RNAseq_20150409_Lane2_R1R2_H3_0.fq /data/Aligns/H3/RNAseq_20150409_Lane3_R1R2_H3_0.fq /data/Aligns/H3/RNAseq_20150409_Lane4_R1R2_H3_0.fq /data/Aligns/H3/RNAseq_20150409_Lane5_R1R2_H3_0.fq /data/Aligns/H3/RNAseq_20150409_Lane6_R1R2_H3_0.fq,1.0
+cat /data/Aligns/D6/RNAseq_20150409_Lane1_R1R2_D6_0.fq /data/Aligns/D6/RNAseq_20150409_Lane2_R1R2_D6_0.fq /data/Aligns/D6/RNAseq_20150409_Lane3_R1R2_D6_0.fq /data/Aligns/D6/RNAseq_20150409_Lane4_R1R2_D6_0.fq /data/Aligns/D6/RNAseq_20150409_Lane5_R1R2_D6_0.fq /data/Aligns/D6/RNAseq_20150409_Lane6_R1R2_D6_0.fq,1.0
+cat /data/Aligns/H9/RNAseq_20150409_Lane1_R1R2_H9_0.fq /data/Aligns/H9/RNAseq_20150409_Lane2_R1R2_H9_0.fq /data/Aligns/H9/RNAseq_20150409_Lane3_R1R2_H9_0.fq /data/Aligns/H9/RNAseq_20150409_Lane4_R1R2_H9_0.fq /data/Aligns/H9/RNAseq_20150409_Lane5_R1R2_H9_0.fq /data/Aligns/H9/RNAseq_20150409_Lane6_R1R2_H9_0.fq,1.0
+cat /data/Aligns/A3/RNAseq_20150409_Lane1_R1R2_A3_0.fq /data/Aligns/A3/RNAseq_20150409_Lane2_R1R2_A3_0.fq /data/Aligns/A3/RNAseq_20150409_Lane3_R1R2_A3_0.fq /data/Aligns/A3/RNAseq_20150409_Lane4_R1R2_A3_0.fq /data/Aligns/A3/RNAseq_20150409_Lane5_R1R2_A3_0.fq /data/Aligns/A3/RNAseq_20150409_Lane6_R1R2_A3_0.fq,1.0
+cat /data/Aligns/A12/RNAseq_20150409_Lane1_R1R2_A12_0.fq /data/Aligns/A12/RNAseq_20150409_Lane2_R1R2_A12_0.fq /data/Aligns/A12/RNAseq_20150409_Lane3_R1R2_A12_0.fq /data/Aligns/A12/RNAseq_20150409_Lane4_R1R2_A12_0.fq /data/Aligns/A12/RNAseq_20150409_Lane5_R1R2_A12_0.fq /data/Aligns/A12/RNAseq_20150409_Lane6_R1R2_A12_0.fq,1.0
+cat /data/Aligns/G10/RNAseq_20150409_Lane1_R1R2_G10_0.fq /data/Aligns/G10/RNAseq_20150409_Lane2_R1R2_G10_0.fq /data/Aligns/G10/RNAseq_20150409_Lane3_R1R2_G10_0.fq /data/Aligns/G10/RNAseq_20150409_Lane4_R1R2_G10_0.fq /data/Aligns/G10/RNAseq_20150409_Lane5_R1R2_G10_0.fq /data/Aligns/G10/RNAseq_20150409_Lane6_R1R2_G10_0.fq,1.0
