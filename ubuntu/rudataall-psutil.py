@@ -193,11 +193,13 @@ def getVmInfo():
 
 
 
-	cmd=['findmnt', '-n', '-o', 'SOURCE', '/']
-	proc = subprocess.Popen(cmd, bufsize=-1, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-	o, e = proc.communicate()
-	mounted_filesys=str(o.decode('UTF-8').split('/').pop().rstrip())
+	cmd1=['lsblk', '-nd', '--output', 'NAME,TYPE']
+	cmd2=['grep','disk']
+	p1 = subprocess.Popen(cmd1, stdout=subprocess.PIPE)
+	p2 = subprocess.Popen(cmd2, stdin=p1.stdout, stdout=subprocess.PIPE)
+	o, e = p2.communicate()
 
+	mounted_filesys=str(o.decode('UTF-8').split()[0])
 	vm_disk_file=open("/proc/diskstats", "r")
 	vm_disk_file_stats=vm_disk_file.read()
 	vDiskSucessfulReads=int(re.findall(rf"{mounted_filesys}.*", vm_disk_file_stats)[0].split(sep=" ")[1])
