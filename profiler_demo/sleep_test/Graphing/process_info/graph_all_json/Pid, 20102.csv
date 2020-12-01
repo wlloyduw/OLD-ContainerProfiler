@@ -1,121 +1,77 @@
-,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pMajorPGFault,pName,pNonvoluntaryContextSwitches,pNumThreads,pPGFault,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
-10,1602873178,2020_10_16__18_32_57_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21247
-58,1602873179,2020_10_16__18_32_58_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21256
-81,1602873180,2020_10_16__18_32_59_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21264
-35,1602873181,2020_10_16__18_33_00_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21272
-67,1602873182,2020_10_16__18_33_01_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21280
-75,1602873183,2020_10_16__18_33_02_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21289
-68,1602873184,2020_10_16__18_33_03_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21297
-106,1602873185,2020_10_16__18_33_04_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21306
-7,1602873186,2020_10_16__18_33_05_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21315
-84,1602873187,2020_10_16__18_33_06_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21324
-11,1602873188,2020_10_16__18_33_07_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21333
-33,1602873189,2020_10_16__18_33_08_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21342
-119,1602873190,2020_10_16__18_33_09_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21351
-23,1602873191,2020_10_16__18_33_10_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21359
-17,1602873192,2020_10_16__18_33_11_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21368
-108,1602873193,2020_10_16__18_33_12_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,111,1,131,289,11735040,21377
-92,1602873194,2020_10_16__18_33_13_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,112,1,131,289,11735040,21386
-59,1602873195,2020_10_16__18_33_14_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,112,1,131,289,11735040,21395
-47,1602873196,2020_10_16__18_33_15_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,112,1,131,289,11735040,21404
-110,1602873197,2020_10_16__18_33_16_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,112,1,131,289,11735040,21413
-70,1602873198,2020_10_16__18_33_17_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,112,1,131,289,11735040,21422
-88,1602873199,2020_10_16__18_33_18_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,112,1,131,289,11735040,21431
-91,1602873200,2020_10_16__18_33_19_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,112,1,131,289,11735040,21439
-13,1602873201,2020_10_16__18_33_20_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,112,1,131,289,11735040,21447
-83,1602873202,2020_10_16__18_33_21_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,112,1,140,289,11735040,21456
-41,1602873203,2020_10_16__18_33_22_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21464
-74,1602873204,2020_10_16__18_33_23_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21473
-6,1602873205,2020_10_16__18_33_24_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21482
-49,1602873206,2020_10_16__18_33_25_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21491
-114,1602873207,2020_10_16__18_33_26_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21500
-54,1602873208,2020_10_16__18_33_27_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21508
-90,1602873209,2020_10_16__18_33_28_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21517
-76,1602873210,2020_10_16__18_33_29_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21526
-56,1602873211,2020_10_16__18_33_30_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21535
-50,1602873212,2020_10_16__18_33_31_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21544
-100,1602873213,2020_10_16__18_33_32_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21553
-94,1602873214,2020_10_16__18_33_33_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21562
-19,1602873215,2020_10_16__18_33_34_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21571
-4,1602873216,2020_10_16__18_33_35_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21580
-73,1602873217,2020_10_16__18_33_36_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21589
-78,1602873218,2020_10_16__18_33_37_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21597
-52,1602873219,2020_10_16__18_33_38_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21605
-77,1602873220,2020_10_16__18_33_39_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21613
-93,1602873221,2020_10_16__18_33_40_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21622
-16,1602873222,2020_10_16__18_33_41_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21629
-104,1602873223,2020_10_16__18_33_42_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21637
-62,1602873224,2020_10_16__18_33_43_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21646
-111,1602873225,2020_10_16__18_33_44_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21655
-97,1602873226,2020_10_16__18_33_45_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21664
-32,1602873227,2020_10_16__18_33_46_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21673
-37,1602873228,2020_10_16__18_33_47_delta.json,0,0,0,Invalid Json,0,0,20102,0,grep,113,1,140,289,11735040,21682
-60,1602873229,2020_10_16__18_33_48_delta.json,0,0,0,Invalid Json,12,4,20102,0,grep,113,1,140,289,11735040,21690
-31,1602873230,2020_10_16__18_33_49_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21699
-113,1602873231,2020_10_16__18_33_50_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21708
-27,1602873232,2020_10_16__18_33_51_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21716
-0,1602873233,2020_10_16__18_33_52_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21724
-29,1602873234,2020_10_16__18_33_53_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21733
-43,1602873235,2020_10_16__18_33_54_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21742
-30,1602873236,2020_10_16__18_33_55_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21751
-112,1602873237,2020_10_16__18_33_56_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21760
-115,1602873238,2020_10_16__18_33_57_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21768
-102,1602873239,2020_10_16__18_33_58_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21777
-98,1602873240,2020_10_16__18_33_59_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21786
-15,1602873241,2020_10_16__18_34_00_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21794
-55,1602873242,2020_10_16__18_34_01_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21802
-20,1602873243,2020_10_16__18_34_02_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21811
-101,1602873244,2020_10_16__18_34_03_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21820
-64,1602873245,2020_10_16__18_34_04_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21829
-118,1602873246,2020_10_16__18_34_05_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21837
-82,1602873247,2020_10_16__18_34_06_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21846
-1,1602873248,2020_10_16__18_34_07_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21854
-117,1602873249,2020_10_16__18_34_08_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21863
-5,1602873250,2020_10_16__18_34_09_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21872
-72,1602873251,2020_10_16__18_34_10_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21881
-14,1602873252,2020_10_16__18_34_11_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21890
-65,1602873253,2020_10_16__18_34_12_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21899
-109,1602873254,2020_10_16__18_34_13_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21907
-24,1602873255,2020_10_16__18_34_14_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21915
-80,1602873256,2020_10_16__18_34_15_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21924
-25,1602873257,2020_10_16__18_34_16_delta.json,0,0,0,Invalid Json,14,5,20102,0,grep,113,1,140,289,11735040,21931
-18,1602873258,2020_10_16__18_34_17_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,21940
-21,1602873259,2020_10_16__18_34_18_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,21949
-61,1602873260,2020_10_16__18_34_19_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,21958
-69,1602873261,2020_10_16__18_34_20_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,21966
-116,1602873262,2020_10_16__18_34_21_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,21975
-3,1602873263,2020_10_16__18_34_22_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,21984
-71,1602873264,2020_10_16__18_34_23_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,21993
-44,1602873265,2020_10_16__18_34_24_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22001
-86,1602873266,2020_10_16__18_34_25_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22010
-39,1602873267,2020_10_16__18_34_26_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22019
-42,1602873269,2020_10_16__18_34_27_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22028
-96,1602873270,2020_10_16__18_34_28_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22037
-79,1602873271,2020_10_16__18_34_30_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22046
-48,1602873272,2020_10_16__18_34_31_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22055
-38,1602873273,2020_10_16__18_34_32_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22063
-99,1602873274,2020_10_16__18_34_33_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22072
-34,1602873275,2020_10_16__18_34_34_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22081
-53,1602873276,2020_10_16__18_34_35_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22090
-36,1602873277,2020_10_16__18_34_36_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22099
-22,1602873278,2020_10_16__18_34_37_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22108
-46,1602873279,2020_10_16__18_34_38_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22117
-66,1602873280,2020_10_16__18_34_39_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22126
-89,1602873281,2020_10_16__18_34_40_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22134
-105,1602873282,2020_10_16__18_34_41_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22143
-12,1602873283,2020_10_16__18_34_42_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22152
-95,1602873284,2020_10_16__18_34_43_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22161
-103,1602873285,2020_10_16__18_34_44_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22170
-40,1602873286,2020_10_16__18_34_45_delta.json,0,0,0,Invalid Json,29,11,20102,0,grep,113,1,140,289,11735040,22179
-57,1602873287,2020_10_16__18_34_46_delta.json,0,0,0,Invalid Json,32,14,20102,0,grep,113,1,140,289,11735040,22188
-63,1602873288,2020_10_16__18_34_47_delta.json,0,0,0,Invalid Json,43,17,20102,0,grep,113,1,140,289,11735040,22196
-107,1602873289,2020_10_16__18_34_48_delta.json,0,0,0,Invalid Json,43,17,20102,0,grep,113,1,140,289,11735040,22205
-8,1602873290,2020_10_16__18_34_49_delta.json,0,0,0,Invalid Json,43,17,20102,0,grep,113,1,140,289,11735040,22214
-87,1602873291,2020_10_16__18_34_50_delta.json,0,0,0,Invalid Json,43,17,20102,0,grep,113,1,140,289,11735040,22223
-9,1602873292,2020_10_16__18_34_51_delta.json,0,0,0,Invalid Json,43,17,20102,0,grep,113,1,140,289,11735040,22232
-28,1602873293,2020_10_16__18_34_52_delta.json,0,0,0,Invalid Json,43,17,20102,0,grep,113,1,140,289,11735040,22241
-85,1602873294,2020_10_16__18_34_53_delta.json,0,0,0,Invalid Json,43,17,20102,0,grep,113,1,140,289,11735040,22250
-45,1602873295,2020_10_16__18_34_54_delta.json,0,0,0,Invalid Json,43,17,20102,0,grep,113,1,140,289,11735040,22258
-51,1602873296,2020_10_16__18_34_55_delta.json,0,0,0,Invalid Json,43,17,20102,0,grep,113,1,140,289,11735040,22266
-2,1602873297,2020_10_16__18_34_56_delta.json,0,0,0,Invalid Json,52,21,20102,0,grep,113,1,140,289,11735040,22275
-26,1602873298,2020_10_16__18_34_57_delta.json,0,0,0,Invalid Json,60,26,20102,0,grep,113,1,140,289,11735040,22283
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdline,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pInvoluntaryContextSwitches,pName,pNumThreads,pVirtualMemoryBytes,pVoluntaryContextSwitches
+9,1606210880,2020_11_24_07_59_04_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+44,1606210890,2020_11_24_07_59_05_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+18,1606210901,2020_11_24_07_59_06_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+36,1606210911,2020_11_24_07_59_07_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+43,1606210921,2020_11_24_07_59_08_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+16,1606210932,2020_11_24_07_59_09_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+30,1606210942,2020_11_24_07_59_10_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+28,1606210952,2020_11_24_07_59_11_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+65,1606210962,2020_11_24_07_59_12_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+7,1606210972,2020_11_24_07_59_14_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+17,1606210982,2020_11_24_07_59_15_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+37,1606210992,2020_11_24_07_59_16_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+74,1606211002,2020_11_24_07_59_17_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+6,1606211012,2020_11_24_07_59_18_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+29,1606211022,2020_11_24_07_59_19_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+3,1606211032,2020_11_24_07_59_20_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+22,1606211042,2020_11_24_07_59_21_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+12,1606211052,2020_11_24_07_59_22_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+68,1606211062,2020_11_24_07_59_23_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+27,1606211072,2020_11_24_07_59_24_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+53,1606211082,2020_11_24_07_59_25_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+69,1606211092,2020_11_24_07_59_26_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+57,1606211102,2020_11_24_07_59_27_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+60,1606211112,2020_11_24_07_59_29_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+34,1606211122,2020_11_24_07_59_30_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+45,1606211132,2020_11_24_07_59_31_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+4,1606211142,2020_11_24_07_59_32_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+73,1606211153,2020_11_24_07_59_33_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+15,1606211163,2020_11_24_07_59_34_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+55,1606211173,2020_11_24_07_59_35_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+51,1606211183,2020_11_24_07_59_36_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+66,1606211193,2020_11_24_07_59_37_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+52,1606211204,2020_11_24_07_59_38_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+35,1606211214,2020_11_24_07_59_39_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+24,1606211224,2020_11_24_07_59_40_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+13,1606211234,2020_11_24_07_59_41_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+11,1606211244,2020_11_24_07_59_42_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+59,1606211254,2020_11_24_07_59_43_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+31,1606211264,2020_11_24_07_59_44_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+41,1606211274,2020_11_24_07_59_45_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+1,1606211284,2020_11_24_07_59_46_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+5,1606211294,2020_11_24_07_59_48_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+70,1606211304,2020_11_24_07_59_49_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+8,1606211314,2020_11_24_07_59_50_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+56,1606211324,2020_11_24_07_59_51_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+67,1606211334,2020_11_24_07_59_52_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+54,1606211344,2020_11_24_07_59_53_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+61,1606211354,2020_11_24_07_59_54_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+2,1606211364,2020_11_24_07_59_55_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+42,1606211374,2020_11_24_07_59_56_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+72,1606211384,2020_11_24_07_59_57_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+10,1606211394,2020_11_24_07_59_58_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+64,1606211404,2020_11_24_07_59_59_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+62,1606211415,2020_11_24_08_00_00_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+20,1606211425,2020_11_24_08_00_01_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+38,1606211435,2020_11_24_08_00_02_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+50,1606211445,2020_11_24_08_00_03_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+63,1606211455,2020_11_24_08_00_05_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+48,1606211465,2020_11_24_08_00_06_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+0,1606211475,2020_11_24_08_00_07_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+49,1606211485,2020_11_24_08_00_08_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+19,1606211496,2020_11_24_08_00_09_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+46,1606211506,2020_11_24_08_00_10_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+33,1606211516,2020_11_24_08_00_11_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+39,1606211526,2020_11_24_08_00_12_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+40,1606211536,2020_11_24_08_00_13_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+14,1606211546,2020_11_24_08_00_14_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+25,1606211556,2020_11_24_08_00_15_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+47,1606211566,2020_11_24_08_00_16_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+58,1606211576,2020_11_24_08_00_17_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+21,1606211586,2020_11_24_08_00_18_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+26,1606211596,2020_11_24_08_00_20_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+75,1606211606,2020_11_24_08_00_21_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+32,1606211616,2020_11_24_08_00_22_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+71,1606211626,2020_11_24_08_00_23_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1
+23,1606211636,2020_11_24_08_00_24_delta.json,0.0,0.0,0.0,/bin/bash /usr/local/bin/start.sh multibwa.sh /data /data/References/Broad_UMI /data/References/Broad_UMI/Human_RefSeq /data/Aligns 24 20 8,0.0,0.0,20102,0,start.sh,1,18964480,1

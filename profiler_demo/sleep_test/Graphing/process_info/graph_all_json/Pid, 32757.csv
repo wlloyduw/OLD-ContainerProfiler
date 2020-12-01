@@ -1,0 +1,2 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdline,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pInvoluntaryContextSwitches,pName,pNumThreads,pVirtualMemoryBytes,pVoluntaryContextSwitches
+0,1606670346,2020_11_29_17_18_54_delta.json,0.0,0.0,0.0,grep -v '^\@',0.0,0.0,32757,2,grep,1,11743232,1

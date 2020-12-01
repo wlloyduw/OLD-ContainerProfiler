@@ -50,7 +50,7 @@ def update_fig(figure, y_title, the_title):
             x=.5,
             y=-0.29,
             showarrow=False,
-            text="Time (Seconds)",
+            text="Time (h)",
             xref="paper",
             yref="paper"
         ),
@@ -65,7 +65,7 @@ def update_fig(figure, y_title, the_title):
             ),
             showarrow=False,
             text=y_title,
-            textangle=-90,
+            textangle=0,
             xref="paper",
             yref="paper"
         )
@@ -131,14 +131,14 @@ def make_four(data_frame):
 	metricslist1 = [metrics1, metrics2, metrics3, metrics4]
 
 
-	titles2=["Cpu Utilization", "Memory Utilization", "Network Utilization", "Disk Utilization"]
-	ytitles2=["% of CPU Utilization", "Physical Ram (KB)", "# of bytes sent/received", "# of disk reads/writes"]
-	applypercent2=[True, False, False, False]
+	titles2=["CPU usage", "Memory Usage", "Network transfer", "Disk Uwrites"]
+	ytitles2=["Percentage", "Percentage", "GB received","GB written"]
+	applypercent2=[True, True, False, False]
 
-	metrics1=["vCpuTime"]
-	metrics2=["vMemoryFree", "vMemoryCached"]
-	metrics3=["vNetworkBytesRecvd", "vNetworkBytesSent"]
-	metrics4=["vDiskSuccessfulReads", "vDiskSuccessfulWrites"]
+	metrics1=["vCpuTime", "cCpuTime"]
+	metrics2=["vMemoryFree", "cMemoryUsed"]
+	metrics3=["vNetworkBytesRecvd", "cNetworkBytesRecvd"]
+	metrics4=["cDiskSectorWrites", "vDiskSectorWrites"]
 
 
 	metricslist2 = [metrics1, metrics2, metrics3, metrics4]
@@ -169,8 +169,13 @@ def make_four(data_frame):
 				#the_max= data_frame[sublist].max().max()
 				the_max= data_frame[el].max()
 				if all_percents[num][count] == True:
-					fig.add_trace(go.Scatter(x=data_frame['currentTime'], y=data_frame[el]/the_max, name=el, hoverinfo='x+y+name'), row=current_row, col=current_col)
-					export_fig.add_trace(go.Scatter(x=data_frame['currentTime'], y=data_frame[el]/the_max, name=el, hoverinfo='x+y+name'))
+					if el == "vMemoryFree":
+						fig.add_trace(go.Scatter(x=data_frame['currentTime'], y=1-(data_frame[el]/the_max), name=el, hoverinfo='x+y+name'), row=current_row, col=current_col)
+						export_fig.add_trace(go.Scatter(x=data_frame['currentTime'], y=1-(data_frame[el]/the_max), name=el, hoverinfo='x+y+name'))
+
+					else:
+						fig.add_trace(go.Scatter(x=data_frame['currentTime'], y=data_frame[el]/the_max, name=el, hoverinfo='x+y+name'), row=current_row, col=current_col)
+						export_fig.add_trace(go.Scatter(x=data_frame['currentTime'], y=data_frame[el]/the_max, name=el, hoverinfo='x+y+name'))
 				else:
 					fig.add_trace(go.Scatter(x=data_frame['currentTime'], y=data_frame[el], name=el, hoverinfo='x+y+name'), row=current_row, col=current_col)
 					export_fig.add_trace(go.Scatter(x=data_frame['currentTime'], y=data_frame[el], name=el, hoverinfo='x+y+name'))
@@ -184,7 +189,7 @@ def make_four(data_frame):
 				current_row +=1
 			currentXAxis='xaxis{}'.format(axiscounter)
 			currentYAxis='yaxis{}'.format(axiscounter)
-			fig['layout'][currentXAxis].update(title="Time (seconds)")
+			fig['layout'][currentXAxis].update(title="Time (h)")
 			fig['layout'][currentYAxis].update(title=ytitles[count])
 			axiscounter+=1
 			update_fig(export_fig, ytitles_all[num][count], titles_all[num][count])
@@ -274,7 +279,7 @@ args= parser.parse_args()
 #dataframe read into from cmdline
 data_frame = pd.read_csv(args.csv_file)
 data_frame.head()
-data_frame['currentTime'] = data_frame['currentTime'] - data_frame['currentTime'][0]
+data_frame['currentTime'] = (data_frame['currentTime'] - data_frame['currentTime'][0])/3600
 
 data_frame.name=args.csv_file
 

@@ -1,0 +1,7 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
+5,1602003049,2020_10_06__16_50_39_delta.json,0,0,0,/usr/bin/python2 /usr/bin/aws s3 cp s3://container-profiler-overhead/100MilFastQFiles ./downloaded_seq_files --recursive,1112,734,151,aws,93,18,86054,375701504,60672
+1,1602003060,2020_10_06__16_50_40_delta.json,0,0,0,/usr/bin/python2 /usr/bin/aws s3 cp s3://container-profiler-overhead/100MilFastQFiles ./downloaded_seq_files --recursive,2447,1496,151,aws,323,18,86694,379494400,148876
+0,1602003070,2020_10_06__16_50_41_delta.json,0,0,0,/usr/bin/python2 /usr/bin/aws s3 cp s3://container-profiler-overhead/100MilFastQFiles ./downloaded_seq_files --recursive,3639,2204,151,aws,493,18,86728,378429440,229851
+4,1602003080,2020_10_06__16_50_42_delta.json,0,0,0,/usr/bin/python2 /usr/bin/aws s3 cp s3://container-profiler-overhead/100MilFastQFiles ./downloaded_seq_files --recursive,4841,2875,151,aws,664,18,86555,378871808,309190
+2,1602003091,2020_10_06__16_50_44_delta.json,0,0,0,/usr/bin/python2 /usr/bin/aws s3 cp s3://container-profiler-overhead/100MilFastQFiles ./downloaded_seq_files --recursive,6135,3661,151,aws,831,18,86858,379613184,397935
+3,1602003102,2020_10_06__16_50_45_delta.json,0,0,0,/usr/bin/python2 /usr/bin/aws s3 cp s3://container-profiler-overhead/100MilFastQFiles ./downloaded_seq_files --recursive,7457,4423,151,aws,1070,18,86891,379965440,486225

@@ -1,20 +1,52 @@
-,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pMajorPGFault,pName,pNonvoluntaryContextSwitches,pNumThreads,pPGFault,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
-8,1602567718,2020_10_13__05_41_51_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,0,2,25317,0,bwa,90,1,1161,1649,19496960,1064
-18,1602567728,2020_10_13__05_41_58_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,0,2,25317,0,bwa,90,1,1161,1649,19496960,1075
-14,1602567740,2020_10_13__05_42_08_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,0,2,25317,0,bwa,91,1,1161,1649,19496960,1086
-15,1602567745,2020_10_13__05_42_20_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,0,2,25317,0,bwa,92,1,1161,1649,19496960,1097
-0,1602567753,2020_10_13__05_42_25_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,9,25,25317,0,bwa,93,1,38485,34934,155463680,1108
-12,1602567759,2020_10_13__05_42_33_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,9,25,25317,0,bwa,94,1,38485,34934,155463680,1119
-16,1602567766,2020_10_13__05_42_39_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,9,25,25317,0,bwa,95,1,38485,34934,155463680,1130
-4,1602567775,2020_10_13__05_42_46_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,9,25,25317,0,bwa,97,1,38485,34934,155463680,1141
-7,1602567782,2020_10_13__05_42_55_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,9,25,25317,0,bwa,98,1,38485,34934,155463680,1152
-13,1602567793,2020_10_13__05_43_02_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,9,25,25317,0,bwa,99,1,38485,34934,155463680,1163
-10,1602567802,2020_10_13__05_43_13_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,32,324,25317,0,bwa,99,1,106283,34877,155340800,1174
-6,1602567807,2020_10_13__05_43_22_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,32,324,25317,0,bwa,100,1,106283,34877,155340800,1184
-17,1602567814,2020_10_13__05_43_27_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,32,324,25317,0,bwa,100,1,106283,34877,155340800,1195
-1,1602567822,2020_10_13__05_43_34_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,32,324,25317,0,bwa,102,1,106283,34877,155340800,1206
-11,1602567831,2020_10_13__05_43_42_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,32,324,25317,0,bwa,103,1,106283,34877,155340800,1217
-9,1602567843,2020_10_13__05_43_51_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,52,609,25317,0,bwa,104,1,163025,44444,194453504,1228
-3,1602567855,2020_10_13__05_44_03_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,53,618,25317,0,bwa,105,1,163025,44444,194453504,1239
-2,1602567866,2020_10_13__05_44_15_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,53,618,25317,0,bwa,106,1,163025,44444,194453504,1250
-5,1602567878,2020_10_13__05_44_26_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/F9/all.fastq,64,680,25317,0,bwa,107,1,210215,91634,387743744,1261
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdline,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pInvoluntaryContextSwitches,pName,pNumThreads,pVirtualMemoryBytes,pVoluntaryContextSwitches
+20,1606206069,2020_11_24_07_50_35_delta.json,1.0,0.0,0.0,grep -v '^\@',0.0,0.0,25317,2,grep,1,11743232,11
+23,1606206079,2020_11_24_07_50_36_delta.json,1.0,0.0,0.0,grep -v '^\@',0.0,0.0,25317,2,grep,1,11743232,11
+40,1606206089,2020_11_24_07_50_37_delta.json,1.0,0.0,0.0,grep -v '^\@',0.0,0.0,25317,2,grep,1,11743232,11
+6,1606206099,2020_11_24_07_50_38_delta.json,1.0,0.0,0.0,grep -v '^\@',0.0,0.0,25317,2,grep,1,11743232,262
+4,1606206109,2020_11_24_07_50_40_delta.json,1.0,0.0,0.0,grep -v '^\@',0.0,0.0,25317,2,grep,1,11743232,262
+36,1606206119,2020_11_24_07_50_41_delta.json,1.0,0.0,0.0,grep -v '^\@',0.0,0.0,25317,2,grep,1,11743232,262
+34,1606206129,2020_11_24_07_50_42_delta.json,1.0,0.0,0.0,grep -v '^\@',0.0,0.0,25317,2,grep,1,11743232,262
+32,1606206140,2020_11_24_07_50_43_delta.json,1.0,0.0,0.0,grep -v '^\@',10.0,5.0,25317,3,grep,1,11743232,16351
+16,1606206150,2020_11_24_07_50_44_delta.json,1.0,0.0,0.0,grep -v '^\@',10.0,5.0,25317,3,grep,1,11743232,16351
+41,1606206160,2020_11_24_07_50_45_delta.json,1.0,0.0,0.0,grep -v '^\@',10.0,5.0,25317,3,grep,1,11743232,16351
+3,1606206170,2020_11_24_07_50_46_delta.json,1.0,0.0,0.0,grep -v '^\@',22.0,8.0,25317,7,grep,1,11743232,32397
+35,1606206180,2020_11_24_07_50_47_delta.json,1.0,0.0,0.0,grep -v '^\@',22.0,8.0,25317,7,grep,1,11743232,32397
+17,1606206190,2020_11_24_07_50_48_delta.json,1.0,0.0,0.0,grep -v '^\@',22.0,8.0,25317,7,grep,1,11743232,32397
+24,1606206200,2020_11_24_07_50_49_delta.json,1.0,0.0,0.0,grep -v '^\@',22.0,8.0,25317,7,grep,1,11743232,32397
+7,1606206210,2020_11_24_07_50_50_delta.json,1.0,0.0,0.0,grep -v '^\@',35.0,12.0,25317,13,grep,1,11743232,48357
+10,1606206220,2020_11_24_07_50_51_delta.json,1.0,0.0,0.0,grep -v '^\@',35.0,12.0,25317,13,grep,1,11743232,48357
+5,1606206230,2020_11_24_07_50_52_delta.json,1.0,0.0,0.0,grep -v '^\@',35.0,12.0,25317,13,grep,1,11743232,48357
+0,1606206240,2020_11_24_07_50_53_delta.json,1.0,0.0,0.0,grep -v '^\@',35.0,12.0,25317,13,grep,1,11743232,48357
+12,1606206250,2020_11_24_07_50_54_delta.json,1.0,0.0,0.0,grep -v '^\@',44.0,19.0,25317,17,grep,1,11743232,64321
+26,1606206260,2020_11_24_07_50_55_delta.json,1.0,0.0,0.0,grep -v '^\@',44.0,19.0,25317,17,grep,1,11743232,64321
+38,1606206270,2020_11_24_07_50_56_delta.json,1.0,0.0,0.0,grep -v '^\@',44.0,19.0,25317,17,grep,1,11743232,64321
+29,1606206280,2020_11_24_07_50_58_delta.json,1.0,0.0,0.0,grep -v '^\@',44.0,19.0,25317,17,grep,1,11743232,64321
+25,1606206290,2020_11_24_07_50_59_delta.json,1.0,0.0,0.0,grep -v '^\@',55.00000000000001,26.0,25317,21,grep,1,11743232,80310
+1,1606206300,2020_11_24_07_51_00_delta.json,1.0,0.0,0.0,grep -v '^\@',55.00000000000001,26.0,25317,21,grep,1,11743232,80310
+50,1606206310,2020_11_24_07_51_01_delta.json,1.0,0.0,0.0,grep -v '^\@',55.00000000000001,26.0,25317,21,grep,1,11743232,80310
+31,1606206320,2020_11_24_07_51_02_delta.json,1.0,0.0,0.0,grep -v '^\@',55.00000000000001,26.0,25317,21,grep,1,11743232,80310
+13,1606206330,2020_11_24_07_51_03_delta.json,1.0,0.0,0.0,grep -v '^\@',65.0,31.0,25317,24,grep,1,11743232,96088
+21,1606206340,2020_11_24_07_51_04_delta.json,1.0,0.0,0.0,grep -v '^\@',65.0,31.0,25317,24,grep,1,11743232,96088
+9,1606206350,2020_11_24_07_51_05_delta.json,1.0,0.0,0.0,grep -v '^\@',65.0,31.0,25317,24,grep,1,11743232,96088
+47,1606206360,2020_11_24_07_51_06_delta.json,1.0,0.0,0.0,grep -v '^\@',65.0,31.0,25317,24,grep,1,11743232,96088
+33,1606206371,2020_11_24_07_51_07_delta.json,1.0,0.0,0.0,grep -v '^\@',75.0,36.0,25317,27,grep,1,11743232,111849
+44,1606206381,2020_11_24_07_51_08_delta.json,1.0,0.0,0.0,grep -v '^\@',75.0,36.0,25317,27,grep,1,11743232,111849
+11,1606206391,2020_11_24_07_51_09_delta.json,1.0,0.0,0.0,grep -v '^\@',75.0,36.0,25317,27,grep,1,11743232,111849
+46,1606206401,2020_11_24_07_51_10_delta.json,1.0,0.0,0.0,grep -v '^\@',75.0,36.0,25317,27,grep,1,11743232,111849
+19,1606206411,2020_11_24_07_51_11_delta.json,1.0,0.0,0.0,grep -v '^\@',84.0,42.0,25317,27,grep,1,11743232,127692
+27,1606206421,2020_11_24_07_51_12_delta.json,1.0,0.0,0.0,grep -v '^\@',84.0,42.0,25317,27,grep,1,11743232,127692
+8,1606206431,2020_11_24_07_51_14_delta.json,1.0,0.0,0.0,grep -v '^\@',84.0,42.0,25317,27,grep,1,11743232,127692
+18,1606206441,2020_11_24_07_51_15_delta.json,1.0,0.0,0.0,grep -v '^\@',84.0,42.0,25317,27,grep,1,11743232,127692
+49,1606206451,2020_11_24_07_51_16_delta.json,1.0,0.0,0.0,grep -v '^\@',97.0,46.0,25317,27,grep,1,11743232,143571
+22,1606206461,2020_11_24_07_51_17_delta.json,1.0,0.0,0.0,grep -v '^\@',97.0,46.0,25317,27,grep,1,11743232,143571
+37,1606206471,2020_11_24_07_51_18_delta.json,1.0,0.0,0.0,grep -v '^\@',97.0,46.0,25317,27,grep,1,11743232,143571
+39,1606206481,2020_11_24_07_51_19_delta.json,1.0,0.0,0.0,grep -v '^\@',97.0,46.0,25317,27,grep,1,11743232,143571
+45,1606206491,2020_11_24_07_51_20_delta.json,1.0,0.0,0.0,grep -v '^\@',107.0,52.0,25317,27,grep,1,11743232,159293
+43,1606206501,2020_11_24_07_51_21_delta.json,1.0,0.0,0.0,grep -v '^\@',107.0,52.0,25317,27,grep,1,11743232,159293
+30,1606206511,2020_11_24_07_51_22_delta.json,1.0,0.0,0.0,grep -v '^\@',107.0,52.0,25317,27,grep,1,11743232,159293
+15,1606206521,2020_11_24_07_51_23_delta.json,1.0,0.0,0.0,grep -v '^\@',107.0,52.0,25317,27,grep,1,11743232,159293
+2,1606206531,2020_11_24_07_51_24_delta.json,1.0,0.0,0.0,grep -v '^\@',117.0,56.99999999999999,25317,28,grep,1,11743232,175180
+14,1606206541,2020_11_24_07_51_25_delta.json,1.0,0.0,0.0,grep -v '^\@',117.0,56.99999999999999,25317,28,grep,1,11743232,175180
+28,1606206551,2020_11_24_07_51_26_delta.json,1.0,0.0,0.0,grep -v '^\@',117.0,56.99999999999999,25317,28,grep,1,11743232,175180
+42,1606206561,2020_11_24_07_51_27_delta.json,1.0,0.0,0.0,grep -v '^\@',128.0,62.0,25317,28,grep,1,11743232,191073
+48,1606206571,2020_11_24_07_51_28_delta.json,1.0,0.0,0.0,grep -v '^\@',131.0,65.0,25317,28,grep,1,11743232,197390

@@ -1,0 +1,3 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdline,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pInvoluntaryContextSwitches,pName,pNumThreads,pVirtualMemoryBytes,pVoluntaryContextSwitches
+0,1606673162,2020_11_29_18_05_45_delta.json,0.0,0.0,1.0,python3 /usr/local/bin/rudataall-psutil.py /.cprofiles,1.0,8.0,2719,64,python3,1,45613056,16
+1,1606675670,2020_11_29_18_47_33_delta.json,0.0,0.0,0.0,python3 /usr/local/bin/rudataall-psutil.py /.cprofiles,0.0,5.0,2719,1,python3,1,45613056,12

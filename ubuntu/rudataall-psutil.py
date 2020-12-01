@@ -124,13 +124,14 @@ def getContainerInfo():
 
 	
 	cNetworkBytesFile=open("/proc/net/dev", "r")
-
+	cNetworkBytesFileStats=cNetworkBytesFile.read()
 	cNetworkBytesRecvd=0
 	cNetworkBytesSent=0
 	try:
-		cNetworkBytesArr=int(re.findall(r'eth0.*',cNetworkBytesFile)[0].split())
-		cNetworkBytesRecvd=cNetworkBytesArr[1]
-		cNetworkBytesSent=cNetworkBytesArr[9]
+		cNetworkBytesArr=re.findall(r'eth0.*',cNetworkBytesFileStats)[0]
+		cNetworkBytesRecvd=int(cNetworkBytesArr[1])
+		cNetworkBytesSent=int(cNetworkBytesArr[9])
+
 	except:	
 		pass
 		

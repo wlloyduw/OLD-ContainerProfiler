@@ -1,0 +1,10 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
+1,1602003510,2020_10_06__16_55_43_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G11/all.fastq,0,3,1260,bwa,3,1,1613,19496960,1
+0,1602003526,2020_10_06__16_55_52_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G11/all.fastq,0,3,1260,bwa,3,1,1613,19496960,1
+7,1602003544,2020_10_06__16_56_02_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G11/all.fastq,7,27,1260,bwa,1744,1,34884,155598848,2
+3,1602003554,2020_10_06__16_56_11_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G11/all.fastq,7,27,1260,bwa,1744,1,34884,155598848,2
+6,1602003572,2020_10_06__16_56_20_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G11/all.fastq,19,80,1260,bwa,1793,1,82074,348889088,2
+5,1602003586,2020_10_06__16_56_26_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G11/all.fastq,30,310,1260,bwa,19533,1,34856,155336704,3
+2,1602003604,2020_10_06__16_56_32_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G11/all.fastq,30,310,1260,bwa,19533,1,34856,155336704,3
+4,1602003620,2020_10_06__16_56_36_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G11/all.fastq,49,542,1260,bwa,34360,1,44414,194580480,3
+8,1602003638,2020_10_06__16_56_45_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/G11/all.fastq,53,580,1260,bwa,37163,1,44414,194580480,4

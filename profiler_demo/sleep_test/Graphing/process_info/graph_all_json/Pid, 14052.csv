@@ -1,0 +1,2 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdline,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pInvoluntaryContextSwitches,pName,pNumThreads,pVirtualMemoryBytes,pVoluntaryContextSwitches
+0,1606668834,2020_11_29_16_53_44_delta.json,0.0,0.0,0.0,rm /data/Aligns/F12/all.fastq,8.0,0.0,14052,7,rm,1,4677632,0

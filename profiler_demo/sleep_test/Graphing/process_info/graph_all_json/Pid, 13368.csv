@@ -1,0 +1,11 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
+6,1602005068,2020_10_06__17_09_43_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A1/all.fastq,0,3,13368,bwa,4,1,1632,19496960,1
+1,1602005079,2020_10_06__17_09_52_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A1/all.fastq,0,3,13368,bwa,4,1,1632,19496960,1
+5,1602005097,2020_10_06__17_09_56_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A1/all.fastq,7,27,13368,bwa,1749,1,34837,155328512,16
+4,1602005110,2020_10_06__17_10_05_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A1/all.fastq,7,27,13368,bwa,1749,1,34837,155328512,16
+2,1602005128,2020_10_06__17_10_14_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A1/all.fastq,7,27,13368,bwa,1749,1,34837,155328512,16
+7,1602005146,2020_10_06__17_10_24_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A1/all.fastq,36,302,13368,bwa,19286,1,34811,155066368,17
+0,1602005156,2020_10_06__17_10_33_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A1/all.fastq,36,302,13368,bwa,19286,1,34811,155066368,17
+8,1602005174,2020_10_06__17_10_35_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A1/all.fastq,36,302,13368,bwa,19286,1,34811,155066368,17
+3,1602005184,2020_10_06__17_10_45_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A1/all.fastq,57,573,13368,bwa,36670,1,44282,193961984,18
+9,1602005203,2020_10_06__17_10_53_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/A1/all.fastq,68,675,13368,bwa,36718,1,91472,387252224,18

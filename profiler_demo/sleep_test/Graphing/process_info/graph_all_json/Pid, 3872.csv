@@ -1,22 +1,2 @@
-,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pMajorPGFault,pName,pNonvoluntaryContextSwitches,pNumThreads,pPGFault,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
-9,1602568139,2020_10_13__05_48_53_delta.json,0,0,0,Invalid Json,0,0,3872,0,grep,131,1,132,262,11735040,1568
-5,1602568157,2020_10_13__05_48_59_delta.json,0,0,0,Invalid Json,0,0,3872,0,grep,132,1,132,262,11735040,1590
-20,1602568165,2020_10_13__05_49_17_delta.json,0,0,0,Invalid Json,0,0,3872,0,grep,133,1,132,262,11735040,1601
-4,1602568170,2020_10_13__05_49_24_delta.json,0,0,0,Invalid Json,0,0,3872,0,grep,133,1,141,262,11735040,1612
-2,1602568182,2020_10_13__05_49_30_delta.json,0,0,0,Invalid Json,0,0,3872,0,grep,134,1,141,262,11735040,1623
-13,1602568194,2020_10_13__05_49_42_delta.json,0,0,0,Invalid Json,0,0,3872,0,grep,135,1,141,262,11735040,1634
-17,1602568203,2020_10_13__05_49_54_delta.json,0,0,0,Invalid Json,0,0,3872,0,grep,138,1,141,262,11735040,1645
-6,1602568208,2020_10_13__05_50_03_delta.json,0,0,0,Invalid Json,10,5,3872,0,grep,139,1,141,262,11735040,1655
-10,1602568220,2020_10_13__05_50_08_delta.json,0,0,0,Invalid Json,10,5,3872,0,grep,140,1,141,262,11735040,1666
-12,1602568225,2020_10_13__05_50_20_delta.json,0,0,0,Invalid Json,10,5,3872,0,grep,141,1,141,262,11735040,1677
-1,1602568236,2020_10_13__05_50_25_delta.json,0,0,0,Invalid Json,10,5,3872,0,grep,142,1,141,262,11735040,1688
-19,1602568241,2020_10_13__05_50_36_delta.json,0,0,0,Invalid Json,10,5,3872,0,grep,143,1,141,262,11735040,1699
-0,1602568253,2020_10_13__05_50_41_delta.json,0,0,0,Invalid Json,23,7,3872,0,grep,145,1,141,262,11735040,1710
-3,1602568265,2020_10_13__05_50_53_delta.json,0,0,0,Invalid Json,23,7,3872,0,grep,146,1,141,262,11735040,1721
-16,1602568269,2020_10_13__05_51_04_delta.json,0,0,0,Invalid Json,23,7,3872,0,grep,147,1,141,262,11735040,1732
-15,1602568275,2020_10_13__05_51_09_delta.json,0,0,0,Invalid Json,23,7,3872,0,grep,148,1,141,262,11735040,1743
-11,1602568283,2020_10_13__05_51_14_delta.json,0,0,0,Invalid Json,23,7,3872,0,grep,149,1,141,262,11735040,1754
-7,1602568295,2020_10_13__05_51_23_delta.json,0,0,0,Invalid Json,34,12,3872,0,grep,150,1,141,262,11735040,1765
-14,1602568307,2020_10_13__05_51_35_delta.json,0,0,0,Invalid Json,34,12,3872,0,grep,151,1,141,262,11735040,1776
-18,1602568319,2020_10_13__05_51_47_delta.json,0,0,0,Invalid Json,34,12,3872,0,grep,152,1,141,262,11735040,1787
-8,1602568330,2020_10_13__05_51_59_delta.json,0,0,0,Invalid Json,47,14,3872,0,grep,152,1,141,262,11735040,1797
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdline,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pInvoluntaryContextSwitches,pName,pNumThreads,pVirtualMemoryBytes,pVoluntaryContextSwitches
+0,1606670630,2020_11_29_17_23_35_delta.json,0.0,0.0,0.0,python3 /usr/local/bin/rudataall-psutil.py /.cprofiles,2.0,6.0,3872,10,python3,1,45613056,13

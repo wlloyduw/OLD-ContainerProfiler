@@ -1,0 +1,10 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
+8,1602003750,2020_10_06__16_57_57_delta.json,0,0,0,bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H10/all.fastq,13,1820,27085,bwa,939,1,62520,268656640,0
+7,1602003760,2020_10_06__16_58_05_delta.json,0,0,0,bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H10/all.fastq,13,2740,27085,bwa,1457,1,62520,268656640,0
+1,1602003779,2020_10_06__16_58_15_delta.json,0,0,0,bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H10/all.fastq,16,4495,27085,bwa,2420,1,62589,268726272,1716
+6,1602003798,2020_10_06__16_58_20_delta.json,0,0,0,bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H10/all.fastq,16,6367,27085,bwa,3452,1,62589,268726272,1716
+0,1602003810,2020_10_06__16_58_30_delta.json,0,0,0,bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H10/all.fastq,18,7240,27085,bwa,3923,1,62589,268726272,3404
+2,1602003823,2020_10_06__16_58_36_delta.json,0,0,0,bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H10/all.fastq,18,8559,27085,bwa,4594,1,62589,268726272,3404
+3,1602003841,2020_10_06__16_58_46_delta.json,0,0,0,bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H10/all.fastq,18,10276,27085,bwa,5579,1,62589,268726272,3404
+5,1602003858,2020_10_06__16_58_55_delta.json,0,0,0,bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H10/all.fastq,19,11315,27085,bwa,6052,1,62589,268726272,5058
+4,1602003872,2020_10_06__16_59_04_delta.json,0,0,0,bwa aln -l 24 -t 1 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa /data/Aligns/H10/all.fastq,19,13116,27085,bwa,7144,1,62589,268726272,5058

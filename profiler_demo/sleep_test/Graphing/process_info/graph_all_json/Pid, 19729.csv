@@ -1,0 +1,10 @@
+,currentTime,filename,pBlockIODelays,pChildrenKernelMode,pChildrenUserMode,pCmdLine,pCpuTimeKernelMode,pCpuTimeUserMode,pId,pName,pNonvoluntaryContextSwitches,pNumThreads,pResidentSetSize,pVirtualMemoryBytes,pVoluntaryContextSwitches
+0,1602003681,2020_10_06__16_57_11_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E12/all.fastq,0,2,19729,bwa,2,1,1627,19496960,1
+4,1602003691,2020_10_06__16_57_20_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E12/all.fastq,0,2,19729,bwa,2,1,1627,19496960,1
+2,1602003709,2020_10_06__16_57_29_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E12/all.fastq,5,29,19729,bwa,1768,1,34911,155463680,16
+3,1602003719,2020_10_06__16_57_38_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E12/all.fastq,5,29,19729,bwa,1768,1,34911,155463680,16
+8,1602003737,2020_10_06__16_57_47_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E12/all.fastq,5,29,19729,bwa,1768,1,34911,155463680,16
+7,1602003750,2020_10_06__16_57_57_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E12/all.fastq,30,307,19729,bwa,19409,1,34793,155070464,17
+6,1602003760,2020_10_06__16_58_05_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E12/all.fastq,30,307,19729,bwa,19409,1,34793,155070464,17
+1,1602003779,2020_10_06__16_58_15_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E12/all.fastq,30,307,19729,bwa,19409,1,34793,155070464,17
+5,1602003798,2020_10_06__16_58_20_delta.json,0,0,0,bwa samse -n 20 /data/References/Broad_UMI/Human_RefSeq/refMrna_ERCC_polyAstrip.hg19.fa - /data/Aligns/E12/all.fastq,47,583,19729,bwa,36949,1,44287,193933312,18
