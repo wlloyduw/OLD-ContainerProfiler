@@ -128,7 +128,7 @@ def getContainerInfo():
 	cNetworkBytesRecvd=0
 	cNetworkBytesSent=0
 	try:
-		cNetworkBytesArr=re.findall(r'eth0.*',cNetworkBytesFileStats)[0]
+		cNetworkBytesArr=re.findall(r'eth0.*',cNetworkBytesFileStats)[0].split()
 		cNetworkBytesRecvd=int(cNetworkBytesArr[1])
 		cNetworkBytesSent=int(cNetworkBytesArr[9])
 
