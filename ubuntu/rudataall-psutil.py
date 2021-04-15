@@ -4,6 +4,8 @@ import argparse
 from datetime import datetime
 import re      
 import subprocess
+import os.path
+from os import path
 
 #add the virtual level.
 CORRECTION_MULTIPLIER=100
@@ -54,13 +56,10 @@ def getContainerInfo():
 		cProcessorDict[temp_str]=int(el)
 	
 	cDiskSectorIO=0
-	try:
+	if path.exists('/sys/fs/cgroup/blkio/blkio.sectors'):
 		cDiskSectorIOFile=open("/sys/fs/cgroup/blkio/blkio.sectors", "r")
 		cDiskSectorIOFileArr = re.findall(r'cpu.*', cDiskSectorIOFile)[0].split()
 		cDiskSectorIO=sum(cDiskSectorIOFileArr)
-	except:
-		cDiskSectorIO=0
-
 	cDiskReadBytes=0
 	cDiskWriteBytes=0
 

@@ -343,16 +343,16 @@ then
     disk_arr+=(${temp[1]})
   done
 
+  SRWC=0
+  if [ -f /sys/fs/cgroup/blkio/blkio.sectors ]
+  then
+    arr=($(cat /sys/fs/cgroup/blkio/blkio.sectors | grep 'Total' | cut -d" " -f 2))
 
-  arr=($(cat /sys/fs/cgroup/blkio/blkio.sectors | grep 'Total' | cut -d" " -f 2))
-
-  # if arr is empty, then assign 0; else, sum up all elements in arr
-  if [ -z "$arr" ]; then
-    SRWC=0
-  else
-    SRWC=$( ( IFS=+; echo "${arr[*]}" ) | bc )
+    # if arr is empty, then assign 0; else, sum up all elements in arr
+    if [ ! -z "$arr" ]; then
+      SRWC=$( ( IFS=+; echo "${arr[*]}" ) | bc )
+    fi
   fi
-
 
   IFS=$'\n'
   arr=($(cat /sys/fs/cgroup/blkio/blkio.throttle.io_service_bytes  | grep 'Read')) # in Bytes
