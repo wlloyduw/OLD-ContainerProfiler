@@ -190,8 +190,7 @@ def getVmInfo():
 	cpuinfo_file_stats=cpuinfo_file.read()
 	vCpuType = re.findall(r'model name.*', cpuinfo_file_stats)[0].split(sep=": ")[1]
 
-
-
+	kernel_info=str(subprocess.Popen("uname -a", shell=True, stdout =subprocess.PIPE).communicate()[0][:-1], 'utf-8')
 
 	cmd1=['lsblk', '-nd', '--output', 'NAME,TYPE']
 	cmd2=['grep','disk']
@@ -208,6 +207,7 @@ def getVmInfo():
 
 	vm_dict={
 		"vMetricType" : "VM Level",
+		"vKernelInfo" : kernel_info,
 		"vCpuTime" : (cpu_info[0] + cpu_info[2]) *CORRECTION_MULTIPLIER ,
 		"vDiskSectorReads" : disk_info[2]/512, 
 		"vDiskSectorWrites" : disk_info[3]/512,

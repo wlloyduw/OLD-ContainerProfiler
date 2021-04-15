@@ -59,6 +59,7 @@ output=$''
 output+=$'{\n'
 epochtime=$(date +%s)
 write_time_start=$(date '+%s%3N')
+kernel_info=$(uname -a)
 
 # Find the number of processes inside the container
 IFS=$'\n'
@@ -188,12 +189,10 @@ for (( i=0 ; i < length; i++ ))
   T_VM_2=$(date +%s%3N)
   let T_VM=$T_VM_2-$T_VM_1
 
-	
  #experimental pagefault
  filedata() {
      volumes=$(cat $1 | grep -m 1 -i $2)
-     tr " " "\n" <<< $volumes | tail -n1 
-    
+     tr " " "\n" <<< $volumes | tail -n1
  }
  vPGFault=$(filedata "/proc/vmstat" "pgfault")
  vMajorPGFault=$(filedata "/proc/vmstat" "pgmajfault")
@@ -202,7 +201,9 @@ for (( i=0 ; i < length; i++ ))
   output+=$'  \"currentTime\": '"$epochtime"
   output+=$',\n'
   output+=$'  \"vMetricType\": \"VM level\",\n'
-  output+=$'  \"vTime\": '"$T_VM"
+  output+=$"  \"vKernelInfo\": \"$kernel_info\""
+  output+=$',\n'
+  output+=$'  \"vTime\": '$T_VM
   output+=$',\n'
 
   ## print VM level data 
