@@ -30,3 +30,24 @@ to have the json files written internally to /var/profiles:
 docker run --rm  -it -v $PWD:/var/profiles -e OUTPUTDIR='/var/profiles' biodepot/profiler:alpine_3.7 sleep 10
 ```
 This option is included on the off-chance that the default /.cprofiles is in use for something else.
+
+### Using profiler that consists of docker inside
+# To build the docker image
+```
+docker build -t profiler
+```
+
+# To use the container
+```
+docker run --rm -it -v ${PWD}:/data -e PROFILER_OUTPUT_DIR=CONTAINER_DIRECTORY profiler "YOUR_SET_OF_COMMANDS"
+docker run --rm -it -v ${PWD}:/data -e PROFILER_OUTPUT_DIR=/data profiler "sleep 10"
+docker run --rm -it -v ${PWD}:/data -e PROFILER_OUTPUT_DIR=/data profiler "sleep 10; ls /data"
+docker run --rm -it -v ${PWD}:/data -e PROFILER_OUTPUT_DIR=/data profiler "docker run --rm -v ${PWD}:/data varikmp/bwa mem -M -t 1 /data/hg19bwaidx/hg19bwaidx /data/TUMOR.bam.fq"
+```
+
+# To use already-built container image and get the delta for quick test
+```
+docker run --rm -it -v ${PWD}:/data -e PROFILER_OUTPUT_DIR=/data varikmp/profiler "sleep 10"
+docker run --rm -it -v ${PWD}:/data varikmp/delta /data/2021_05_20_00_04_45.json /data/2021_05_20_00_04_35.json
+docker run --rm -it -v ${PWD}:/data varikmp/delta /data/2021_05_20_00_04_45.json /data/2021_05_20_00_04_35.json > delta.json
+```

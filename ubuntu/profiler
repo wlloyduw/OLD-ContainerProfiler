@@ -1,0 +1,45 @@
+#!/bin/bash
+#======================================================================
+#- IMPLEMENTATION
+#-    version         profiler (https://www.washington.edu/) 0.2
+#-    author          Varik Hoang <varikmp@uw.edu
+#-    copyright       Copyright (c) https://www.washington.edu/
+#-    license         GNU General Public License
+#-    script_id       12345
+#-
+#======================================================================
+#  HISTORY
+#     2021/05/19 : varikmp - script creation
+#======================================================================
+#  OPTION
+#    PROFILER_OUTPUT_DIR # specify the output directory
+#    PROFILER_TIME_STEPS # specify the time step each second
+#======================================================================
+
+function help()
+{
+	echo "Usage: $0 COMMAND"
+    echo "       PROFILER_OUTPUT_DIR: output directory for the profiling"
+    echo "       PROFILER_TIME_STEPS: time steps in seconds (must be non-negative integer)"
+    echo "Example:"
+	echo "       PROFILER_OUTPUT_DIR=/tmp"
+	echo "       PROFILER_TIME_STEPS=1"
+    echo "       $0 -c\"sleep 3\""
+}
+
+if [ "$#" -eq "0" ]
+then
+	help
+	exit
+fi
+
+PROFILER_OUTPUT_DIR=$(printenv PROFILER_OUTPUT_DIR)
+PROFILER_TIME_STEPS=$(printenv PROFILER_TIME_STEPS)
+if [ -z $PROFILER_OUTPUT_DIR ]
+then
+    PROFILER_OUTPUT_DIR=./
+fi
+
+python3 ./rudataall-psutil.py -vcp $PROFILER_OUTPUT_DIR
+eval $@
+python3 ./rudataall-psutil.py -vcp $PROFILER_OUTPUT_DIR
