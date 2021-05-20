@@ -42,7 +42,7 @@ docker build -t profiler
 docker run --rm -it -v ${PWD}:/data -e PROFILER_OUTPUT_DIR=CONTAINER_DIRECTORY profiler "YOUR_SET_OF_COMMANDS"
 docker run --rm -it -v ${PWD}:/data -e PROFILER_OUTPUT_DIR=/data profiler "sleep 10"
 docker run --rm -it -v ${PWD}:/data -e PROFILER_OUTPUT_DIR=/data profiler "sleep 10; ls /data"
-docker run --rm -it -v ${PWD}:/data -e PROFILER_OUTPUT_DIR=/data profiler "docker run --rm -v ${PWD}:/data varikmp/bwa mem -M -t 1 /data/hg19bwaidx/hg19bwaidx /data/TUMOR.bam.fq"
+docker run --rm -it -v ${PWD}:/data -e PROFILER_OUTPUT_DIR=/data -v /var/run/docker.sock:/var/run/docker.sock profiler "docker run --rm -v ${PWD}:/data varikmp/bwa mem -M -t 1 /data/hg19bwaidx/hg19bwaidx /data/TUMOR.bam.fq"
 ```
 
 # To use already-built container image and get the delta for quick test
