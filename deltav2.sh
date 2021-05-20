@@ -43,4 +43,4 @@ for key in "${!map1[@]}"; do
         >&2 echo $key" : "${map1[$key]}","
     fi
 done
-
+printf "}"
