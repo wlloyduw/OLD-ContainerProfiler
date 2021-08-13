@@ -1,15 +1,14 @@
 #!/bin/bash
 #======================================================================
 #- IMPLEMENTATION
-#-    version         profiler (https://www.washington.edu/) 0.2
-#-    author          Varik Hoang <varikmp@uw.edu
+#-    version         profiler (https://www.washington.edu/) 0.3
+#-    author          Varik Hoang <varikmp@uw.edu>
 #-    copyright       Copyright (c) https://www.washington.edu/
 #-    license         GNU General Public License
-#-    script_id       12345
-#-
 #======================================================================
 #  HISTORY
 #     2021/05/19 : varikmp - script creation
+#     2021/08/12 : varikmp - implemented time steps for sampling
 #======================================================================
 #  OPTION
 #    PROFILER_OUTPUT_DIR # specify the output directory
@@ -18,28 +17,44 @@
 
 function help()
 {
-	echo "Usage: $0 COMMAND"
+    echo "Usage: $0 COMMAND"
     echo "       PROFILER_OUTPUT_DIR: output directory for the profiling"
     echo "       PROFILER_TIME_STEPS: time steps in seconds (must be non-negative integer)"
     echo "Example:"
-	echo "       PROFILER_OUTPUT_DIR=/tmp"
-	echo "       PROFILER_TIME_STEPS=1"
-    echo "       $0 -c\"sleep 3\""
+    echo "       PROFILER_OUTPUT_DIR=/tmp"
+    echo "       PROFILER_TIME_STEPS=1"
+    echo "       $0 \"sleep 10\""
 }
 
 if [ "$#" -eq "0" ]
 then
-	help
-	exit
+    help
+    exit
 fi
 
 PROFILER_OUTPUT_DIR=$(printenv PROFILER_OUTPUT_DIR)
 PROFILER_TIME_STEPS=$(printenv PROFILER_TIME_STEPS)
-if [ -z $PROFILER_OUTPUT_DIR ]
+if [ -z "$PROFILER_OUTPUT_DIR" ]
 then
     PROFILER_OUTPUT_DIR=./
 fi
+if [ -z "$PROFILER_TIME_STEPS" ] || \
+   ! [[ "$PROFILER_TIME_STEPS" =~ ^[0-9]+$ ]] || [ $PROFILER_TIME_STEPS -lt 1 ]
+then
+    PROFILER_TIME_STEPS=0
+fi
 
-python3 ./rudataall-psutil.py -vcp $PROFILER_OUTPUT_DIR
-eval $@
-python3 ./rudataall-psutil.py -vcp $PROFILER_OUTPUT_DIR
+echo $PROFILER_TIME_STEPS
+if [ $PROFILER_TIME_STEPS -eq 0 ]
+then
+    python3 ./rudataall -vcp $PROFILER_OUTPUT_DIR
+    eval $@
+    python3 ./rudataall -vcp $PROFILER_OUTPUT_DIR
+else
+    eval $@ & PID=$!
+    while kill -0 $PID > /dev/null 2>&1
+    do
+        python3 ./rudataall -vcp $PROFILER_OUTPUT_DIR
+        sleep $PROFILER_TIME_STEPS
+    done
+fi
